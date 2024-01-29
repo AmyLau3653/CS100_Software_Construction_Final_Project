@@ -18,9 +18,17 @@
 ## Project Description
  > Your project description should summarize the project you are proposing. Be sure to include:
  > * Why is it important or interesting to you?
+
+ > This project holds significance for us as aspiring computing professionals, as it serves as a valuable learning opportunity in areas such as programming logic, data structures, user interface creation, team collaboration, and various other essential skills.
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
+
+ > Our project will be implemented in C++ and Git will be our version control system.
  > * What will be the input/output of your project?
+
+ > The program will use the terminal to handle input and output of each turn of the game.
  > * What are the features that the project provides?
+
+ > The RPG we are making consists of a map generated in the form of a square (where there is an odd square number of rooms on the map). This game will primarily feature a 2 player mode in which there are 2 win conditions: the first one to reach the escape room (designated as the middle of the map for now) wins, or the first to bring the other player's hp to 0 wins. However, other modes (like single-player modes) are also being considered further down the development line. There's will potentially be some RNG (random luck) elements involved as well, and a movement count for each player. Each player has a set HP and Atk value and will be determined by whichever type of player class the user chooses.
  > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
  > 
  > You also need to set up an empty project board using GitHub projects (board view with default columns). Make sure you add the board under your project repository. You should also have a Product Backlog and In testing columns added. All columns should be in the right order.
