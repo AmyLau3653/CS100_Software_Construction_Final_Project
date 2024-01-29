@@ -1,7 +1,7 @@
  > As you complete each section you **must** remove the prompt text. Every *turnin* of this project includes points for formatting of this README so keep it clean and keep it up to date. 
  > Prompt text is any lines beginning with "\>"
  > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
-# Escape the Maze
+# Escape the Square Maze
  > Your author list below should include links to all members GitHub (remove existing author).
  
  > Authors: \<[Brian Uong](https://github.com/Brian-Uong), \<[Amy Lau](https://github.com/alau030), \<[Bryan Yu](https://github.com/bryany1220/), \<[Ieu Mckenzie](https://github.com/ieuMckenzie)
