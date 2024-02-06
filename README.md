@@ -4,7 +4,7 @@
 # Escape the Square Maze
  > Your author list below should include links to all members GitHub (remove existing author).
  
- > Authors: \<[Brian Uong](https://github.com/Brian-Uong), \<[Amy Lau](https://github.com/alau030), \<[Bryan Yu](https://github.com/bryany1220/), \<[Ieu Mckenzie](https://github.com/ieuMckenzie)
+ > Authors: [Brian Uong](https://github.com/Brian-Uong), [Amy Lau](https://github.com/alau030), [Bryan Yu](https://github.com/bryany1220/), [Ieu Mckenzie](https://github.com/ieuMckenzie)
 
  > You will be forming a group of **FOUR** students and working on an interesting project. The project has 4 phases, each one with specific requirements. A list of proposed project ideas that have been successful in previous quarters is listed in the project specifications document on Canvas. You can select an idea from the list and start thinking about the features you will implement. If you want to propose your own original idea, you will have to contact your instructor to discuss the project and obtain written permission before you submit your project proposal (Phase 1). The project work should be divided almost equally among team members. You can of course help each other, but it needs to be clear who will be responsible for which features. Additionally, you are expected to follow Scrum patterns, specifically the use of a Scrum (Project) board, Sprints, and Scrum meetings.
 
@@ -26,6 +26,11 @@
  > * What will be the input/output of your project?
 
  > The program will use the terminal to handle input and output of each turn of the game.
+> If the player is all alone in the room, they will be prompted to either ('m') or stay (SPACE)
+> If they choose to move, they can move up ('w'), left ('a'), right('d'), or down('s') depending on where they are in the map.
+> If the player happens to be in another room with another player, they can choose to fight ('f') or run('m'). We are still working out how the combat works.
+> Note that these input keys are not final and may be subject to change.
+> 
  > * What are the features that the project provides?
 
  > The RPG we are making consists of a map generated in the form of a square (where there is an odd square number of rooms on the map). This game will primarily feature a 2 player mode in which there are 2 win conditions: the first one to reach the escape room (designated as the middle of the map for now) wins, or the first to bring the other player's hp to 0 wins. However, other modes (like single-player modes) are also being considered further down the development line. There's will potentially be some RNG (random luck) elements involved as well, and a movement count for each player. Each player has a set HP and Atk value and will be determined by whichever type of player class the user chooses.
