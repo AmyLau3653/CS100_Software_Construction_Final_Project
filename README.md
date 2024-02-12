@@ -46,11 +46,16 @@ This diagram depicts the different "screens" that the game will feature. For exa
 Our game is exclusively played in the terminal and uses five screen layouts: one for the game menu/introduction, one for the normal/encounter scenario, as well as screen layouts for the ‘move’, ‘analyze’, and ‘attack’ actions. 
 * Game Menu/Introduction: Outputs the game menu and instructions on how to play
   * Expected input: ‘0’ to quit the game, ‘1’ to play the game, and ‘2’ to view the rules on how to play the game.
-  * Input '1':  
+  * Input '1' to play the game:  
 ![input1](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/27d9aab0-4fc7-4bc6-b501-068b503e4657)
-  * Input '2':  
+  * Input '2' to view how to play:  
 ![input2](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/47a86509-d461-4245-956d-564737d89296)
-
+* Normal Scenario: Output's options to 'Move', 'Stay', or 'Analyze'
+  * Expected input:  ‘1’ to Move, 2 to ‘Stay’, and 3 to ‘Analyze’
+  * Input '1' to Move:  
+![input1move](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/ab0c7a12-3ee9-41f7-9435-db20e493eec5)
+  * Input '3' to Analyze:  
+![input3analyze](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/3990584b-4828-4ccb-8f11-beb2afd36b97)
 
 ## Class Diagram
  > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
