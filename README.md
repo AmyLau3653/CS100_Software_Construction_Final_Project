@@ -43,6 +43,15 @@ This diagram depicts the different "screens" that the game will feature. For exa
 ### Screen Layouts
 > Include the layout of each of your screens. The layout should describe the screen’s major components such as menus and prompts for user inputs and expected output, or any graphical user interface components if applicable (e.g. buttons, text boxes, etc). Explain what is on the layout, and the purpose of each menu item, button, etc. If many screens share the same layout, start by describing the general layout and then list the screens that will be using that layout and the differences between each of them.
 
+Our game is exclusively played in the terminal and uses five screen layouts: one for the game menu/introduction, one for the normal/encounter scenario, as well as screen layouts for the ‘move’, ‘analyze’, and ‘attack’ actions. 
+* Game Menu/Introduction: Outputs the game menu and instructions on how to play
+  * Expected input: ‘0’ to quit the game, ‘1’ to play the game, and ‘2’ to view the rules on how to play the game.
+  * Input '1':
+![input1](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/27d9aab0-4fc7-4bc6-b501-068b503e4657)
+  * Input '2':
+![input2](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/47a86509-d461-4245-956d-564737d89296)
+
+
 ## Class Diagram
  > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
  
