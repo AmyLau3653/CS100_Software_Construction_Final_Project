@@ -46,9 +46,9 @@ This diagram depicts the different "screens" that the game will feature. For exa
 Our game is exclusively played in the terminal and uses five screen layouts: one for the game menu/introduction, one for the normal/encounter scenario, as well as screen layouts for the ‘move’, ‘analyze’, and ‘attack’ actions. 
 * Game Menu/Introduction: Outputs the game menu and instructions on how to play
   * Expected input: ‘0’ to quit the game, ‘1’ to play the game, and ‘2’ to view the rules on how to play the game.
-  * Input '1':
+  * Input '1':  
 ![input1](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/27d9aab0-4fc7-4bc6-b501-068b503e4657)
-  * Input '2':
+  * Input '2':  
 ![input2](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/47a86509-d461-4245-956d-564737d89296)
 
 
