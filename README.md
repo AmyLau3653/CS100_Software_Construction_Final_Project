@@ -59,8 +59,9 @@ Our game is exclusively played in the terminal and uses five screen layouts: one
 ![encounter attack](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/baccc55d-66fc-4918-ac54-1a7610ffb062)
 
 ## Class Diagram
- > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
- 
+![ULM_Diagram](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/156245193/23110b10-9982-4336-842d-d59ef1b564aa)
+
+
  > ## Phase III
  > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
  
