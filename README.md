@@ -56,7 +56,7 @@ Our game is exclusively played in the terminal and uses five screen layouts: one
 ![input3analyze](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/3990584b-4828-4ccb-8f11-beb2afd36b97)
 * Encounter Scenario: Outputs options to 'Move', 'Stay', 'Analyze', or 'Attack'
   * Input '4' to Attack:  
-![encounter attack](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/baccc55d-66fc-4918-ac54-1a7610ffb062)
+![encounter attack](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/88931d85-7fb7-4356-9791-ac2af1cb72e9)
 
 ## Class Diagram
 ![ULM_Diagram](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/156245193/23110b10-9982-4336-842d-d59ef1b564aa)
