@@ -1,4 +1,6 @@
 #include <iostream>
+#include <limits>
+#include <vector>
 #include "wrongInput.hpp"
 
 InvalidInput::InvalidInput()
@@ -17,16 +19,21 @@ InvalidInput::InvalidInput(const std::string& input)
 }
 
 
-bool InvalidInput::TitleInput()
+int InvalidInput::TitleInput()
 {
-    if(0 <= x && x <= 3) {
-        std::cout << "input valid" << std::endl;
-        return false;
-    }
-    else {
-        std::cout << "input invalid" << std::endl;
-        return true;
-    }
+    bool isValid = false;
+    while (!isValid) {
+        std::cin >> x;
+        if(std::cin.fail() || (x < 0 || x > 3)) {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "Invalid" << std::endl;
+        }
+        else {
+            isValid = true;
+        }
+    }  
+    return x;
 }
 
 bool InvalidInput::IntroInvalid()

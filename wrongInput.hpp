@@ -7,7 +7,7 @@ public:
     InvalidInput(int input);
     InvalidInput(const std::string& input);
     
-    bool TitleInput();
+    int TitleInput();
     bool IntroInvalid();
     bool PlayInvalid();
     bool AnalyzeInvalid();
