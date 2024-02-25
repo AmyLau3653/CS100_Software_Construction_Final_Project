@@ -7,10 +7,13 @@ public:
     InvalidInput(int input);
     InvalidInput(const std::string& input);
     
-    int TitleInput();
-    bool IntroInvalid();
-    bool PlayInvalid();
-    bool AnalyzeInvalid();
+    int validateTitle();
+    bool validateQuit();
+    int validateHowToPlay();
+    bool validateIntro();
+    bool validateCharacterSelection();
+    int validateTurn();
+    bool validateEncounter();
 
     void setInt(int _x);
     void setString(const std::string& _s);
