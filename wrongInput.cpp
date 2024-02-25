@@ -2,22 +2,6 @@
 #include <limits>
 #include "wrongInput.hpp"
 
-InvalidInput::InvalidInput()
-{
-
-}
-
-InvalidInput::InvalidInput(int input)
-{
-    stream << input;
-}
-
-InvalidInput::InvalidInput(const std::string& input)
-{
-    stream << input;
-}
-
-
 int InvalidInput::validateTitle()
 {
     bool isValid = false;
@@ -60,14 +44,25 @@ int InvalidInput::validateHowToPlay()
     return x;
 }
 
-bool InvalidInput::validateIntro()
+bool InvalidInput::validateCharacterSelection()
 {
     return true;
 }
 
-bool InvalidInput::validateCharacterSelection()
-{
-    return true;
+int InvalidInput::validateRoomSize() {
+    bool isValid = false;
+    while (!isValid) {
+        std::cin >> x;
+        if(std::cin.fail() || (x < 2 || x > 9)) {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "Invalid" << std::endl;
+        }
+        else {
+            isValid = true;
+        }
+    }  
+    return x;
 }
 
 int InvalidInput::validateTurn() {
@@ -85,9 +80,24 @@ int InvalidInput::validateTurn() {
     }  
 }
 
-bool InvalidInput::validateEncounter()
-{
-    return true;
+bool InvalidInput::validateEncounter() {
+    bool isValid = false;
+    while (!isValid) {
+        std::cin >> x;
+        if(std::cin.fail() || (x < 0 || x > 4)) {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "Invalid" << std::endl;
+        }
+        else {
+            isValid = true;
+        }
+    }  
+    return x;
+}
+
+const std::string& InvalidInput::validateMove() {
+    return "";
 }
 
 void InvalidInput::setInt(int _x)

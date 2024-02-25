@@ -3,16 +3,15 @@
 class InvalidInput
 {
 public:
-    InvalidInput();
-    InvalidInput(int input);
-    InvalidInput(const std::string& input);
+    InvalidInput() = default;
     
     int validateTitle();
     bool validateQuit();
     int validateHowToPlay();
-    bool validateIntro();
     bool validateCharacterSelection();
+    int validateRoomSize();
     int validateTurn();
+    const std::string& validateMove();
     bool validateEncounter();
 
     void setInt(int _x);
@@ -20,5 +19,4 @@ public:
 private:
     int x;
     std::string s;
-    std::stringstream stream;
 };
