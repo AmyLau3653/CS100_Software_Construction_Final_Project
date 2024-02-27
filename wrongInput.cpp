@@ -2,6 +2,7 @@
 #include <limits>
 #include "wrongInput.hpp"
 
+
 int InvalidInput::validateTitle() {
     bool isValid = false;
     while (!isValid) {
