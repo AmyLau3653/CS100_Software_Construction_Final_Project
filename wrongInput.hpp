@@ -1,5 +1,6 @@
 #include <sstream>
 #include <string>
+
 class InvalidInput
 {
 public:
@@ -8,14 +9,11 @@ public:
     int validateTitle();
     bool validateQuit();
     int validateHowToPlay();
-    bool validateCharacterSelection();
+    const std::string validateCharacterSelection();
     int validateRoomSize();
     int validateTurn();
-    const std::string& validateMove();
+    const std::string validateMove();
     bool validateEncounter();
-
-    void setInt(int _x);
-    void setString(const std::string& _s);
 private:
     int x;
     std::string s;

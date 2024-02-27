@@ -2,8 +2,7 @@
 #include <limits>
 #include "wrongInput.hpp"
 
-int InvalidInput::validateTitle()
-{
+int InvalidInput::validateTitle() {
     bool isValid = false;
     while (!isValid) {
         std::cin >> x;
@@ -27,8 +26,7 @@ bool InvalidInput::validateQuit() {
     return false;
 }
 
-int InvalidInput::validateHowToPlay()
-{
+int InvalidInput::validateHowToPlay() {
     bool isValid = false;
     while (!isValid) {
         std::cin >> x;
@@ -44,9 +42,21 @@ int InvalidInput::validateHowToPlay()
     return x;
 }
 
-bool InvalidInput::validateCharacterSelection()
-{
-    return true;
+const std::string InvalidInput::validateCharacterSelection() {
+    std::string input;
+    bool valid = false;
+
+    while(!valid) {
+        std::cin >> input;
+        if (input == "a" || input == "b" || input == "c") {
+            valid = true;
+        }
+        else {
+            std::cout << "Invalid" << std::endl;
+        }
+
+    }
+    return input;
 }
 
 int InvalidInput::validateRoomSize() {
@@ -78,6 +88,7 @@ int InvalidInput::validateTurn() {
             isValid = true;
         }
     }  
+    return x;
 }
 
 bool InvalidInput::validateEncounter() {
@@ -96,21 +107,20 @@ bool InvalidInput::validateEncounter() {
     return x;
 }
 
-const std::string& InvalidInput::validateMove() {
-    return "";
+const std::string InvalidInput::validateMove() {
+    std::string input;
+    bool valid = false;
+
+    while(!valid) {
+        std::cin >> input;
+        if (input == "w" || input == "a" || input == "s" || input == "d" || input == "c") {
+            valid = true;
+        }
+        else {
+            std::cout << "Invalid" << std::endl;
+        }
+
+    }
+    return input;
 }
 
-void InvalidInput::setInt(int _x)
-{
-    x = _x;
-}
-void InvalidInput::setString(const std::string& _s)
-{
-    s = _s;
-}
-
-int main() {
-    InvalidInput i;
-    i.validateTitle();
-    return 0;
-}
