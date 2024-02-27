@@ -8,8 +8,9 @@ int main() {
     cout << "1. Scout" << endl;
     cout << "2. Soldier" << endl;
     cout << "3. Heavy" << endl;
+
     int choice;
-    std::cin >> choice;
+    cin >> choice;
 
     Character* selectedCharacter = nullptr;
 

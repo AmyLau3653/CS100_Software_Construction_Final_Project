@@ -8,6 +8,7 @@ Character::Character(std::string n, int h, int a) : name(n), health(h), attack(a
 Character::~Character() {}
 
 void Character::displayStats() {
+    
     cout << "Name: " << name << endl;
     cout << "Health: " << health << endl;
     cout << "Attack: " << attack << endl;

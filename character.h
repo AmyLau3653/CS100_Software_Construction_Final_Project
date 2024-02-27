@@ -9,7 +9,7 @@ class Character {
     protected:
         string name;
         int health;
-        int attack;
+        int attack; 
 
     public:
         Character(string n , int h, int a);
