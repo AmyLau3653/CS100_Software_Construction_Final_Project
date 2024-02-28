@@ -6,6 +6,8 @@ class InvalidInput
 public:
     InvalidInput() = default;
     
+    int validateNumInputRange(int minNum, int maxNum);
+
     int validateTitle();
     bool validateQuit();
     int validateHowToPlay();
@@ -15,6 +17,6 @@ public:
     const std::string validateMove();
     bool validateEncounter();
 private:
-    int x;
-    std::string s;
+    int numInput;
+    std::string strInput;
 };

@@ -2,110 +2,63 @@
 #include <limits>
 #include "wrongInput.hpp"
 
-
-int InvalidInput::validateTitle() {
+int InvalidInput::validateNumInputRange(int minNum, int maxNum) {
     bool isValid = false;
     while (!isValid) {
-        std::cin >> x;
-        if(std::cin.fail() || (x < 0 || x > 3)) {
+        std::cin >> numInput;
+        if(std::cin.fail() || (numInput < minNum || numInput > maxNum)) {
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            std::cout << "Invalid" << std::endl;
+            std::cout << "Error: invalid Input" << std::endl;
         }
         else {
             isValid = true;
         }
     }  
-    return x;
+    return numInput;
+}
+int InvalidInput::validateTitle() {
+    return validateNumInputRange(0, 3);
 }
 
 bool InvalidInput::validateQuit() {
-    std::cin >> s;
-    if (s.compare("q")) {
+    std::cin >> strInput;
+    if (strInput.compare("q")) {
         return true;
     }
     return false;
 }
 
 int InvalidInput::validateHowToPlay() {
-    bool isValid = false;
-    while (!isValid) {
-        std::cin >> x;
-        if(std::cin.fail() || (x < 0 || x > 2)) {
-            std::cin.clear();
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            std::cout << "Invalid" << std::endl;
-        }
-        else {
-            isValid = true;
-        }
-    }  
-    return x;
+    return validateNumInputRange(0, 2);
 }
 
 const std::string InvalidInput::validateCharacterSelection() {
-    std::string input;
     bool valid = false;
 
     while(!valid) {
-        std::cin >> input;
-        if (input == "a" || input == "b" || input == "c") {
+        std::cin >> strInput;
+        if (strInput == "a" || strInput == "b" || strInput == "c") {
             valid = true;
         }
         else {
-            std::cout << "Invalid" << std::endl;
+            std::cout << "Error: invalid input" << std::endl;
         }
 
     }
-    return input;
+    return strInput;
 }
 
 int InvalidInput::validateRoomSize() {
-    bool isValid = false;
-    while (!isValid) {
-        std::cin >> x;
-        if(std::cin.fail() || (x < 2 || x > 9)) {
-            std::cin.clear();
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            std::cout << "Invalid" << std::endl;
-        }
-        else {
-            isValid = true;
-        }
-    }  
-    return x;
+    return validateNumInputRange(2, 9);
 }
 
 int InvalidInput::validateTurn() {
-    bool isValid = false;
-    while (!isValid) {
-        std::cin >> x;
-        if(std::cin.fail() || (x < 0 || x > 3)) {
-            std::cin.clear();
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            std::cout << "Invalid" << std::endl;
-        }
-        else {
-            isValid = true;
-        }
-    }  
-    return x;
+    return validateNumInputRange(0, 3);
 }
 
 bool InvalidInput::validateEncounter() {
-    bool isValid = false;
-    while (!isValid) {
-        std::cin >> x;
-        if(std::cin.fail() || (x < 0 || x > 4)) {
-            std::cin.clear();
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            std::cout << "Invalid" << std::endl;
-        }
-        else {
-            isValid = true;
-        }
-    }  
-    return x;
+    return validateNumInputRange(0, 4);
 }
 
 const std::string InvalidInput::validateMove() {
@@ -118,10 +71,16 @@ const std::string InvalidInput::validateMove() {
             valid = true;
         }
         else {
-            std::cout << "Invalid" << std::endl;
+            std::cout << "Error: invalid input" << std::endl;
         }
 
     }
     return input;
 }
 
+int main()
+{
+    InvalidInput i;
+    i.validateTitle();
+    return 0;
+}
