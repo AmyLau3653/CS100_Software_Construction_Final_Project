@@ -78,9 +78,3 @@ const std::string InvalidInput::validateMove() {
     return input;
 }
 
-int main()
-{
-    InvalidInput i;
-    i.validateTitle();
-    return 0;
-}
