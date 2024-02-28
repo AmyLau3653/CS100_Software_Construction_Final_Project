@@ -1,6 +1,9 @@
 #include <sstream>
 #include <string>
 
+#ifndef __INVALIDINPUT_HPP__
+#define __INVALIDINPUT_HPP__
+
 class InvalidInput
 {
 public:
@@ -20,3 +23,5 @@ private:
     int numInput;
     std::string strInput;
 };
+
+#endif
