@@ -52,25 +52,8 @@ Our game is exclusively played in the terminal and uses five screen layouts: one
 The game class is used to be the driver of the game, creating the map of rooms and the character selection for each user.The Room class is a base class that will create each room in the map. A defualt room will be created if the room is not on the edge of the map and if a room is an edge, the room will be created using the EdgeRoom class. The Output class will be used to output the text seen by the users to the screen. The Player class is an abstract class that allows for three different types of characters, TypeA, TypeB and Type C. The TypeA class will will be a well rounded character with even attributes in health and attack, TypeB will have a greater enphasis on health over damage, while TypeC will have greater attack stats than health. If choosing to do the game in multiplayer, both people can choose their own class, but playing in singleplayer mode, the enemy will randomly choose one of the types. Armor and weapons can be found in different rooms that boost stats of a player character. 
 
  > ## Phase III
- > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
- 
- > BEFORE the meeting you should do the following:
- > * Update your class diagram from Phase II to include any feedback you received from your TA/grader.
- > * Considering the SOLID design principles, reflect back on your class diagram and think about how you can use the SOLID principles to improve your design. You should then update the README.md file by adding the following:
- >   * A new class diagram incorporating your changes after considering the SOLID principles.
- >   * For each update in your class diagram, you must explain in 3-4 sentences:
- >     * What SOLID principle(s) did you apply?
- >     * How did you apply it? i.e. describe the change.
- >     * How did this change help you write better code?
- > * Perform a new sprint plan like you did in Phase II.
- > * You should also make sure that your README file (and Project board) are up-to-date reflecting the current status of your project and the most recent class diagram. Previous versions of the README file should still be visible through your commit history.
- 
-> During the meeting with your reader you will discuss: 
- > * How effective your last sprint was (each member should talk about what they did)
- > * Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
- > * Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
- > * What tasks you are planning for this next sprint.
-
+### Added InValidInput class and removed OutputBadInput function in Output class  
+We removed the OutputBadInput function so that the Output class follows the single responsibility principle (SRP). The InvalidInput class now handles cases where there is an invalid input, and outputs "Error." After this update, both classes have a single responsibility and adhere to the SOLID principles.
  
  > ## Final deliverable
  > All group members will give a demo to the reader during lab time. ou should schedule your demo on Calendly with the same reader who took your second scrum meeting. The reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
