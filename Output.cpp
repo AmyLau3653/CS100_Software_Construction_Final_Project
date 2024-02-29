@@ -65,8 +65,6 @@ void Output::OutputMenu() {
   OutputColor(0, 33, "How to Play (2)\n");
 }
 
-void Output::OutputBadInput() {}
-
 void Output::OutputPlay() {
   //output in red
   OutputColor(0, 31, "Quit Game (0)     ");
@@ -106,8 +104,4 @@ void Output::OutputExitRoom(Player player) {
 void Output::OutputFight(Player player1, Player player2) {
   cout << player1.GetName() << " does " << player1.GetDamage() << " attack to "
        << player2.GetName() << "!" << endl;
-}
-
-Player Output::OutputPlayer() {
-  
 }
