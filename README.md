@@ -55,6 +55,8 @@ The game class is used to be the driver of the game, creating the map of rooms a
 ### Added InValidInput class and removed OutputBadInput function in Output class  
 We removed the OutputBadInput function so that the Output class follows the single responsibility principle (SRP). The InvalidInput class now handles cases where there is an invalid input, and outputs "Error." After this update, both classes have a single responsibility and adhere to the SOLID principles.
 
+### Updated Player Class's inherited classes
+We decided to remove the "Enemy" class since there are only two players, with one acting as the current player and the other acting as the opponent player. We also decided to move some universal functions up to the Player class so that each inheriting class has access from one source. This follows the Dependency Inversion Principle (DIP) where the player types (Type A, Type B, and Type C) all depend on an abstract class (Player) and don't depend on outputs, but rather the player's inputs.
  
  > ## Final deliverable (Phase IV)
  > All group members will give a demo to the reader during lab time. ou should schedule your demo on Calendly with the same reader who took your second scrum meeting. The reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
