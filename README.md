@@ -72,7 +72,7 @@ The game class is used to be the driver of the game, creating the map of rooms a
  > * What tasks you are planning for this next sprint.
 
  
- > ## Final deliverable
+ > ## Final deliverable (Phase IV)
  > All group members will give a demo to the reader during lab time. ou should schedule your demo on Calendly with the same reader who took your second scrum meeting. The reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
  > Before the demo, you should do the following:
  > * Complete the sections below (i.e. Screenshots, Installation/Usage, Testing)
