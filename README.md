@@ -52,8 +52,8 @@ Our game is exclusively played in the terminal and uses five screen layouts: one
 The game class is used to be the driver of the game, creating the map of rooms and the character selection for each user.The Room class is a base class that will create each room in the map. A defualt room will be created if the room is not on the edge of the map and if a room is an edge, the room will be created using the EdgeRoom class. The Output class will be used to output the text seen by the users to the screen. The Player class is an abstract class that allows for three different types of characters, TypeA, TypeB and Type C. The TypeA class will will be a well rounded character with even attributes in health and attack, TypeB will have a greater enphasis on health over damage, while TypeC will have greater attack stats than health. If choosing to do the game in multiplayer, both people can choose their own class, but playing in singleplayer mode, the enemy will randomly choose one of the types. Armor and weapons can be found in different rooms that boost stats of a player character. 
 
  > ## Phase III
-> ### Added InValidInput class and removed OutputBadInput function in Output class
-> We removed the OutputBadInput function so that the Output class follows the single responsibility principle (SRP). The InvalidInput class now handles cases where there is an invalid input, and outputs "Error." After this update, both classes have a single responsibility and adhere to the SOLID principles.
+### Added InValidInput class and removed OutputBadInput function in Output class  
+We removed the OutputBadInput function so that the Output class follows the single responsibility principle (SRP). The InvalidInput class now handles cases where there is an invalid input, and outputs "Error." After this update, both classes have a single responsibility and adhere to the SOLID principles.
 
  
  > ## Final deliverable (Phase IV)
