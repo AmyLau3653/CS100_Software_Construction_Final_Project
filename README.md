@@ -48,14 +48,19 @@ Our game is exclusively played in the terminal and uses five screen layouts: one
 ![encounter attack](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/88931d85-7fb7-4356-9791-ac2af1cb72e9)
 
 ## Class Diagram
-![ULM_Diagram](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/156245193/23110b10-9982-4336-842d-d59ef1b564aa)
+![umlPhase2 drawio](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/156245193/d70bbbf7-9695-4889-8bde-773eb2e6e676)
 The game class is used to be the driver of the game, creating the map of rooms and the character selection for each user.The Room class is a base class that will create each room in the map. A defualt room will be created if the room is not on the edge of the map and if a room is an edge, the room will be created using the EdgeRoom class. The Output class will be used to output the text seen by the users to the screen. The Player class is an abstract class that allows for three different types of characters, TypeA, TypeB and Type C. The TypeA class will will be a well rounded character with even attributes in health and attack, TypeB will have a greater enphasis on health over damage, while TypeC will have greater attack stats than health. If choosing to do the game in multiplayer, both people can choose their own class, but playing in singleplayer mode, the enemy will randomly choose one of the types. Armor and weapons can be found in different rooms that boost stats of a player character. 
 
  > ## Phase III
 ### Added InValidInput class and removed OutputBadInput function in Output class  
 We removed the OutputBadInput function so that the Output class follows the single responsibility principle (SRP). The InvalidInput class now handles cases where there is an invalid input, and outputs "Error." After this update, both classes have a single responsibility and adhere to the SOLID principles.
+
+
+### Updated Player Class's inherited classes
+We decided to remove the "Enemy" class since there are only two players, with one acting as the current player and the other acting as the opponent player. We also decided to move some universal functions up to the Player class so that each inheriting class has access from one source. This follows the Dependency Inversion Principle (DIP) where the player types (Type A, Type B, and Type C) all depend on an abstract class (Player) and don't depend on outputs, but rather the player's inputs.
+
  
- > ## Final deliverable
+ > ## Final deliverable (Phase IV)
  > All group members will give a demo to the reader during lab time. ou should schedule your demo on Calendly with the same reader who took your second scrum meeting. The reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
  > Before the demo, you should do the following:
  > * Complete the sections below (i.e. Screenshots, Installation/Usage, Testing)
