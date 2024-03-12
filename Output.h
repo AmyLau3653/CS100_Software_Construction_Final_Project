@@ -22,6 +22,8 @@ public:
   void OutputHowToPlay();
   void OutputExitRoom(Player);
   void OutputFight(Player, Player);
+  void OutputEnemyIsClose(Player*, Player*);
+  void ExitIsClose(Player*, int, int); //write new function to immediately access exit
 
 private: 
   void OutputColor(int, int, string);

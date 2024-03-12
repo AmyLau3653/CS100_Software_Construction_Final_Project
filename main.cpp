@@ -10,6 +10,7 @@
 #include "Type_B.h"
 #include "Type_C.h"
 #include "gameplay.h"
+#include "Output.h"
 using namespace std;
 
 vector<Room> MapGenerator(const int& n) {
@@ -59,6 +60,8 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
 
     cout << currPlayer->getName() << " currently in room " << currRoom.getID() << endl; //for testing purposes only
     
+
+
     int m = 3;
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
       m = 4;
@@ -231,40 +234,4 @@ int main() {
   //setupGame();
   runGame();
   return 0;
-=======
-#include "character.h"
-
-using namespace std;
-
-int main() {
-    cout << "Select a character:" << endl;
-    cout << "1. Scout" << endl;
-    cout << "2. Soldier" << endl;
-    cout << "3. Heavy" << endl;
-
-    int choice;
-    cin >> choice;
-
-    Character* selectedCharacter = nullptr;
-
-    switch (choice) {
-        case 1:
-            selectedCharacter = new Scout();
-            break;
-        case 2:
-            selectedCharacter = new Soldier();
-            break;
-        case 3:
-            selectedCharacter = new Heavy();
-            break;
-        default:
-            cout << "Invalid choice. Exiting..." << endl;
-            return 1;
-    }
-
-    selectedCharacter->displayStats();
-
-    delete selectedCharacter;
-
-    return 0;
 }

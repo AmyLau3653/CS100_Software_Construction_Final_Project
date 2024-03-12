@@ -37,6 +37,9 @@ public:
   void analyze(Player &);
   int getX(), getY();
   Room searchRoom(vector<Room>, int, int);
+  bool isClose(int, int);
+private:
+  int Manhattan(int, int);
 };
 
 #endif

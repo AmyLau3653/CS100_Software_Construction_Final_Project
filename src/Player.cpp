@@ -1,4 +1,5 @@
 #include "Player.h"
+#include <cmath>
 #include <iostream>
 using namespace std;
 
@@ -92,4 +93,13 @@ void Player::getPosition() const {
   return;
 } //for testing purposes only
 
-//implement output.h files later
+int Player::Manhattan(int x2, int y2) {
+    return (abs(xLoc - x2) + abs(yLoc - y2));
+}
+
+bool Player::isClose(int x, int y) {
+    if (Manhattan(x, y) == 1) {
+      return true;
+    }
+    return false;
+}
