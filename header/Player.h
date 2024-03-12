@@ -39,4 +39,5 @@ public:
   Room searchRoom(vector<Room>, int, int);
 };
 
+//add in output.h functions later
 #endif
