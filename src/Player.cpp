@@ -91,3 +91,5 @@ void Player::getPosition() const {
   cout << name << " is at (" << xLoc << ", " << yLoc << ")" << endl;
   return;
 } //for testing purposes only
+
+//implement output.h files later
