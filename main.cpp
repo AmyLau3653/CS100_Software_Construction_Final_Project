@@ -61,7 +61,6 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
     cout << currPlayer->getName() << " currently in room " << currRoom.getID() << endl; //for testing purposes only
     
 
-
     int m = 3;
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
       m = 4;

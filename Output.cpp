@@ -106,14 +106,10 @@ void Output::OutputFight(Player player1, Player player2) {
        << player2.GetName() << "!" << endl;
 }
 
-void Output::OutputEnemyIsClose(Player* player1, Player* player2) {
-  if player1->isClose(player2->getX(), player2->getY()) {
-    cout << "WARNING: " << player2->getName() << " is nearby!" << endl;
-  }
+void Output::OutputEnemyIsClose(Player* player2) {
+  cout << "WARNING: " << player2->getName() << " is nearby!" << endl;
 }
 
-void Output::OutputExitIsClose(Player* currPlayer, int x, int y) {
-  if (currPlayer->isClose(x, y)) {
-    cout << "The exit is near!" << endl;
-  }
+void Output::OutputExitIsClose() {
+  cout << "The exit is nearby!" << endl;
 }
