@@ -111,3 +111,9 @@ void Output::OutputEnemyIsClose(Player* player1, Player* player2) {
     cout << "WARNING: " << player2->getName() << " is nearby!" << endl;
   }
 }
+
+void Output::OutputExitIsClose(Player* currPlayer, int x, int y) {
+  if (currPlayer->isClose(x, y)) {
+    cout << "The exit is near!" << endl;
+  }
+}
