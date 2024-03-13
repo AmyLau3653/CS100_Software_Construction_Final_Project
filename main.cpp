@@ -9,8 +9,8 @@
 #include "header/Type_B.h"
 #include "header/Type_C.h"
 #include "header/gameplay.h"
-#include "Output.h"
-#include "wrongInput.hpp"
+#include "header/Output.h"
+#include "headerwrongInput.hpp"
 
 using namespace std;
 
