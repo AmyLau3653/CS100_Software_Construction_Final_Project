@@ -1,6 +1,6 @@
 using namespace std;
 
-#include "Player.h"
+#include "header/Player.h"
 #include "wrongInput.hpp"
 
 #ifndef __OUTPUT_H__
@@ -8,20 +8,26 @@ using namespace std;
 
 class Output {
 public:
-  Output();
-  void OutputDeath(Player);
+  Output() = default;
+  void OutputDeath(Player*);
   void OutputChoice();
-  void OutputGameSetup();
-  void OutputMove(Player);
-  void OutputLevelUpPlayer(Player);
-  void OutputAnalyze(Player, Player);
-  void OutputEncounter(Player, Player);
-  void OutputWin(Player);
+  void OutputGameSetup(const string& pName);
+  void OutputMove();
+  void OutputLevelUpPlayer(Player*);
+  void OutputAnalyze(Player*);
+  void OutputEncounter(Player*, Player*);
+  void OutputWin(Player*);
   void OutputMenu();
   void OutputPlay();
   void OutputHowToPlay();
-  void OutputExitRoom(Player);
-  void OutputFight(Player, Player);
+  void OutputExitRoom(Player*);
+  void OutputFight(Player*, Player*);
+  void OutputPhase(Player* p, int PlayerPhase);
+  void OutputChoiceAttack();
+  void OutputChoiceMoveStay();
+  void OutputChoiceThreeOptions();
+  void OutputChooseMapSize();
+  void OutputChoosePlayerName(int playerNum);
 
 private: 
   void OutputColor(int, int, string);
