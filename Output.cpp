@@ -1,22 +1,23 @@
 #include <iostream>
 #include <string>
+#include "Output.h"
+
 using namespace std;
 
-#include "Output.h"
 
 void Output::OutputColor(int emphasis, int color, string text) {
   cout << "\033[" + to_string(emphasis) + ";" + to_string(color) + "m" + text + "\033[0m";
 }
 
-void Output::OutputDeath(Player player) {
+void Output::OutputDeath(Player* player) {
   //output in italicized red
-  OutputColor(3, 31, player.GetName() + " has died!");
+  OutputColor(3, 31, player->getName() + " has died!");
 }
 
-void Output::OutputEncounter(Player player1, Player player2) {
-  cout << player1.GetName() << " has encountered " << player2.GetName()
-       << "! What will " << player1.GetName() << " do?\n";
-  cout << player1.GetName() << ", Turn " << player1.GetNumMoves() << ":\n";
+void Output::OutputEncounter(Player* player1, Player* player2) {
+  cout << player1->getName() << " has encountered " << player2->getName()
+       << "! What will " << player1->getName() << " do?\n";
+  cout << player1->getName() << ", Turn FIX/n" /*<< player1->getNumMoves() << ":\n"*/;
   cout << "Move (1)   Stay (2)   Analyze (3)   Attack (4)" << endl;
 }
 
@@ -31,7 +32,7 @@ void Output::OutputGameSetup() {
   cout << "   - Type C (press \'c\')\n";
 }
 
-void Output::OutputMove(Player) {
+void Output::OutputMove() {
   cout << "Up     -     \'w\'\n";
   cout << "Left   -     \'a\'\n";
   cout << "Down   -     \'s\'\n";
@@ -39,20 +40,20 @@ void Output::OutputMove(Player) {
   cout << "Cancel -     \'c\'" << endl;
 }
 
-void Output::OutputLevelUpPlayer(Player player) {
+void Output::OutputLevelUpPlayer(Player* player) {
   //output in cyan/light blue
-  OutputColor(0, 36, player.GetName() + " is now level " + to_string(player.GetLevel() + 1));
+  OutputColor(0, 36, player->getName() + " is now level " /*+ to_string(player->getLevel() + 1))*/);
 }
 
-void Output::OutputAnalyze(Player player1, Player player2) {
-  cout << player.GetName() << ":\n";
-  cout << "Level: " << player.GetLevel() << "\n";
-  cout << "HP: " << player.GetHP() << "\n";
-  cout << "Attack: << ";
+void Output::OutputAnalyze(Player* player) {
+  cout << player->getName() << ":\n";
+  player->getLevel();
+  player->getHealth();
+  player->getAttack();
 }
 
-void Output::OutputWin(Player player) {
-  cout << player.GetName() << " wins!" << endl;
+void Output::OutputWin(Player* player) {
+  cout << player->getName() << " wins!" << endl;
 }
 
 void Output::OutputMenu() {
@@ -95,13 +96,13 @@ void Output::OutputHowToPlay() {
   cout << endl;
 }
 
-void Output::OutputExitRoom(Player player) {
-  cout << player.GetName() << " has found the exit!\n";
+void Output::OutputExitRoom(Player* player) {
+  cout << player->getName() << " has found the exit!\n";
   // output in italicized green
-  OutputColor(3, 32, player.GetName() + " wins!");
+  OutputColor(3, 32, player->getName() + " wins!");
 }
 
-void Output::OutputFight(Player player1, Player player2) {
-  cout << player1.GetName() << " does " << player1.GetDamage() << " attack to "
-       << player2.GetName() << "!" << endl;
+void Output::OutputFight(Player* player1, Player* player2) {
+  cout << player1->getName() << " does " << /*player1->GetDamage() << */" attack to "
+       << player2->getName() << "!" << endl;
 }

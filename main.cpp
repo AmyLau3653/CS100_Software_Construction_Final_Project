@@ -1,15 +1,17 @@
 #include <iostream>
-
 #include <string>
 #include <vector>
 #include <cstdlib>
 #include <cmath>
-#include "room.h"
-#include "Player.h"
-#include "Type_A.h"
-#include "Type_B.h"
-#include "Type_C.h"
-#include "gameplay.h"
+#include "header/room.h"
+#include "header/Player.h"
+#include "header/Type_A.h"
+#include "header/Type_B.h"
+#include "header/Type_C.h"
+#include "header/gameplay.h"
+#include "Output.h"
+#include "wrongInput.hpp"
+
 using namespace std;
 
 vector<Room> MapGenerator(const int& n) {
@@ -53,10 +55,11 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
     int currY = currPlayer->getY();
     int oppX = oppPlayer->getX();
     int oppY = oppPlayer->getY();
+    ////////////////////////////
     cout << currPlayer->getName() << ", Phase " 
       << Playerphase << endl;
     Room currRoom = currPlayer->searchRoom(map, currX, currY);
-
+    /////////////////////
     cout << currPlayer->getName() << " currently in room " << currRoom.getID() << endl; //for testing purposes only
     
     int m = 3;
@@ -231,40 +234,4 @@ int main() {
   //setupGame();
   runGame();
   return 0;
-=======
-#include "character.h"
-
-using namespace std;
-
-int main() {
-    cout << "Select a character:" << endl;
-    cout << "1. Scout" << endl;
-    cout << "2. Soldier" << endl;
-    cout << "3. Heavy" << endl;
-
-    int choice;
-    cin >> choice;
-
-    Character* selectedCharacter = nullptr;
-
-    switch (choice) {
-        case 1:
-            selectedCharacter = new Scout();
-            break;
-        case 2:
-            selectedCharacter = new Soldier();
-            break;
-        case 3:
-            selectedCharacter = new Heavy();
-            break;
-        default:
-            cout << "Invalid choice. Exiting..." << endl;
-            return 1;
-    }
-
-    selectedCharacter->displayStats();
-
-    delete selectedCharacter;
-
-    return 0;
 }
