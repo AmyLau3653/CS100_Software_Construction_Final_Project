@@ -50,7 +50,7 @@ void Output::OutputMove() {
 
 void Output::OutputLevelUpPlayer(Player* player) {
   //output in cyan/light blue
-  OutputColor(0, 36, player->getName() + " is now level " + to_string(player->getNumLevel()));
+  OutputColor(0, 36, "Level Up! " + player->getName() + " is now level " + to_string(player->getNumLevel()) + "\n");
 }
 
 void Output::OutputAnalyze(Player* player) {
@@ -108,7 +108,7 @@ void Output::OutputExitRoom(Player* player) {
 }
 
 void Output::OutputFight(Player* player1, Player* player2) {
-  cout << player1->getName() << " does " << /*player1->GetDamage() << */" attack to "
+  cout << player1->getName() << " does " << player1->getNumAttack() << " damage to "
        << player2->getName() << "!" << endl;
 }
 

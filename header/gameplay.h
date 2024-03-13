@@ -2,23 +2,18 @@
 #define GAMEPLAY_H
 #include "../header/Player.h"
 #include "../header/room.h"
+#include "../header/Output.h"
+#include "../header/wrongInput.h"
 #include <iostream>
 using namespace std;
 
 
 
 void analyze(Player *currPlayer, Player *oppPlayer) {
-  cout << currPlayer->getName() << ":" << endl;
-  currPlayer->getLevel();
-  currPlayer->getHealth();
-  currPlayer->getAttack();
-
+  Output output;
+  output.OutputAnalyze(currPlayer);
   cout << endl;
-
-  cout << oppPlayer->getName() << ":" << endl;
-  oppPlayer->getLevel();
-  oppPlayer->getHealth();
-  oppPlayer->getAttack();
+  output.OutputAnalyze(oppPlayer);
 }
 
 void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Room> map) {

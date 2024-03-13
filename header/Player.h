@@ -29,6 +29,7 @@ public:
   void getLevel() const; //
   void getAttack() const;
   int getNumLevel() const;
+  int getNumAttack() const;
   void damage(int);
   virtual void levelUp() = 0;
   void moveSpace(const char &c);
