@@ -8,7 +8,7 @@ using namespace std;
 
 class Output {
 public:
-  Output();
+  Output() = default;
   void OutputDeath(Player*);
   void OutputChoice();
   void OutputGameSetup(const string& pName);
