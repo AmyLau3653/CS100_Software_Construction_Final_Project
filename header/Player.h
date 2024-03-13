@@ -1,10 +1,11 @@
+#ifndef PLAYER_H_
+#define PLAYER_H_
 #include "room.h"
 #include <string>
 #include <vector>
 using namespace std;
 
-#ifndef PLAYER_H_
-#define PLAYER_H_
+
 
 enum PlayerType { TYPE_A, TYPE_B, TYPE_C };
 
