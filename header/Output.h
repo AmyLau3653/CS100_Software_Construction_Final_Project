@@ -1,10 +1,10 @@
-using namespace std;
-
-#include "header/Player.h"
-#include "wrongInput.hpp"
-
 #ifndef __OUTPUT_H__
 #define __OUTPUT_H__
+using namespace std;
+#include "../header/Player.h"
+#include "wrongInput.hpp"
+
+
 
 class Output {
 public:

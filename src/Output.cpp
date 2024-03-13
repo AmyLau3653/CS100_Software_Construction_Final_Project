@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "Output.h"
+#include "../header/Output.h"
 
 using namespace std;
 
