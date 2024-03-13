@@ -2,7 +2,7 @@
 #define __OUTPUT_H__
 using namespace std;
 #include "../header/Player.h"
-#include "wrongInput.hpp"
+#include "../header/wrongInput.hpp"
 
 
 

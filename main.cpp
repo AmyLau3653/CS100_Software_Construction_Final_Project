@@ -10,7 +10,7 @@
 #include "header/Type_C.h"
 #include "header/gameplay.h"
 #include "header/Output.h"
-#include "wrongInput.hpp"
+#include "header/wrongInput.hpp"
 
 using namespace std;
 
