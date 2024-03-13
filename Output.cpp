@@ -17,19 +17,27 @@ void Output::OutputDeath(Player* player) {
 void Output::OutputEncounter(Player* player1, Player* player2) {
   cout << player1->getName() << " has encountered " << player2->getName()
        << "! What will " << player1->getName() << " do?\n";
-  cout << player1->getName() << ", Turn FIX/n" /*<< player1->getNumMoves() << ":\n"*/;
-  cout << "Move (1)   Stay (2)   Analyze (3)   Attack (4)" << endl;
+  //cout << player1->getName() << ", Turn FIX/n" /*<< player1->getNumMoves() << ":\n"*/;
+  //cout << "Move (1)   Stay (2)   Analyze (3)   Attack (4)" << endl;
 }
 
 void Output::OutputChoice() {
-  cout << "Move (1)   Stay (2)   Analyze (3)" << endl;
+  cout << "Move (1)   Stay (2)   Analyze (3)";
 }
 
-void Output::OutputGameSetup() {
-  cout << "Choose your player type:\n";
-  cout << "   - Type A (press \'a\')\n";
-  cout << "   - Type B (press \'b\')\n";
-  cout << "   - Type C (press \'c\')\n";
+void Output::OutputChoiceMoveStay() {
+  cout << "Move (1)   Stay (2)";
+}
+
+void Output::OutputChoiceThreeOptions() {
+  cout << "\t Attack (3)" << endl;
+}
+
+void Output::OutputGameSetup(const string& pName) {
+  cout << pName << ", choose your player type:\n" <<
+    "\t - Type A (press 'a')\n" <<
+    "\t - Type B (press 'b')\n" << 
+    "\t - Type C (press 'c')\n";
 }
 
 void Output::OutputMove() {
@@ -76,24 +84,21 @@ void Output::OutputPlay() {
 }
 
 void Output::OutputHowToPlay() {
-  cout << "=========How To Play=========\n";
-  cout << "1. Put in a number between 2-9. A square map will be generated "
-          "based on the number you put in.\n";
-  cout << "2. Put in names for Player 1 and Player 2. Then, select your player "
-          "type.\n";
-  cout << "   - Player Type A has normal stats (5 health, 5 attack)\n";
-  cout << "   - Player Type B has higher HP but lower attack (6 health, 4 "
-          "attack)\n";
-  cout << "   - Player Type C has higher attack but lower HP (4 health, 6 "
-          "attack)\n";
-  cout << "3. There are two ways to win:\n";
-  cout << "   - Find the escape room first (randomly placed, only available if "
-          "you choose “4” or more in the beginning)\n";
-  cout << "   - Kill the other player first\n";
-  cout << "4. You can level up and increase your stats whenever you move 2 "
-          "rooms. So keep moving! However, you will not know where you are in "
-          "the map, but you can use clues based on wherever you end up.\n";
-  cout << endl;
+  cout << "========= How to Play =========" << endl;
+  cout << 
+  "1. Pick a number between 4 and 13 to decide the size\
+  of the maze." << endl <<
+  "2. Put in names for Player 1 and Player 2. Then\
+  select your player type." << endl <<
+  "\t - Type A has normal stats (5 health, 5 attack)" 
+  << endl << 
+  "\t - Type B has higher HP but lower attack (6 health, 4 attack)" << endl <<
+  "\t - Type C has higher attack but lower HP (4 health, 6 attack)" << endl <<
+  "3. There are two ways to win:\n" <<
+  "\t - Find the escape room first\n" <<
+  "\t - Kill the other player first\n" << 
+  "4. You can level up and increase your stats whenever you move 2 rooms, so keep moving! However, you will not know where you are in the map, but you can use clues based on wherever you end up.\n\n" <<
+  "Quit Game (0)\t\t Play Game (1)" << endl;
 }
 
 void Output::OutputExitRoom(Player* player) {
@@ -105,4 +110,22 @@ void Output::OutputExitRoom(Player* player) {
 void Output::OutputFight(Player* player1, Player* player2) {
   cout << player1->getName() << " does " << /*player1->GetDamage() << */" attack to "
        << player2->getName() << "!" << endl;
+}
+
+void Output::OutputPhase(Player* p, int PlayerPhase) {
+  cout << p->getName() << ", Phase " 
+      << PlayerPhase << endl;
+}
+
+void Output::OutputChoiceAttack() {
+  cout << "\t Attack (4)";
+}
+
+void Output::OutputChooseMapSize() {
+  cout << "========= Play =========" << endl;
+  cout << "Enter a number between 4 and 13: ";
+}
+
+void Output::OutputChoosePlayerName(int playerNum) {
+  cout << "Enter Player " << playerNum << "'s name: ";
 }

@@ -37,6 +37,7 @@ vector<Room> MapGenerator(const int& n) {
 }
 
 void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
+  Output output;
   int n = sqrt(map.size());
   int numTurns = 0;
   while(p1->isAlive() && p2->isAlive()) {
@@ -56,8 +57,8 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
     int oppX = oppPlayer->getX();
     int oppY = oppPlayer->getY();
     ////////////////////////////
-    cout << currPlayer->getName() << ", Phase " 
-      << Playerphase << endl;
+    output.OutputPhase(currPlayer, Playerphase);
+
     Room currRoom = currPlayer->searchRoom(map, currX, currY);
     /////////////////////
     cout << currPlayer->getName() << " currently in room " << currRoom.getID() << endl; //for testing purposes only
@@ -65,19 +66,29 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
     int m = 3;
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
       m = 4;
-      cout << currPlayer->getName() << " has encountered " << 
-        oppPlayer->getName() << "! What will " << 
-        currPlayer->getName() << " do?" << endl;
+      ////////////////
+      output.OutputEncounter(currPlayer, oppPlayer);
     }
-    cout << "Move (1)\t Stay (2)\t Analyze (3)";
+    ///////////////
+    output.OutputChoice();
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
-      cout << "\t Attack (4)";
+      /////////////
+      output.OutputChoiceAttack();
     }
     cout << endl;
+
     int decision;
     cin >> decision;
 
-    
+    /*
+    InvalidInput i;
+    if(m == 3) {
+      i.validateTurn();
+    }
+    else {
+      i.validateNumInputRange(1, 4);
+    }
+    */
     while (decision < 1 && decision > m) { //check for bad input
       cout << "Error, please enter a valid input:\n" <<
         "Move (1)\t Stay (2)\t Analyze (3)";
@@ -90,11 +101,12 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
     if (decision == 3) {
       analysis = true;
         analyze(currPlayer, oppPlayer);
-        cout << "Move (1)\t Stay (2)";
+        output.OutputChoiceMoveStay();
         if (currRoom.conflict(currX, currY, oppX, oppY)) {
-          cout << "\t Attack (3)" << endl;
+          output.OutputChoiceThreeOptions();
         }
         cout << endl;
+        //////////
         cin >> decision;
       while (decision < 1 || decision > 3) {
         cout << "Error, please enter a valid input: ";
@@ -115,8 +127,10 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
 }
 
 void runGame() {
-  cout << "========= The Square Maze =========" << endl;
-  cout << "Quit (0)\nPlay (1)\nHow To Play (2)\n";
+  Output output;
+  output.OutputMenu();
+
+//////
   char choice;
   cin >> choice;
   while (!(choice == '0' || choice == '1' || choice == '2')) {
@@ -130,21 +144,8 @@ void runGame() {
     return;
   }
   if (choice == '2') {
-    cout << "========= How to Play =========" << endl;
-    cout << 
-      "1. Pick a number between 4 and 13 to decide the size\
-      of the maze." << endl <<
-      "2. Put in names for Player 1 and Player 2. Then\
-      select your player type." << endl <<
-      "\t - Type A has normal stats (5 health, 5 attack)" 
-      << endl << 
-      "\t - Type B has higher HP but lower attack (6 health, 4 attack)" << endl <<
-      "\t - Type C has higher attack but lower HP (4 health, 6 attack)" << endl <<
-      "3. There are two ways to win:\n" <<
-      "\t - Find the escape room first\n" <<
-      "\t - Kill the other player first\n" << 
-      "4. You can level up and increase your stats whenever you move 2 rooms, so keep moving! However, you will not know where you are in the map, but you can use clues based on wherever you end up.\n\n" <<
-      "Quit Game (0)\t\t Play Game (1)" << endl;
+    output.OutputHowToPlay();
+    
     cin.clear();
     while (choice != '1' && choice != '0') {
       cin >> choice;
@@ -154,8 +155,7 @@ void runGame() {
     }
   }
 
-  cout << "========= Play =========" << endl;
-  cout << "Enter a number between 4 and 13: ";
+  output.OutputChooseMapSize();
   int n;
   cin >> n;
   while (n < 4 || n > 13) {
@@ -173,15 +173,12 @@ void runGame() {
   int y2 = (rand() % n) + 1;
 
   string p1Name, p2Name;
-  cout << "Enter Player 1's name: ";
+  output.OutputChoosePlayerName(1);
   cin >> p1Name;
-  cout << "Enter Player 2's name: ";
+  output.OutputChoosePlayerName(2);
   cin >> p2Name;
 
-  cout << p1Name << ", choose your player type:\n" <<
-    "\t - Type A (press 'a')\n" <<
-    "\t - Type B (press 'b')\n" << 
-    "\t - Type C (press 'c')\n";
+  output.OutputGameSetup(p1Name);
 
   char p1Type;
   cin >> p1Type;
@@ -201,11 +198,7 @@ void runGame() {
     P1 = new TypeC(p1Name, BASEHP2, BASEATK2, x1, y1);
   }
 
-  cout << p2Name << ", choose your player type:\n" <<
-    "\t - Type A (press 'a')\n" <<
-    "\t - Type B (press 'b')\n" << 
-    "\t - Type C (press 'c')\n";
-
+  output.OutputGameSetup(p2Name);
   char p2Type;
   cin >> p2Type;
   while (p2Type != 'a' && p2Type != 'b' && p2Type != 'c') {

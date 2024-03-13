@@ -54,7 +54,7 @@ int InvalidInput::validateRoomSize() {
 }
 
 int InvalidInput::validateTurn() {
-    return validateNumInputRange(0, 3);
+    return validateNumInputRange(1, 3);
 }
 
 bool InvalidInput::validateEncounter() {
