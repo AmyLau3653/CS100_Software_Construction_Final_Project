@@ -28,6 +28,8 @@ public:
   void OutputChoiceThreeOptions();
   void OutputChooseMapSize();
   void OutputChoosePlayerName(int playerNum);
+  void OutputEnemyClose(string);
+  void OutputExitClose();
 
 private: 
   void OutputColor(int, int, string);

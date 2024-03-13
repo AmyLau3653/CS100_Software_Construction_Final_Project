@@ -129,3 +129,11 @@ void Output::OutputChooseMapSize() {
 void Output::OutputChoosePlayerName(int playerNum) {
   cout << "Enter Player " << playerNum << "'s name: ";
 }
+
+void Output::OutputEnemyClose(string playerName) {
+  cout << "Warning: " << playerName << " is nearby!" << endl;
+}
+
+void Output::OutputExitClose() {
+  cout << "The exit is nearby!" << endl;
+}
