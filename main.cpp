@@ -10,7 +10,7 @@
 #include "header/Type_B.h"
 #include "header/Type_C.h"
 #include "header/gameplay.h"
-#include "header/Output.h"
+//#include "header/Output.h"
 using namespace std;
 
 vector<Room> MapGenerator(const int& n) {
