@@ -1,7 +1,7 @@
 using namespace std;
 
-#include "header/Player.h"
-#include "header/wrongInput.hpp"
+#include "../header/Player.h"
+#include "../header/wrongInput.hpp"
 
 #ifndef __OUTPUT_H__
 #define __OUTPUT_H__
