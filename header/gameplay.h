@@ -1,10 +1,11 @@
+#ifndef GAMEPLAY_H
+#define GAMEPLAY_H
 #include "../header/Player.h"
 #include "../header/room.h"
 #include <iostream>
 using namespace std;
 
-#ifndef GAMEPLAY_H
-#define GAMEPLAY_H
+
 
 void analyze(Player *currPlayer, Player *oppPlayer) {
   cout << currPlayer->getName() << ":" << endl;
