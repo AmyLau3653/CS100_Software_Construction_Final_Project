@@ -1,4 +1,4 @@
-#include "Type_B.h"
+#include "header/Type_B.h"
 #include <iostream>
 using namespace std;
 
