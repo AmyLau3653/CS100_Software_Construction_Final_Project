@@ -3,7 +3,7 @@
 #include "../header/Player.h"
 #include "../header/room.h"
 #include "../header/Output.h"
-#include "../header/wrongInput.h"
+#include "../header/wrongInput.hpp"
 #include <iostream>
 using namespace std;
 
