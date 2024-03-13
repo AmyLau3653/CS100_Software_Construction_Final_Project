@@ -3,12 +3,12 @@
 #include <vector>
 #include <cstdlib>
 #include <cmath>
-#include "header/room.h"
-#include "header/Player.h"
-#include "header/Type_A.h"
-#include "header/Type_B.h"
-#include "header/Type_C.h"
-#include "header/gameplay.h"
+#include "../header/room.h"
+#include "../header/Player.h"
+#include "../header/Type_A.h"
+#include "../header/Type_B.h"
+#include "../header/Type_C.h"
+#include "../header/gameplay.h"
 #include "Output.h"
 #include "wrongInput.hpp"
 
