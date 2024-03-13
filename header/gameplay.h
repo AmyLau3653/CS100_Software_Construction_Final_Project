@@ -1,6 +1,6 @@
-#include "../header/Player.h"
-#include "../header/room.h"
-#include "../header/Output.h"
+#include "Player.h"
+#include "room.h"
+#include "Output.h"
 #include <iostream>
 using namespace std;
 
