@@ -50,7 +50,7 @@ void Output::OutputMove() {
 
 void Output::OutputLevelUpPlayer(Player* player) {
   //output in cyan/light blue
-  OutputColor(0, 36, player->getName() + " is now level " /*+ to_string(player->getLevel() + 1))*/);
+  OutputColor(0, 36, player->getName() + " is now level " + to_string(player->getNumLevel()));
 }
 
 void Output::OutputAnalyze(Player* player) {

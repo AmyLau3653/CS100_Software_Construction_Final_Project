@@ -1,5 +1,6 @@
 #include "../header/Type_A.h"
 #include <iostream>
+#include "Output.h"
 using namespace std;
 
 TypeA::TypeA(const string &name, int hp, int atk, int x, int y)
@@ -10,6 +11,6 @@ void TypeA::levelUp() {
   health = maxHealth;
   attackStrength += 2;
   level++;
-  cout << "Level up! " << name << " is now level " << level << 
-    endl;
+  //cout << "Level up! " << name << " is now level " << level << endl;
+  OutputLevelUpPlayer(this);
 }
