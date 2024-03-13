@@ -27,6 +27,7 @@ public:
   void getHealth() const;
   void getLevel() const; //
   void getAttack() const;
+  
   void damage(int);
   virtual void levelUp() = 0;
   void moveSpace(const char &c);
