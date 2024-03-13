@@ -4,12 +4,12 @@
 #include <vector>
 #include <cstdlib>
 #include <cmath>
-#include "room.h"
-#include "Player.h"
-#include "Type_A.h"
-#include "Type_B.h"
-#include "Type_C.h"
-#include "gameplay.h"
+#include "../header/room.h"
+#include "../header/Player.h"
+#include "../header/Type_A.h"
+#include "../header/Type_B.h"
+#include "../header/Type_C.h"
+#include "../header/gameplay.h"
 #include "Output.h"
 using namespace std;
 
