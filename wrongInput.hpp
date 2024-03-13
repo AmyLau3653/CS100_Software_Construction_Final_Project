@@ -20,6 +20,7 @@ public:
     const std::string& validateMove(int currX, int currY, int n);
     bool validateEncounter();
     int validateNoConflict();
+    std::string SetName();
 private:
     int numInput;
     std::string strInput;

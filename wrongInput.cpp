@@ -76,3 +76,8 @@ const std::string& InvalidInput::validateMove(int currX, int currY, int n) {
     return strInput;
 }
 
+std::string InvalidInput::SetName() {
+    std::string name;
+    std::cin >>  name;
+    return name;
+}

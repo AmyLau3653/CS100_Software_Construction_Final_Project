@@ -72,7 +72,7 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
       output.OutputChoiceAttack();
     }
-    cout << endl;
+    output.OutputNewLine();
 
     int decision;
     InvalidInput i;
@@ -92,8 +92,7 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
         if (conflict) {
           output.OutputChoiceThreeOptions();
         }
-        cout << endl;
-        //////////
+        output.OutputNewLine();
         if(!conflict) {
           decision = i.validateNoConflict();
         }
@@ -151,9 +150,9 @@ void runGame() {
 
   string p1Name, p2Name;
   output.OutputChoosePlayerName(1);
-  std::cin >> p1Name;
+  p1Name = i.SetName();
   output.OutputChoosePlayerName(2);
-  std::cin >> p2Name;
+  p2Name = i.SetName();
 
   output.OutputGameSetup(p1Name);
 
