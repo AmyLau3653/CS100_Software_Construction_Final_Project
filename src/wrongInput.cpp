@@ -1,6 +1,6 @@
 #include <iostream>
 #include <limits>
-#include "wrongInput.hpp"
+#include "../header/wrongInput.h"
 
 int InvalidInput::validateNumInputRange(int minNum, int maxNum) {
     bool isValid = false;
