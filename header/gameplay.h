@@ -17,6 +17,7 @@ void analyze(Player *currPlayer, Player *oppPlayer) {
 }
 
 void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Room> map) {
+  Output output;
   char direction;
   int currY = currPlayer->getY();
   int currX = currPlayer->getX();
@@ -69,8 +70,7 @@ void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Ro
       currPlayer->levelUp();
     }
     if (currRoom.Exodus()) {
-      cout << currPlayer->getName() << " has escaped!" << endl
-           << currPlayer->getName() << " wins!" << endl;
+      output.OutputExitRoom(currPlayer);
       exit(0);
     }
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
