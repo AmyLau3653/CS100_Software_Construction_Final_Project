@@ -1,6 +1,6 @@
 #include "../header/Type_B.h"
 #include <iostream>
-#include "Output.h"
+#include "../header/Output.h"
 using namespace std;
 
 TypeB ::TypeB(const string &name, int hp, int atk, int x, int y)

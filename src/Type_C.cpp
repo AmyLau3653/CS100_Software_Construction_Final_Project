@@ -1,6 +1,6 @@
 #include "../header/Type_C.h"
 #include <iostream>
-#include "Output.h"
+#include "../header/Output.h"
 using namespace std;
 
 TypeC::TypeC(const string &name, int hp, int atk, int x, int y)
