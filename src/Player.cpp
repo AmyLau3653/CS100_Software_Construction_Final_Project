@@ -103,6 +103,6 @@ bool Player::isClose(int x, int y) {
   return(Manhattan(x, y) == 1);
 }
 
-int Player::getNumLevel() {
+int Player::getNumLevel() const {
   return level;
 }
