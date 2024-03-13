@@ -1,6 +1,10 @@
-#include "Player.h"
+#include "../header/Player.h"
+#include "../header/Output.h"
+#include <cmath>
 #include <iostream>
 using namespace std;
+
+
 
 Player::Player(PlayerType type, const string& name, int hp, int atk, int x, int y) :
   type(type), name(name), health(hp), maxHealth(hp),   
@@ -42,13 +46,13 @@ void Player::damage(int dmg) {
 }
 
 void Player::attack(Player *opp) {
+  Output output;
   opp->damage(attackStrength);
 
-  cout << name << " does " << attackStrength 
-    << " damage to " << opp->getName() << endl;
+  output.OutputFight(this, opp);
   if (!(opp->isAlive())) {
-    cout << opp->getName() << " is dead! " << endl;
-    cout << name << "wins!" << endl;
+    output.OutputDeath(opp);
+    output.OutputWin(this);
   }
   return;
 }
@@ -92,4 +96,18 @@ void Player::getPosition() const {
   return;
 } //for testing purposes only
 
-//add in output functions later
+int Player::Manhattan(int x2, int y2) {
+  return (abs(xLoc - x2) + abs(yLoc - y2));
+}
+
+bool Player::isClose(int x, int y) {
+  return(Manhattan(x, y) == 1);
+}
+
+int Player::getNumLevel() const {
+  return level;
+}
+
+int Player::getNumAttack() const {
+  return attackStrength;
+}

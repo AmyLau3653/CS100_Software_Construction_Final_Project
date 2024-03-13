@@ -1,26 +1,23 @@
-#include "Player.h"
-#include "room.h"
+#ifndef GAMEPLAY_H
+#define GAMEPLAY_H
+#include "../header/Player.h"
+#include "../header/room.h"
+#include "../header/Output.h"
+#include "../header/wrongInput.hpp"
 #include <iostream>
 using namespace std;
 
-#ifndef GAMEPLAY_H
-#define GAMEPLAY_H
+
 
 void analyze(Player *currPlayer, Player *oppPlayer) {
-  cout << currPlayer->getName() << ":" << endl;
-  currPlayer->getLevel();
-  currPlayer->getHealth();
-  currPlayer->getAttack();
-
+  Output output;
+  output.OutputAnalyze(currPlayer);
   cout << endl;
-
-  cout << oppPlayer->getName() << ":" << endl;
-  oppPlayer->getLevel();
-  oppPlayer->getHealth();
-  oppPlayer->getAttack();
+  output.OutputAnalyze(oppPlayer);
 }
 
 void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Room> map) {
+  Output output;
   char direction;
   int currY = currPlayer->getY();
   int currX = currPlayer->getX();
@@ -73,8 +70,7 @@ void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Ro
       currPlayer->levelUp();
     }
     if (currRoom.Exodus()) {
-      cout << currPlayer->getName() << " has escaped!" << endl
-           << currPlayer->getName() << " wins!" << endl;
+      output.OutputExitRoom(currPlayer);
       exit(0);
     }
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
