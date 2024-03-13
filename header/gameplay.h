@@ -1,5 +1,5 @@
 #include "Player.h"
-#include "src/Player.cpp"
+#include "Player.cpp"
 #include "room.h"
 #include <iostream>
 using namespace std;
