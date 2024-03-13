@@ -14,7 +14,7 @@ public:
   void OutputGameSetup(const string& pName);
   void OutputMove();
   void OutputLevelUpPlayer(Player*);
-  void OutputAnalyze(Player*);
+  void OutputAnalyze(Player*, Player*);
   void OutputEncounter(Player*, Player*);
   void OutputWin(Player*);
   void OutputMenu();
@@ -28,6 +28,7 @@ public:
   void OutputChoiceThreeOptions();
   void OutputChooseMapSize();
   void OutputChoosePlayerName(int playerNum);
+  void OutputMoveChoice(int py1, int px1, int py2, int px2, int n);
 
 private: 
   void OutputColor(int, int, string);

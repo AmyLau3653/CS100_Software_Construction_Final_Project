@@ -81,7 +81,7 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
     }
     else {
       decision = i.validateNumInputRange(1, 4);
-    }
+    } 
 
     bool analysis = false;
     if (decision == 3) {

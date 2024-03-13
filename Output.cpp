@@ -53,11 +53,18 @@ void Output::OutputLevelUpPlayer(Player* player) {
   OutputColor(0, 36, player->getName() + " is now level " /*+ to_string(player->getLevel() + 1))*/);
 }
 
-void Output::OutputAnalyze(Player* player) {
-  cout << player->getName() << ":\n";
-  player->getLevel();
-  player->getHealth();
-  player->getAttack();
+void Output::OutputAnalyze(Player* currPlayer, Player* oppPlayer) {
+  cout << currPlayer->getName() << ":" << endl;
+  currPlayer->getLevel();
+  currPlayer->getHealth();
+  currPlayer->getAttack();
+
+  cout << endl;
+
+  cout << oppPlayer->getName() << ":" << endl;
+  oppPlayer->getLevel();
+  oppPlayer->getHealth();
+  oppPlayer->getAttack();
 }
 
 void Output::OutputWin(Player* player) {
@@ -128,4 +135,20 @@ void Output::OutputChooseMapSize() {
 
 void Output::OutputChoosePlayerName(int playerNum) {
   cout << "Enter Player " << playerNum << "'s name: ";
+}
+
+void Output::OutputMoveChoice(int currY, int currX, int py2, int px2, int n) {
+  if (currY != 1) {
+    cout << "Up - 'w'" << endl;
+  }
+  if (currX != 1) {
+    cout << "Left - 'a'" << endl;
+  }
+  if (currY != n) {
+    cout << "Down - 's'" << endl;
+  }
+  if (currX != n) {
+    cout << "Right - 'd'" << endl;
+  }
+  cout << "Cancel - 'c'" << endl << endl << "Enter a direction or cancel: ";
 }

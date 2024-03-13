@@ -42,7 +42,7 @@ const std::string InvalidInput::validateCharacterSelection() {
             valid = true;
         }
         else {
-            std::cout << "Error: invalid input" << std::endl;
+            std::cout << "Error: invalid input: " << std::endl;
         }
 
     }
