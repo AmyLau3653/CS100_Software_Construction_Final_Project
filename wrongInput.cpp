@@ -50,7 +50,7 @@ const std::string InvalidInput::validateCharacterSelection() {
 }
 
 int InvalidInput::validateRoomSize() {
-    return validateNumInputRange(2, 9);
+    return validateNumInputRange(4, 13);
 }
 
 int InvalidInput::validateTurn() {

@@ -56,63 +56,53 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
     int currY = currPlayer->getY();
     int oppX = oppPlayer->getX();
     int oppY = oppPlayer->getY();
-    ////////////////////////////
+
     output.OutputPhase(currPlayer, Playerphase);
 
     Room currRoom = currPlayer->searchRoom(map, currX, currY);
-    /////////////////////
     cout << currPlayer->getName() << " currently in room " << currRoom.getID() << endl; //for testing purposes only
     
     int m = 3;
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
       m = 4;
-      ////////////////
       output.OutputEncounter(currPlayer, oppPlayer);
     }
-    ///////////////
+
     output.OutputChoice();
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
-      /////////////
       output.OutputChoiceAttack();
     }
     cout << endl;
 
     int decision;
-    cin >> decision;
-
-    /*
     InvalidInput i;
     if(m == 3) {
-      i.validateTurn();
+      decision = i.validateTurn();
     }
     else {
-      i.validateNumInputRange(1, 4);
+      decision = i.validateNumInputRange(1, 4);
     }
-    */
-    while (decision < 1 && decision > m) { //check for bad input
-      cout << "Error, please enter a valid input:\n" <<
-        "Move (1)\t Stay (2)\t Analyze (3)";
-      if (m == 4) {
-        cout << "\t Attack (4)";
-      }
-    }
-    bool analysis = false;
 
+    bool analysis = false;
     if (decision == 3) {
       analysis = true;
         analyze(currPlayer, oppPlayer);
         output.OutputChoiceMoveStay();
-        if (currRoom.conflict(currX, currY, oppX, oppY)) {
+        bool conflict = currRoom.conflict(currX, currY, oppX, oppY);
+        if (conflict) {
           output.OutputChoiceThreeOptions();
         }
         cout << endl;
         //////////
-        cin >> decision;
-      while (decision < 1 || decision > 3) {
-        cout << "Error, please enter a valid input: ";
-        cin >> decision;
-      }
+        if(!conflict) {
+          decision = i.validateNumInputRange(1, 2);
+        }
+        else {
+          decision = i.validateNumInputRange(1, 3);
+
+        }
     }
+
     if (decision == 1) {
       move(currPlayer, oppPlayer, currRoom, n, map);
     } //analyze
@@ -128,40 +118,27 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
 
 void runGame() {
   Output output;
+  InvalidInput i;
   output.OutputMenu();
 
-//////
-  char choice;
-  cin >> choice;
-  while (!(choice == '0' || choice == '1' || choice == '2')) {
-    cout << "Error! Invalid input. Please try again." << endl;
-    cout << "========= The Square Maze =========" << endl;
-    cout << "Quit (0)\nPlay (1)\nHow To Play (2)\n";
-    cin >> choice;
-  }
+  int choice;
+  choice = i.validateHowToPlay();
 
-  if (choice == '0') {
+  if (choice == 0) {
     return;
   }
-  if (choice == '2') {
+  if (choice == 2) {
     output.OutputHowToPlay();
-    
-    cin.clear();
-    while (choice != '1' && choice != '0') {
-      cin >> choice;
-    }
-    if (choice == '0') {
+    choice = i.validateNumInputRange(0, 1);
+
+    if (choice == 0) {
       return;
     }
   }
 
   output.OutputChooseMapSize();
   int n;
-  cin >> n;
-  while (n < 4 || n > 13) {
-    cout << "Error! Please input a number between 4 and 13: ";
-    cin >> n;
-  }
+  n = i.validateRoomSize();
 
   vector<Room> map = MapGenerator(n);
   Player* P1;
@@ -174,24 +151,19 @@ void runGame() {
 
   string p1Name, p2Name;
   output.OutputChoosePlayerName(1);
-  cin >> p1Name;
+  std::cin >> p1Name;
   output.OutputChoosePlayerName(2);
-  cin >> p2Name;
+  std::cin >> p2Name;
 
   output.OutputGameSetup(p1Name);
 
-  char p1Type;
-  cin >> p1Type;
-  while (p1Type != 'a' && p1Type != 'b' && p1Type != 'c') {
-    cout << "Error! Please choose a valid player type:\n";
-    cin >> p1Type;
-  }
-
+  string p1Type;
+  p1Type = i.validateCharacterSelection();
   
-  if (p1Type == 'a') {
+  if (p1Type == "a") {
     P1 = new TypeA(p1Name, BASEHP0, BASEATK0, x1, y1);
   }
-  else if (p1Type == 'b') {
+  else if (p1Type == "b") {
     P1 = new TypeB(p1Name, BASEHP1, BASEATK1, x1, y1);
   }
   else {
@@ -199,17 +171,13 @@ void runGame() {
   }
 
   output.OutputGameSetup(p2Name);
-  char p2Type;
-  cin >> p2Type;
-  while (p2Type != 'a' && p2Type != 'b' && p2Type != 'c') {
-    cout << "Error! Please choose a valid player type:\n";
-    cin >> p2Type;
-  }
+  string p2Type;
+  p2Type = i.validateCharacterSelection();
 
-  if (p2Type == 'a') {
+  if (p2Type == "a") {
     P2 = new TypeA(p2Name, BASEHP0, BASEATK0, x2, y2);
   }
-  else if (p2Type == 'b') {
+  else if (p2Type == "b") {
     P2 = new TypeB(p2Name, BASEHP1, BASEATK1, x2, y2);
   }
   else {
