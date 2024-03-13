@@ -16,7 +16,7 @@ public:
   void OutputLevelUpPlayer(Player*);
   void OutputAnalyze(Player*, Player*);
   void OutputEncounter(Player*, Player*);
-  void OutputWin(Player*);
+  void OutputEscapeWin(Player*);
   void OutputMenu();
   void OutputPlay();
   void OutputHowToPlay();
@@ -28,8 +28,9 @@ public:
   void OutputChoiceThreeOptions();
   void OutputChooseMapSize();
   void OutputChoosePlayerName(int playerNum);
-  void OutputMoveChoice(int py1, int px1, int py2, int px2, int n);
-
+  void OutputDirectionChoice(int py1, int px1, int n);
+  void OutputNewLine();
+  void OutputConflict(Player* currPlayer, Player* oppPlayer);
 private: 
   void OutputColor(int, int, string);
 };

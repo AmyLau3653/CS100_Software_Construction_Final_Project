@@ -32,6 +32,10 @@ void Player::getLevel() const {
   cout << "Level: " << level << endl;
 }
 
+int Player::getIntLevel() const {
+  return level;
+}
+
 void Player::getAttack() const {
   cout << "Attack: " << attackStrength << endl;
 }
@@ -57,17 +61,17 @@ bool Player::isAlive() const {
   return health > 0;
 }
 
-void Player::moveSpace(const char& c) { //check for valid input
-  if (c == 'w') {
+void Player::moveSpace(const string& c) { //check for valid input
+  if (c == "w") {
     yLoc--;
   }
-  else if (c == 'a') {
+  else if (c == "a") {
     xLoc--;
   }
-  else if (c == 's') {
+  else if (c == "s") {
     yLoc++;
   }
-  else if (c == 'd') {
+  else if (c == "d") {
     xLoc++;
   }
   spacesMoved++;

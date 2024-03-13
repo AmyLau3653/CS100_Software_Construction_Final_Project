@@ -80,13 +80,13 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
       decision = i.validateTurn();
     }
     else {
-      decision = i.validateNumInputRange(1, 4);
+      decision = i.validateEncounter();
     } 
 
     bool analysis = false;
     if (decision == 3) {
       analysis = true;
-        analyze(currPlayer, oppPlayer);
+        analyze(currPlayer, oppPlayer, output);
         output.OutputChoiceMoveStay();
         bool conflict = currRoom.conflict(currX, currY, oppX, oppY);
         if (conflict) {
@@ -95,16 +95,16 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
         cout << endl;
         //////////
         if(!conflict) {
-          decision = i.validateNumInputRange(1, 2);
+          decision = i.validateNoConflict();
         }
         else {
-          decision = i.validateNumInputRange(1, 3);
+          decision = i.validateTurn();
 
         }
     }
 
     if (decision == 1) {
-      move(currPlayer, oppPlayer, currRoom, n, map);
+      move(currPlayer, oppPlayer, currRoom, n, map, output);
     } //analyze
     if (decision == 4 || 
       (analysis == true && decision == 3)) {
@@ -129,7 +129,7 @@ void runGame() {
   }
   if (choice == 2) {
     output.OutputHowToPlay();
-    choice = i.validateNumInputRange(0, 1);
+    choice = i.validateTitle();
 
     if (choice == 0) {
       return;

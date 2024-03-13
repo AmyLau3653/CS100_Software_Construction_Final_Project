@@ -50,7 +50,7 @@ void Output::OutputMove() {
 
 void Output::OutputLevelUpPlayer(Player* player) {
   //output in cyan/light blue
-  OutputColor(0, 36, player->getName() + " is now level " /*+ to_string(player->getLevel() + 1))*/);
+  OutputColor(0, 36, player->getName() + " is now level " + to_string(player->getIntLevel()) + "!");
 }
 
 void Output::OutputAnalyze(Player* currPlayer, Player* oppPlayer) {
@@ -67,8 +67,9 @@ void Output::OutputAnalyze(Player* currPlayer, Player* oppPlayer) {
   oppPlayer->getAttack();
 }
 
-void Output::OutputWin(Player* player) {
-  cout << player->getName() << " wins!" << endl;
+void Output::OutputEscapeWin(Player* player) {
+  cout << player->getName() << " has escaped!" << endl
+    << player->getName() << " wins!" << endl;
 }
 
 void Output::OutputMenu() {
@@ -137,7 +138,7 @@ void Output::OutputChoosePlayerName(int playerNum) {
   cout << "Enter Player " << playerNum << "'s name: ";
 }
 
-void Output::OutputMoveChoice(int currY, int currX, int py2, int px2, int n) {
+void Output::OutputDirectionChoice(int currY, int currX, int n) {
   if (currY != 1) {
     cout << "Up - 'w'" << endl;
   }
@@ -151,4 +152,12 @@ void Output::OutputMoveChoice(int currY, int currX, int py2, int px2, int n) {
     cout << "Right - 'd'" << endl;
   }
   cout << "Cancel - 'c'" << endl << endl << "Enter a direction or cancel: ";
+}
+
+void Output::OutputNewLine() {
+  cout << endl;
+}
+
+void Output::OutputConflict(Player* currPlayer, Player* oppPlayer) {
+      cout << "Fight (1) \tStay (2) \tAnalyze (3)" << endl;
 }
