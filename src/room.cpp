@@ -25,10 +25,6 @@ void Room::setExit() {
   return;
 }
 
-
-
-
-
 bool Room::Exodus() { return isExit; }
 
 bool Room::conflict(int x1, int y1, int x2, int y2) { 
