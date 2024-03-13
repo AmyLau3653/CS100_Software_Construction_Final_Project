@@ -10,6 +10,6 @@ void TypeA::levelUp() {
   health = maxHealth;
   attackStrength += 2;
   level++;
-  cout << "Level up! " << name << " is now level " << level << 
-    endl;
+  //cout << "Level up! " << name << " is now level " << level << 
+    //endl;
 }

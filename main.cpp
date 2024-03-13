@@ -151,6 +151,7 @@ void runGame() {
   string p1Name, p2Name;
   output.OutputChoosePlayerName(1);
   p1Name = i.SetName();
+  
   output.OutputChoosePlayerName(2);
   p2Name = i.SetName();
 
@@ -191,7 +192,6 @@ void runGame() {
 }
 
 int main() {
-  //setupGame();
   runGame();
   return 0;
 }
