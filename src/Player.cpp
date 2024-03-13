@@ -51,7 +51,7 @@ void Player::attack(Player *opp) {
     << " damage to " << opp->getName() << endl;
   if (!(opp->isAlive())) {
     cout << opp->getName() << " is dead! " << endl;
-    cout << name << "wins!" << endl;
+    cout << name << " wins!" << endl;
   }
   return;
 }
@@ -100,5 +100,5 @@ int Player::Manhattan(int x2, int y2) {
 }
 
 bool Player::isClose(int x, int y) {
-  return(Manhattan(x, y) <= 1);
+  return(Manhattan(x, y) == 1);
 }
