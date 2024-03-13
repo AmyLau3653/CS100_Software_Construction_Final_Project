@@ -36,7 +36,7 @@ vector<Room> MapGenerator(const int& n) {
   return map;
 }
 
-void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
+void GameSequence(Player* p1, Player* p2, vector<Room>& map, const int _X, const int _Y) {
   Output output;
   int n = sqrt(map.size());
   int numTurns = 0;
@@ -62,6 +62,14 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
     Room currRoom = currPlayer->searchRoom(map, currX, currY);
     cout << currPlayer->getName() << " currently in room " << currRoom.getID() << endl; //for testing purposes only
     
+    if (isClose(oppX, oppY)) {
+      output.OutputEnemyClose(oppPlayer->getName());
+    }
+
+    if (isClose(_X, _Y)) {
+      output.OutputExitClose();
+    } //exit is close by clue
+
     int m = 3;
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
       m = 4;
@@ -141,6 +149,15 @@ void runGame() {
   n = i.validateRoomSize();
 
   vector<Room> map = MapGenerator(n);
+  int exitX, exitY;
+
+  for (int i = 0; i < map.size(); ++i) {
+    if (map[i].Exodus()) {
+      exitX = map[i].getX();
+      exitY = map[i].getY();
+      break;
+    }
+  }
   Player* P1;
   Player* P2;
 
@@ -187,12 +204,12 @@ void runGame() {
   P1->getPosition();
   P2->getPosition(); //take these two out later; these are for testing only
 
-  GameSequence(P1, P2, map);
+  
+  GameSequence(P1, P2, map, exitX, exitY);
   return;
 }
 
 int main() {
-  //setupGame();
   runGame();
   return 0;
 }
