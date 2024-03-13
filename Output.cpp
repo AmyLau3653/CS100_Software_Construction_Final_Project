@@ -8,9 +8,9 @@ void Output::OutputColor(int emphasis, int color, string text) {
   cout << "\033[" + to_string(emphasis) + ";" + to_string(color) + "m" + text + "\033[0m";
 }
 
-void Output::OutputDeath(Player player) {
+void Output::OutputDeath(Player* player) {
   //output in italicized red
-  OutputColor(3, 31, player.GetName() + " has died!");
+  OutputColor(3, 31, player->getName() + " has died!");
 }
 
 void Output::OutputEncounter(Player player1, Player player2) {
