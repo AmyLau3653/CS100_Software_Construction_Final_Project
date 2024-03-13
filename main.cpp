@@ -62,11 +62,11 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map, const int _X, const
     Room currRoom = currPlayer->searchRoom(map, currX, currY);
     cout << currPlayer->getName() << " currently in room " << currRoom.getID() << endl; //for testing purposes only
     
-    if (isClose(oppX, oppY)) {
+    if (currPlayer->isClose(oppX, oppY)) {
       output.OutputEnemyClose(oppPlayer->getName());
     }
 
-    if (isClose(_X, _Y)) {
+    if (currPlayer->isClose(_X, _Y)) {
       output.OutputExitClose();
     } //exit is close by clue
 
