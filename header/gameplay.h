@@ -1,5 +1,4 @@
-#include "Player.h"
-#include "Player.cpp"
+#include "../header/Player.h"
 #include "room.h"
 #include <iostream>
 using namespace std;
