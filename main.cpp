@@ -169,10 +169,10 @@ void runGame() {
 
   string p1Name, p2Name;
   output.OutputChoosePlayerName(1);
-  p1Name = i.SetName();
+  cin >> p1Name;
   
   output.OutputChoosePlayerName(2);
-  p2Name = i.SetName();
+  cin >> p2Name;
 
   output.OutputGameSetup(p1Name);
 
