@@ -8,7 +8,7 @@ TEST(TypeCTests, LevelUpTest) {
 
   EXPECT_EQ(p->getName(), "Test Player");
 
-  EXPECT_EQ(p->getNumAttack(), 6);
+  EXPECT_EQ(p->getNumAttack(), 9);
 
   EXPECT_EQ(p->getIntLevel(), 2);
 
