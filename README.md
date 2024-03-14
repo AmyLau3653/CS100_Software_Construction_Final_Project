@@ -84,8 +84,10 @@ We decided to remove the "Enemy" class since there are only two players, with on
   * Expected input:  ‘1’ to Move, 2 to ‘Stay’, and 3 to ‘Analyze’
   * Input 3 to 'Analyze'
 * Encounter Scenario: Outputs options to 'Move', 'Stay', 'Analyze', or 'Attack'
-  * Input '4' to Attack:  
-
+  * Input '4' to Attack and example output of player death:
+  * ![bobdied](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/335a9c84-f462-425b-88b1-283e948178f6)
+* Winning Scenario:
+  * ![tomwins](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/8edb5fe1-fab9-4ec0-b414-70badcd57427)
 
  ## Installation/Usage
  > Instructions on installing and running your application
