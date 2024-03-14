@@ -51,7 +51,7 @@ TEST(PlayerTests, isCloseTest) {
 
 TEST(PlayerTests, getNumLevelTest) {
   Player *P1 = new TypeA("Bob", BASEHP0, BASEATK0, 2, 2);
-  EXPECT_EQ(P1->getNumLevel(), 1);
+  EXPECT_EQ(P1->getIntLevel(), 1);
 }
 
 TEST(PlayerTests, getNumAttackTest) {
