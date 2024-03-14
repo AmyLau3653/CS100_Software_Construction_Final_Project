@@ -190,6 +190,9 @@ void runGame() {
   P2->getPosition(); //take these two out later; these are for testing only
 
   GameSequence(P1, P2, map);
+  
+  delete P1;
+  delete P2;
   return;
 }
 

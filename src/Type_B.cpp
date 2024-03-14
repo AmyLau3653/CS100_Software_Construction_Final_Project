@@ -10,6 +10,4 @@ void TypeB::levelUp() {
   health = maxHealth;
   attackStrength += 1;
   level++;
-  //cout << "Level up! " << name << " is now level " << level << 
-    //endl;
 }

@@ -7,6 +7,8 @@ Player::Player(PlayerType type, const string& name, int hp, int atk, int x, int 
   attackStrength(atk), xLoc(x), yLoc(y)  {
 }
 
+Player::~Player() {}
+
 int Player::getX() {
   return xLoc;
 }

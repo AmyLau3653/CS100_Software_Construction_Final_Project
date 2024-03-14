@@ -10,6 +10,4 @@ void TypeC::levelUp() {
   health = maxHealth;
   attackStrength += 3;
   level++;
-  //cout << "Level up! " << name << " is now level " << level << 
-   // endl;
 }
