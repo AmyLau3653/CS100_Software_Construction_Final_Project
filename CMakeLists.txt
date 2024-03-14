@@ -1,16 +1,4 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
-
-ADD_EXECUTABLE(runGame
-    src/room.cpp
-    src/Player.cpp 
-    src/Type_A.cpp 
-    src/Type_B.cpp 
-    src/Type_C.cpp 
-    main.cpp
-    src/Output.cpp 
-    src/wrongInput.cpp 
-    
-)cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.0)
 project(finalProject)
 
 add_subdirectory(googletest)
@@ -41,4 +29,4 @@ ADD_EXECUTABLE(test
 )
 
 target_link_libraries(test gtest)
-target_compile_definitions(test PRI
+target_compile_definitions(test PRIVATE gtest_disable_pthreads=ON)
