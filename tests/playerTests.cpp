@@ -30,7 +30,7 @@ TEST(PlayerTests, isAliveTest) {
 
 TEST(PlayerTests, moveSpaceTest) {
   Player *P1 = new TypeA("Bob", BASEHP0, BASEATK0, 2, 2);
-  P1->moveSpace('a');
+  P1->moveSpace("a");
   EXPECT_EQ(P1->getX(), 1);
 }
 
