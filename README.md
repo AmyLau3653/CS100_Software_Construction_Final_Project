@@ -73,6 +73,9 @@ We decided to remove the "Enemy" class since there are only two players, with on
  > Screenshots of the input/output after running your application
  ## Installation/Usage
  > Instructions on installing and running your application
+
+To install this game and run the application, this Github repository should be cloned into an IDE that supports C++ programming. After cloning in the terminal or command line, the following need to be run in this order: `cmake .`, `make`, `./runGame`. After `./runGame`, the game should start running and gameplay will begin. 
+
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
 
