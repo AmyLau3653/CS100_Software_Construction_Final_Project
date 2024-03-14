@@ -1,5 +1,4 @@
 #include "../header/Type_A.h"
-#include "../header/Type_A.h"
 #include "../header/Player.h"
 #include "gtest/gtest.h"
 
