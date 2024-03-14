@@ -1,10 +1,8 @@
 cmake_minimum_required(VERSION 3.0)
 project(finalProject)
 
-# Include the GoogleTest library
 add_subdirectory(googletest)
 
-# Define your source files
 set(SRC_FILES
     src/room.cpp
     src/Player.cpp 
@@ -15,14 +13,12 @@ set(SRC_FILES
     src/wrongInput.cpp 
 )
 
-# Main executable
 add_executable(runGame
     main.cpp
     ${SRC_FILES}
 )
 
-# Test executable
-add_executable(test
+ADD_EXECUTABLE(test
     tests/outputTests.cpp
     tests/playerTests.cpp
     tests/roomTests.cpp
@@ -32,6 +28,5 @@ add_executable(test
     ${SRC_FILES}
 )
 
-# Link against GoogleTest
 target_link_libraries(test gtest)
 target_compile_definitions(test PRIVATE gtest_disable_pthreads=ON)
