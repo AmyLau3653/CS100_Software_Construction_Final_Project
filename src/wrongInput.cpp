@@ -23,7 +23,7 @@ int InvalidInput::validateTitle() {
 
 bool InvalidInput::validateQuit() {
     std::cin >> charInput;
-    if (charInput.compare('q')) {
+    if (charInput == 'q') {
         return true;
     }
     return false;
