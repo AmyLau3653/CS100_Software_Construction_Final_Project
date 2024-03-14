@@ -65,15 +65,8 @@ We decided to remove the "Enemy" class since there are only two players, with on
 
  
  > ## Final deliverable (Phase IV)
- > All group members will give a demo to the reader during lab time. ou should schedule your demo on Calendly with the same reader who took your second scrum meeting. The reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
- > Before the demo, you should do the following:
- > * Complete the sections below (i.e. Screenshots, Installation/Usage, Testing)
- > * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Project board.
- > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
  ## Screenshots
- > Screenshots of the input/output after running your application
-
 * Game Menu/Introduction: Outputs the game menu and instructions on how to play
   * Expected input: ‘0’ to quit the game, ‘1’ to play the game, and ‘2’ to view the rules on how to play the game.
   * Input '2' for rules on how to play the game:
@@ -83,17 +76,16 @@ We decided to remove the "Enemy" class since there are only two players, with on
 * Normal Scenario: Outputs options to 'Move', 'Stay', or 'Analyze'
   * Expected input:  ‘1’ to Move, 2 to ‘Stay’, and 3 to ‘Analyze’
   * Input 3 to 'Analyze'
+  * <img width="348" alt="analyze" src="https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/d30e66db-79d3-4ba4-af81-cc9fee75e234">
 * Encounter Scenario: Outputs options to 'Move', 'Stay', 'Analyze', or 'Attack'
-  * Input '4' to Attack:  
-
+  * Input '4' to Attack and example output of player death:
+  * ![bobdied](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/335a9c84-f462-425b-88b1-283e948178f6)
+* Winning Scenario:
+  * ![tomwins](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/8edb5fe1-fab9-4ec0-b414-70badcd57427)
 
  ## Installation/Usage
- > Instructions on installing and running your application
-
 To install this game and run the application, this Github repository should be cloned into an IDE that supports C++ programming. After cloning in the terminal or command line, the following need to be run in this order: `cmake .`, `make`, `./runGame`. After `./runGame`, the game should start running and gameplay will begin. 
 
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
-
 The project was tested through unit testing using the Google Unit Test Framework, as well as manually testing different inputs while running the game. The unit testing files are included in the tests folder, where we have tested the following classes: Output, Player, Room, TypeA, TypeB, TypeC. A large majority of the testing was through comparing outputs in the terminal with the outputs we had in mind to ensure that the screen layouts would fit our expectations. This is due to the fact that this project is text-based game that is played solely in the terminal. In addition to the unit tests, we ran our game many times to check that it would run smoothly when given a valid input, and that it would output an error message when there was an invalid input.
  
