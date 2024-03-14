@@ -22,8 +22,8 @@ int InvalidInput::validateTitle() {
 }
 
 bool InvalidInput::validateQuit() {
-    std::cin >> charInput;
-    if (charInput == 'q') {
+    std::cin >> strInput;
+    if (strInput.compare("q")) {
         return true;
     }
     return false;
@@ -33,12 +33,12 @@ int InvalidInput::validateHowToPlay() {
     return validateNumInputRange(0, 2);
 }
 
-const char InvalidInput::validateCharacterSelection() {
+const string InvalidInput::validateCharacterSelection() {
     bool valid = false;
 
     while(!valid) {
-        std::cin >> charInput;
-        if (charInput == 'a'|| charInput == 'b' || charInput == 'c') {
+        std::cin >> strInput;
+        if (strInput == "a"|| strInput == "b" || strInput == "c") {
             valid = true;
         }
         else {
@@ -46,7 +46,7 @@ const char InvalidInput::validateCharacterSelection() {
         }
 
     }
-    return charInput;
+    return strInput;
 }
 
 int InvalidInput::validateRoomSize() {
@@ -61,16 +61,16 @@ bool InvalidInput::validateEncounter() {
     return validateNumInputRange(0, 4);
 }
 
-const char InvalidInput::validateMove(Player *currPlayer, const int n) {
-    char input;
+const string InvalidInput::validateMove(Player *currPlayer, const int n) {
+    string input;
     bool valid = false;
     int xPos = currPlayer->getX();
     int yPos = currPlayer->getY();
 
     while(!valid) {
         std::cin >> input;
-        if ((input == 'w' && yPos != 1) || (input == 'a' && xPos != 1) 
-        || (input == 's' && yPos != n) || (input == 'd' && xPos != n) 
+        if ((input == "w" && yPos != 1) || (input == "a" && xPos != 1) 
+        || (input == "s" && yPos != n) || (input == "d" && xPos != n) 
         /*|| (input == 'c')*/) {
             valid = true;
         }

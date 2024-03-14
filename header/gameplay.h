@@ -19,7 +19,7 @@ void analyze(Player *currPlayer, Player *oppPlayer) {
 void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Room> map) {
   Output output;
   InvalidInput invalid;
-  char direction;
+  string direction;
   int currY = currPlayer->getY();
   int currX = currPlayer->getX();
   int oppX = oppPlayer->getX();
@@ -36,7 +36,7 @@ void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Ro
   if (currX != n) {
     cout << "Right - 'd'" << endl;
   }
-  cout << "Enter a direction or cancel: ";
+  cout << "Enter a direction to move in: ";
   direction = invalid.validateMove(currPlayer, n);
   
   currPlayer->moveSpace(direction);

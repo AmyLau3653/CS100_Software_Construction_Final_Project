@@ -32,7 +32,7 @@ public:
   int getNumAttack() const;
   void damage(int);
   virtual void levelUp() = 0;
-  void moveSpace(const char &c);
+  void moveSpace(const string &c);
   int getSpacesMoved() const;
   bool isAlive() const;
   void attack(Player*);

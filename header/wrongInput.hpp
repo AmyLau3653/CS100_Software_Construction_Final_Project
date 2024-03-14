@@ -15,14 +15,14 @@ public:
     int validateTitle();
     bool validateQuit();
     int validateHowToPlay();
-    const char validateCharacterSelection();
+    const string validateCharacterSelection();
     int validateRoomSize();
     int validateTurn();
-    const char validateMove(Player*, const int);
+    const string validateMove(Player*, const int);
     bool validateEncounter();
 private:
     int numInput;
-    char charInput;
+    string strInput;
 };
 
 #endif

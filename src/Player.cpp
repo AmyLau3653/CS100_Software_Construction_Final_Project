@@ -61,7 +61,7 @@ bool Player::isAlive() const {
   return health > 0;
 }
 
-void Player::moveSpace(const char& c) { //check for valid input
+void Player::moveSpace(const string& s) { //check for valid input
   if (c == 'w') {
     yLoc--;
   }
