@@ -33,7 +33,7 @@ int InvalidInput::validateHowToPlay() {
     return validateNumInputRange(0, 2);
 }
 
-const std::string InvalidInput::validateCharacterSelection() {
+const char InvalidInput::validateCharacterSelection() {
     bool valid = false;
 
     while(!valid) {

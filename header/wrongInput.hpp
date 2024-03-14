@@ -15,7 +15,7 @@ public:
     int validateTitle();
     bool validateQuit();
     int validateHowToPlay();
-    const std::string validateCharacterSelection();
+    const char validateCharacterSelection();
     int validateRoomSize();
     int validateTurn();
     const char validateMove(Player*, const int);
