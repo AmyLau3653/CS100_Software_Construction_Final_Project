@@ -1,5 +1,9 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
 
+project(finalProject)
+
+ADD_SUBDIRECTORY(googletest)
+
 ADD_EXECUTABLE(runGame
     src/room.cpp
     src/Player.cpp 
@@ -9,16 +13,16 @@ ADD_EXECUTABLE(runGame
     main.cpp
     src/Output.cpp 
     src/wrongInput.cpp 
-    
+
 )
 
-ADD_EXECUTABLE(Tests
-    tests/outputTests.cpp
-    tests/playerTests.cpp
+ADD_EXECUTABLE(test
     tests/roomTests.cpp
     tests/typeATests.cpp
     tests/typeBTests.cpp
     tests/typeCTests.cpp
+    tests/outputTests.cpp
+    tests/playerTests.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)
