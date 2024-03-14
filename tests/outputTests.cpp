@@ -1,9 +1,3 @@
-// #include "../src/Output.cpp"
-// #include "../src/Player.cpp"
-// #include "../src/Type_A.cpp"
-// #include "../src/Type_B.cpp"
-// #include "gtest/gtest.h"
-
 #include "../header/Output.h"
 #include "../header/Player.h"
 #include "../header/Type_A.h"
