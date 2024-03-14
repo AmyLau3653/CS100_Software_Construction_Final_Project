@@ -4,13 +4,13 @@
 #include <cstdlib>
 #include <cmath>
 #include "header/room.h"
-#include "../header/Player.h"
-#include "../header/Type_A.h"
-#include "../header/Type_B.h"
-#include "../header/Type_C.h"
-#include "../header/gameplay.h"
-#include "../header/Output.h"
-#include "../header/wrongInput.hpp"
+#include "header/Player.h"
+#include "header/Type_A.h"
+#include "header/Type_B.h"
+#include "header/Type_C.h"
+#include "header/gameplay.h"
+#include "header/Output.h"
+#include "header/wrongInput.hpp"
 
 #include "header/Output.h"
 #include "header/wrongInput.hpp"
