@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003
+CMAKE_SOURCE_DIR = /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003
+CMAKE_BINARY_DIR = /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test.dir/depend.make
@@ -72,184 +72,184 @@ include CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/outputTests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/outputTests.cpp.o: tests/outputTests.cpp
 CMakeFiles/test.dir/tests/outputTests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/tests/outputTests.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/outputTests.cpp.o -MF CMakeFiles/test.dir/tests/outputTests.cpp.o.d -o CMakeFiles/test.dir/tests/outputTests.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/tests/outputTests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/tests/outputTests.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/outputTests.cpp.o -MF CMakeFiles/test.dir/tests/outputTests.cpp.o.d -o CMakeFiles/test.dir/tests/outputTests.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/tests/outputTests.cpp
 
 CMakeFiles/test.dir/tests/outputTests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/outputTests.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/tests/outputTests.cpp > CMakeFiles/test.dir/tests/outputTests.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/tests/outputTests.cpp > CMakeFiles/test.dir/tests/outputTests.cpp.i
 
 CMakeFiles/test.dir/tests/outputTests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/outputTests.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/tests/outputTests.cpp -o CMakeFiles/test.dir/tests/outputTests.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/tests/outputTests.cpp -o CMakeFiles/test.dir/tests/outputTests.cpp.s
 
 CMakeFiles/test.dir/tests/playerTests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/playerTests.cpp.o: tests/playerTests.cpp
 CMakeFiles/test.dir/tests/playerTests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/tests/playerTests.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/playerTests.cpp.o -MF CMakeFiles/test.dir/tests/playerTests.cpp.o.d -o CMakeFiles/test.dir/tests/playerTests.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/tests/playerTests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/tests/playerTests.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/playerTests.cpp.o -MF CMakeFiles/test.dir/tests/playerTests.cpp.o.d -o CMakeFiles/test.dir/tests/playerTests.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/tests/playerTests.cpp
 
 CMakeFiles/test.dir/tests/playerTests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/playerTests.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/tests/playerTests.cpp > CMakeFiles/test.dir/tests/playerTests.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/tests/playerTests.cpp > CMakeFiles/test.dir/tests/playerTests.cpp.i
 
 CMakeFiles/test.dir/tests/playerTests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/playerTests.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/tests/playerTests.cpp -o CMakeFiles/test.dir/tests/playerTests.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/tests/playerTests.cpp -o CMakeFiles/test.dir/tests/playerTests.cpp.s
 
 CMakeFiles/test.dir/tests/roomTests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/roomTests.cpp.o: tests/roomTests.cpp
 CMakeFiles/test.dir/tests/roomTests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/tests/roomTests.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/roomTests.cpp.o -MF CMakeFiles/test.dir/tests/roomTests.cpp.o.d -o CMakeFiles/test.dir/tests/roomTests.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/tests/roomTests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/tests/roomTests.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/roomTests.cpp.o -MF CMakeFiles/test.dir/tests/roomTests.cpp.o.d -o CMakeFiles/test.dir/tests/roomTests.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/tests/roomTests.cpp
 
 CMakeFiles/test.dir/tests/roomTests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/roomTests.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/tests/roomTests.cpp > CMakeFiles/test.dir/tests/roomTests.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/tests/roomTests.cpp > CMakeFiles/test.dir/tests/roomTests.cpp.i
 
 CMakeFiles/test.dir/tests/roomTests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/roomTests.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/tests/roomTests.cpp -o CMakeFiles/test.dir/tests/roomTests.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/tests/roomTests.cpp -o CMakeFiles/test.dir/tests/roomTests.cpp.s
 
 CMakeFiles/test.dir/tests/typeATests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/typeATests.cpp.o: tests/typeATests.cpp
 CMakeFiles/test.dir/tests/typeATests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/tests/typeATests.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/typeATests.cpp.o -MF CMakeFiles/test.dir/tests/typeATests.cpp.o.d -o CMakeFiles/test.dir/tests/typeATests.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/tests/typeATests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/tests/typeATests.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/typeATests.cpp.o -MF CMakeFiles/test.dir/tests/typeATests.cpp.o.d -o CMakeFiles/test.dir/tests/typeATests.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/tests/typeATests.cpp
 
 CMakeFiles/test.dir/tests/typeATests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/typeATests.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/tests/typeATests.cpp > CMakeFiles/test.dir/tests/typeATests.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/tests/typeATests.cpp > CMakeFiles/test.dir/tests/typeATests.cpp.i
 
 CMakeFiles/test.dir/tests/typeATests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/typeATests.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/tests/typeATests.cpp -o CMakeFiles/test.dir/tests/typeATests.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/tests/typeATests.cpp -o CMakeFiles/test.dir/tests/typeATests.cpp.s
 
 CMakeFiles/test.dir/tests/typeBTests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/typeBTests.cpp.o: tests/typeBTests.cpp
 CMakeFiles/test.dir/tests/typeBTests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/tests/typeBTests.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/typeBTests.cpp.o -MF CMakeFiles/test.dir/tests/typeBTests.cpp.o.d -o CMakeFiles/test.dir/tests/typeBTests.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/tests/typeBTests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/tests/typeBTests.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/typeBTests.cpp.o -MF CMakeFiles/test.dir/tests/typeBTests.cpp.o.d -o CMakeFiles/test.dir/tests/typeBTests.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/tests/typeBTests.cpp
 
 CMakeFiles/test.dir/tests/typeBTests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/typeBTests.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/tests/typeBTests.cpp > CMakeFiles/test.dir/tests/typeBTests.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/tests/typeBTests.cpp > CMakeFiles/test.dir/tests/typeBTests.cpp.i
 
 CMakeFiles/test.dir/tests/typeBTests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/typeBTests.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/tests/typeBTests.cpp -o CMakeFiles/test.dir/tests/typeBTests.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/tests/typeBTests.cpp -o CMakeFiles/test.dir/tests/typeBTests.cpp.s
 
 CMakeFiles/test.dir/tests/typeCTests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/typeCTests.cpp.o: tests/typeCTests.cpp
 CMakeFiles/test.dir/tests/typeCTests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test.dir/tests/typeCTests.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/typeCTests.cpp.o -MF CMakeFiles/test.dir/tests/typeCTests.cpp.o.d -o CMakeFiles/test.dir/tests/typeCTests.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/tests/typeCTests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test.dir/tests/typeCTests.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/typeCTests.cpp.o -MF CMakeFiles/test.dir/tests/typeCTests.cpp.o.d -o CMakeFiles/test.dir/tests/typeCTests.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/tests/typeCTests.cpp
 
 CMakeFiles/test.dir/tests/typeCTests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/typeCTests.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/tests/typeCTests.cpp > CMakeFiles/test.dir/tests/typeCTests.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/tests/typeCTests.cpp > CMakeFiles/test.dir/tests/typeCTests.cpp.i
 
 CMakeFiles/test.dir/tests/typeCTests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/typeCTests.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/tests/typeCTests.cpp -o CMakeFiles/test.dir/tests/typeCTests.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/tests/typeCTests.cpp -o CMakeFiles/test.dir/tests/typeCTests.cpp.s
 
 CMakeFiles/test.dir/src/room.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/room.cpp.o: src/room.cpp
 CMakeFiles/test.dir/src/room.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test.dir/src/room.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/room.cpp.o -MF CMakeFiles/test.dir/src/room.cpp.o.d -o CMakeFiles/test.dir/src/room.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/room.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test.dir/src/room.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/room.cpp.o -MF CMakeFiles/test.dir/src/room.cpp.o.d -o CMakeFiles/test.dir/src/room.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/room.cpp
 
 CMakeFiles/test.dir/src/room.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/room.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/room.cpp > CMakeFiles/test.dir/src/room.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/room.cpp > CMakeFiles/test.dir/src/room.cpp.i
 
 CMakeFiles/test.dir/src/room.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/room.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/room.cpp -o CMakeFiles/test.dir/src/room.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/room.cpp -o CMakeFiles/test.dir/src/room.cpp.s
 
 CMakeFiles/test.dir/src/Player.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/Player.cpp.o: src/Player.cpp
 CMakeFiles/test.dir/src/Player.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test.dir/src/Player.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/Player.cpp.o -MF CMakeFiles/test.dir/src/Player.cpp.o.d -o CMakeFiles/test.dir/src/Player.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test.dir/src/Player.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/Player.cpp.o -MF CMakeFiles/test.dir/src/Player.cpp.o.d -o CMakeFiles/test.dir/src/Player.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Player.cpp
 
 CMakeFiles/test.dir/src/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Player.cpp > CMakeFiles/test.dir/src/Player.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Player.cpp > CMakeFiles/test.dir/src/Player.cpp.i
 
 CMakeFiles/test.dir/src/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Player.cpp -o CMakeFiles/test.dir/src/Player.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Player.cpp -o CMakeFiles/test.dir/src/Player.cpp.s
 
 CMakeFiles/test.dir/src/Type_A.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/Type_A.cpp.o: src/Type_A.cpp
 CMakeFiles/test.dir/src/Type_A.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/test.dir/src/Type_A.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/Type_A.cpp.o -MF CMakeFiles/test.dir/src/Type_A.cpp.o.d -o CMakeFiles/test.dir/src/Type_A.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Type_A.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/test.dir/src/Type_A.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/Type_A.cpp.o -MF CMakeFiles/test.dir/src/Type_A.cpp.o.d -o CMakeFiles/test.dir/src/Type_A.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Type_A.cpp
 
 CMakeFiles/test.dir/src/Type_A.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/Type_A.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Type_A.cpp > CMakeFiles/test.dir/src/Type_A.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Type_A.cpp > CMakeFiles/test.dir/src/Type_A.cpp.i
 
 CMakeFiles/test.dir/src/Type_A.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/Type_A.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Type_A.cpp -o CMakeFiles/test.dir/src/Type_A.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Type_A.cpp -o CMakeFiles/test.dir/src/Type_A.cpp.s
 
 CMakeFiles/test.dir/src/Type_B.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/Type_B.cpp.o: src/Type_B.cpp
 CMakeFiles/test.dir/src/Type_B.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/test.dir/src/Type_B.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/Type_B.cpp.o -MF CMakeFiles/test.dir/src/Type_B.cpp.o.d -o CMakeFiles/test.dir/src/Type_B.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Type_B.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/test.dir/src/Type_B.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/Type_B.cpp.o -MF CMakeFiles/test.dir/src/Type_B.cpp.o.d -o CMakeFiles/test.dir/src/Type_B.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Type_B.cpp
 
 CMakeFiles/test.dir/src/Type_B.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/Type_B.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Type_B.cpp > CMakeFiles/test.dir/src/Type_B.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Type_B.cpp > CMakeFiles/test.dir/src/Type_B.cpp.i
 
 CMakeFiles/test.dir/src/Type_B.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/Type_B.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Type_B.cpp -o CMakeFiles/test.dir/src/Type_B.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Type_B.cpp -o CMakeFiles/test.dir/src/Type_B.cpp.s
 
 CMakeFiles/test.dir/src/Type_C.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/Type_C.cpp.o: src/Type_C.cpp
 CMakeFiles/test.dir/src/Type_C.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/test.dir/src/Type_C.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/Type_C.cpp.o -MF CMakeFiles/test.dir/src/Type_C.cpp.o.d -o CMakeFiles/test.dir/src/Type_C.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Type_C.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/test.dir/src/Type_C.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/Type_C.cpp.o -MF CMakeFiles/test.dir/src/Type_C.cpp.o.d -o CMakeFiles/test.dir/src/Type_C.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Type_C.cpp
 
 CMakeFiles/test.dir/src/Type_C.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/Type_C.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Type_C.cpp > CMakeFiles/test.dir/src/Type_C.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Type_C.cpp > CMakeFiles/test.dir/src/Type_C.cpp.i
 
 CMakeFiles/test.dir/src/Type_C.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/Type_C.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Type_C.cpp -o CMakeFiles/test.dir/src/Type_C.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Type_C.cpp -o CMakeFiles/test.dir/src/Type_C.cpp.s
 
 CMakeFiles/test.dir/src/Output.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/Output.cpp.o: src/Output.cpp
 CMakeFiles/test.dir/src/Output.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/test.dir/src/Output.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/Output.cpp.o -MF CMakeFiles/test.dir/src/Output.cpp.o.d -o CMakeFiles/test.dir/src/Output.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Output.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/test.dir/src/Output.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/Output.cpp.o -MF CMakeFiles/test.dir/src/Output.cpp.o.d -o CMakeFiles/test.dir/src/Output.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Output.cpp
 
 CMakeFiles/test.dir/src/Output.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/Output.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Output.cpp > CMakeFiles/test.dir/src/Output.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Output.cpp > CMakeFiles/test.dir/src/Output.cpp.i
 
 CMakeFiles/test.dir/src/Output.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/Output.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Output.cpp -o CMakeFiles/test.dir/src/Output.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Output.cpp -o CMakeFiles/test.dir/src/Output.cpp.s
 
 CMakeFiles/test.dir/src/wrongInput.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/wrongInput.cpp.o: src/wrongInput.cpp
 CMakeFiles/test.dir/src/wrongInput.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/test.dir/src/wrongInput.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/wrongInput.cpp.o -MF CMakeFiles/test.dir/src/wrongInput.cpp.o.d -o CMakeFiles/test.dir/src/wrongInput.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/wrongInput.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/test.dir/src/wrongInput.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/wrongInput.cpp.o -MF CMakeFiles/test.dir/src/wrongInput.cpp.o.d -o CMakeFiles/test.dir/src/wrongInput.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/wrongInput.cpp
 
 CMakeFiles/test.dir/src/wrongInput.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/wrongInput.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/wrongInput.cpp > CMakeFiles/test.dir/src/wrongInput.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/wrongInput.cpp > CMakeFiles/test.dir/src/wrongInput.cpp.i
 
 CMakeFiles/test.dir/src/wrongInput.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/wrongInput.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/wrongInput.cpp -o CMakeFiles/test.dir/src/wrongInput.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/wrongInput.cpp -o CMakeFiles/test.dir/src/wrongInput.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
@@ -284,8 +284,9 @@ test: CMakeFiles/test.dir/src/Type_C.cpp.o
 test: CMakeFiles/test.dir/src/Output.cpp.o
 test: CMakeFiles/test.dir/src/wrongInput.cpp.o
 test: CMakeFiles/test.dir/build.make
+test: lib/libgtest.a
 test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -297,6 +298,6 @@ CMakeFiles/test.dir/clean:
 .PHONY : CMakeFiles/test.dir/clean
 
 CMakeFiles/test.dir/depend:
-	cd /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003 /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003 /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003 /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003 /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003 /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003 /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003 /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003 /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test.dir/depend
 

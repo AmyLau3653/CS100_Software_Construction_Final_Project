@@ -990,3 +990,119 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "googletest/googletest/cmake/internal_utils.cmake:66 (find_package)"
+      - "googletest/googletest/CMakeLists.txt:83 (config_compiler_and_linker)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/CMakeScratch/TryCompile-BYVOX5"
+      binary: "/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/CMakeScratch/TryCompile-BYVOX5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/CMakeScratch/TryCompile-BYVOX5
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_33213/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_33213.dir/build.make CMakeFiles/cmTC_33213.dir/build
+        gmake[1]: Entering directory '/data/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/CMakeScratch/TryCompile-BYVOX5'
+        Building C object CMakeFiles/cmTC_33213.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_33213.dir/src.c.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/CMakeScratch/TryCompile-BYVOX5/src.c
+        Linking C executable cmTC_33213
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33213.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_33213.dir/src.c.o -o cmTC_33213 
+        CMakeFiles/cmTC_33213.dir/src.c.o: In function `main':
+        src.c:(.text+0x2d): undefined reference to `pthread_create'
+        src.c:(.text+0x39): undefined reference to `pthread_detach'
+        src.c:(.text+0x45): undefined reference to `pthread_cancel'
+        src.c:(.text+0x56): undefined reference to `pthread_join'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_33213.dir/build.make:99: cmTC_33213] Error 1
+        gmake[1]: Leaving directory '/data/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/CMakeScratch/TryCompile-BYVOX5'
+        gmake: *** [Makefile:127: cmTC_33213/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "googletest/googletest/cmake/internal_utils.cmake:66 (find_package)"
+      - "googletest/googletest/CMakeLists.txt:83 (config_compiler_and_linker)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/CMakeScratch/TryCompile-dDbYkj"
+      binary: "/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/CMakeScratch/TryCompile-dDbYkj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/CMakeScratch/TryCompile-dDbYkj
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_17ff6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_17ff6.dir/build.make CMakeFiles/cmTC_17ff6.dir/build
+        gmake[1]: Entering directory '/data/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/CMakeScratch/TryCompile-dDbYkj'
+        Building C object CMakeFiles/cmTC_17ff6.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_17ff6.dir/CheckFunctionExists.c.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/CMakeScratch/TryCompile-dDbYkj/CheckFunctionExists.c
+        Linking C executable cmTC_17ff6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17ff6.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_17ff6.dir/CheckFunctionExists.c.o -o cmTC_17ff6  -lpthreads 
+        /usr/bin/ld: cannot find -lpthreads
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_17ff6.dir/build.make:99: cmTC_17ff6] Error 1
+        gmake[1]: Leaving directory '/data/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/CMakeScratch/TryCompile-dDbYkj'
+        gmake: *** [Makefile:127: cmTC_17ff6/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "googletest/googletest/cmake/internal_utils.cmake:66 (find_package)"
+      - "googletest/googletest/CMakeLists.txt:83 (config_compiler_and_linker)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/CMakeScratch/TryCompile-AVk4Fo"
+      binary: "/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/CMakeScratch/TryCompile-AVk4Fo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/CMakeScratch/TryCompile-AVk4Fo
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8c558/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8c558.dir/build.make CMakeFiles/cmTC_8c558.dir/build
+        gmake[1]: Entering directory '/data/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/CMakeScratch/TryCompile-AVk4Fo'
+        Building C object CMakeFiles/cmTC_8c558.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_8c558.dir/CheckFunctionExists.c.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/CMakeScratch/TryCompile-AVk4Fo/CheckFunctionExists.c
+        Linking C executable cmTC_8c558
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c558.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_8c558.dir/CheckFunctionExists.c.o -o cmTC_8c558  -lpthread 
+        gmake[1]: Leaving directory '/data/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/CMakeScratch/TryCompile-AVk4Fo'
+        
+      exitCode: 0
+...

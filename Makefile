@@ -57,17 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003
-=======
-CMAKE_SOURCE_DIR = /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003
->>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -92,17 +85,56 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"gmock\" \"gtest\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles 0
-=======
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles 0
->>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 .PHONY : all
 
 # The main clean target
@@ -142,6 +174,71 @@ runGame/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/build
 .PHONY : runGame/fast
 
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -172,6 +269,7 @@ src/Output.o: src/Output.cpp.o
 # target to build an object file
 src/Output.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/Output.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Output.cpp.o
 .PHONY : src/Output.cpp.o
 
 src/Output.i: src/Output.cpp.i
@@ -180,6 +278,7 @@ src/Output.i: src/Output.cpp.i
 # target to preprocess a source file
 src/Output.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/Output.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Output.cpp.i
 .PHONY : src/Output.cpp.i
 
 src/Output.s: src/Output.cpp.s
@@ -188,6 +287,7 @@ src/Output.s: src/Output.cpp.s
 # target to generate assembly for a file
 src/Output.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/Output.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Output.cpp.s
 .PHONY : src/Output.cpp.s
 
 src/Player.o: src/Player.cpp.o
@@ -196,6 +296,7 @@ src/Player.o: src/Player.cpp.o
 # target to build an object file
 src/Player.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/Player.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Player.cpp.o
 .PHONY : src/Player.cpp.o
 
 src/Player.i: src/Player.cpp.i
@@ -204,6 +305,7 @@ src/Player.i: src/Player.cpp.i
 # target to preprocess a source file
 src/Player.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/Player.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Player.cpp.i
 .PHONY : src/Player.cpp.i
 
 src/Player.s: src/Player.cpp.s
@@ -212,6 +314,7 @@ src/Player.s: src/Player.cpp.s
 # target to generate assembly for a file
 src/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/Player.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
 src/Type_A.o: src/Type_A.cpp.o
@@ -220,6 +323,7 @@ src/Type_A.o: src/Type_A.cpp.o
 # target to build an object file
 src/Type_A.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/Type_A.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Type_A.cpp.o
 .PHONY : src/Type_A.cpp.o
 
 src/Type_A.i: src/Type_A.cpp.i
@@ -228,6 +332,7 @@ src/Type_A.i: src/Type_A.cpp.i
 # target to preprocess a source file
 src/Type_A.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/Type_A.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Type_A.cpp.i
 .PHONY : src/Type_A.cpp.i
 
 src/Type_A.s: src/Type_A.cpp.s
@@ -236,6 +341,7 @@ src/Type_A.s: src/Type_A.cpp.s
 # target to generate assembly for a file
 src/Type_A.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/Type_A.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Type_A.cpp.s
 .PHONY : src/Type_A.cpp.s
 
 src/Type_B.o: src/Type_B.cpp.o
@@ -244,6 +350,7 @@ src/Type_B.o: src/Type_B.cpp.o
 # target to build an object file
 src/Type_B.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/Type_B.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Type_B.cpp.o
 .PHONY : src/Type_B.cpp.o
 
 src/Type_B.i: src/Type_B.cpp.i
@@ -252,6 +359,7 @@ src/Type_B.i: src/Type_B.cpp.i
 # target to preprocess a source file
 src/Type_B.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/Type_B.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Type_B.cpp.i
 .PHONY : src/Type_B.cpp.i
 
 src/Type_B.s: src/Type_B.cpp.s
@@ -260,6 +368,7 @@ src/Type_B.s: src/Type_B.cpp.s
 # target to generate assembly for a file
 src/Type_B.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/Type_B.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Type_B.cpp.s
 .PHONY : src/Type_B.cpp.s
 
 src/Type_C.o: src/Type_C.cpp.o
@@ -268,6 +377,7 @@ src/Type_C.o: src/Type_C.cpp.o
 # target to build an object file
 src/Type_C.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/Type_C.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Type_C.cpp.o
 .PHONY : src/Type_C.cpp.o
 
 src/Type_C.i: src/Type_C.cpp.i
@@ -276,6 +386,7 @@ src/Type_C.i: src/Type_C.cpp.i
 # target to preprocess a source file
 src/Type_C.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/Type_C.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Type_C.cpp.i
 .PHONY : src/Type_C.cpp.i
 
 src/Type_C.s: src/Type_C.cpp.s
@@ -284,6 +395,7 @@ src/Type_C.s: src/Type_C.cpp.s
 # target to generate assembly for a file
 src/Type_C.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/Type_C.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Type_C.cpp.s
 .PHONY : src/Type_C.cpp.s
 
 src/room.o: src/room.cpp.o
@@ -292,6 +404,7 @@ src/room.o: src/room.cpp.o
 # target to build an object file
 src/room.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/room.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/room.cpp.o
 .PHONY : src/room.cpp.o
 
 src/room.i: src/room.cpp.i
@@ -300,6 +413,7 @@ src/room.i: src/room.cpp.i
 # target to preprocess a source file
 src/room.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/room.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/room.cpp.i
 .PHONY : src/room.cpp.i
 
 src/room.s: src/room.cpp.s
@@ -308,6 +422,7 @@ src/room.s: src/room.cpp.s
 # target to generate assembly for a file
 src/room.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/room.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/room.cpp.s
 .PHONY : src/room.cpp.s
 
 src/wrongInput.o: src/wrongInput.cpp.o
@@ -316,6 +431,7 @@ src/wrongInput.o: src/wrongInput.cpp.o
 # target to build an object file
 src/wrongInput.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/wrongInput.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/wrongInput.cpp.o
 .PHONY : src/wrongInput.cpp.o
 
 src/wrongInput.i: src/wrongInput.cpp.i
@@ -324,6 +440,7 @@ src/wrongInput.i: src/wrongInput.cpp.i
 # target to preprocess a source file
 src/wrongInput.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/wrongInput.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/wrongInput.cpp.i
 .PHONY : src/wrongInput.cpp.i
 
 src/wrongInput.s: src/wrongInput.cpp.s
@@ -332,7 +449,152 @@ src/wrongInput.s: src/wrongInput.cpp.s
 # target to generate assembly for a file
 src/wrongInput.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/src/wrongInput.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/wrongInput.cpp.s
 .PHONY : src/wrongInput.cpp.s
+
+tests/outputTests.o: tests/outputTests.cpp.o
+.PHONY : tests/outputTests.o
+
+# target to build an object file
+tests/outputTests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/outputTests.cpp.o
+.PHONY : tests/outputTests.cpp.o
+
+tests/outputTests.i: tests/outputTests.cpp.i
+.PHONY : tests/outputTests.i
+
+# target to preprocess a source file
+tests/outputTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/outputTests.cpp.i
+.PHONY : tests/outputTests.cpp.i
+
+tests/outputTests.s: tests/outputTests.cpp.s
+.PHONY : tests/outputTests.s
+
+# target to generate assembly for a file
+tests/outputTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/outputTests.cpp.s
+.PHONY : tests/outputTests.cpp.s
+
+tests/playerTests.o: tests/playerTests.cpp.o
+.PHONY : tests/playerTests.o
+
+# target to build an object file
+tests/playerTests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/playerTests.cpp.o
+.PHONY : tests/playerTests.cpp.o
+
+tests/playerTests.i: tests/playerTests.cpp.i
+.PHONY : tests/playerTests.i
+
+# target to preprocess a source file
+tests/playerTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/playerTests.cpp.i
+.PHONY : tests/playerTests.cpp.i
+
+tests/playerTests.s: tests/playerTests.cpp.s
+.PHONY : tests/playerTests.s
+
+# target to generate assembly for a file
+tests/playerTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/playerTests.cpp.s
+.PHONY : tests/playerTests.cpp.s
+
+tests/roomTests.o: tests/roomTests.cpp.o
+.PHONY : tests/roomTests.o
+
+# target to build an object file
+tests/roomTests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/roomTests.cpp.o
+.PHONY : tests/roomTests.cpp.o
+
+tests/roomTests.i: tests/roomTests.cpp.i
+.PHONY : tests/roomTests.i
+
+# target to preprocess a source file
+tests/roomTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/roomTests.cpp.i
+.PHONY : tests/roomTests.cpp.i
+
+tests/roomTests.s: tests/roomTests.cpp.s
+.PHONY : tests/roomTests.s
+
+# target to generate assembly for a file
+tests/roomTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/roomTests.cpp.s
+.PHONY : tests/roomTests.cpp.s
+
+tests/typeATests.o: tests/typeATests.cpp.o
+.PHONY : tests/typeATests.o
+
+# target to build an object file
+tests/typeATests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/typeATests.cpp.o
+.PHONY : tests/typeATests.cpp.o
+
+tests/typeATests.i: tests/typeATests.cpp.i
+.PHONY : tests/typeATests.i
+
+# target to preprocess a source file
+tests/typeATests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/typeATests.cpp.i
+.PHONY : tests/typeATests.cpp.i
+
+tests/typeATests.s: tests/typeATests.cpp.s
+.PHONY : tests/typeATests.s
+
+# target to generate assembly for a file
+tests/typeATests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/typeATests.cpp.s
+.PHONY : tests/typeATests.cpp.s
+
+tests/typeBTests.o: tests/typeBTests.cpp.o
+.PHONY : tests/typeBTests.o
+
+# target to build an object file
+tests/typeBTests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/typeBTests.cpp.o
+.PHONY : tests/typeBTests.cpp.o
+
+tests/typeBTests.i: tests/typeBTests.cpp.i
+.PHONY : tests/typeBTests.i
+
+# target to preprocess a source file
+tests/typeBTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/typeBTests.cpp.i
+.PHONY : tests/typeBTests.cpp.i
+
+tests/typeBTests.s: tests/typeBTests.cpp.s
+.PHONY : tests/typeBTests.s
+
+# target to generate assembly for a file
+tests/typeBTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/typeBTests.cpp.s
+.PHONY : tests/typeBTests.cpp.s
+
+tests/typeCTests.o: tests/typeCTests.cpp.o
+.PHONY : tests/typeCTests.o
+
+# target to build an object file
+tests/typeCTests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/typeCTests.cpp.o
+.PHONY : tests/typeCTests.cpp.o
+
+tests/typeCTests.i: tests/typeCTests.cpp.i
+.PHONY : tests/typeCTests.i
+
+# target to preprocess a source file
+tests/typeCTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/typeCTests.cpp.i
+.PHONY : tests/typeCTests.cpp.i
+
+tests/typeCTests.s: tests/typeCTests.cpp.s
+.PHONY : tests/typeCTests.s
+
+# target to generate assembly for a file
+tests/typeCTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/typeCTests.cpp.s
+.PHONY : tests/typeCTests.cpp.s
 
 # Help Target
 help:
@@ -341,8 +603,17 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... gmock"
+	@echo "... gmock_main"
+	@echo "... gtest"
+	@echo "... gtest_main"
 	@echo "... runGame"
+	@echo "... test"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -367,6 +638,24 @@ help:
 	@echo "... src/wrongInput.o"
 	@echo "... src/wrongInput.i"
 	@echo "... src/wrongInput.s"
+	@echo "... tests/outputTests.o"
+	@echo "... tests/outputTests.i"
+	@echo "... tests/outputTests.s"
+	@echo "... tests/playerTests.o"
+	@echo "... tests/playerTests.i"
+	@echo "... tests/playerTests.s"
+	@echo "... tests/roomTests.o"
+	@echo "... tests/roomTests.i"
+	@echo "... tests/roomTests.s"
+	@echo "... tests/typeATests.o"
+	@echo "... tests/typeATests.i"
+	@echo "... tests/typeATests.s"
+	@echo "... tests/typeBTests.o"
+	@echo "... tests/typeBTests.i"
+	@echo "... tests/typeBTests.s"
+	@echo "... tests/typeCTests.o"
+	@echo "... tests/typeCTests.i"
+	@echo "... tests/typeCTests.s"
 .PHONY : help
 
 
