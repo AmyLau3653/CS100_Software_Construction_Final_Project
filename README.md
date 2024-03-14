@@ -24,13 +24,10 @@ The RPG we are making consists of a map generated in the form of a square (where
 ## User Interface Specification
 
 ### Navigation Diagram
-<<<<<<< HEAD
+
 ![Escape Maze Navi 3](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/139507850/1ee7f429-68f0-47fa-8d33-987648237a90)
 
-=======
 
-![Escape Maze Navi 3](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/139507850/69a4fff8-8904-4830-9ab0-ef327ddc903e)
->>>>>>> byu064/OutputInput
 
 This diagram depicts the different "screens" that the game will feature. For example, we have the title screen which also functions as the main menu. The user/player has the option to read the instructions, start the game, or quit (the circle represents the state of the program when it's not running). Once starting the game, both players will be prompted to the character creation screens, and the mechanics of the gameplay are shown in the rest of the graph. The player can either move, attack, stay, or check both players' stats. The graph also depicts which action will lead to which screen (for example, each action Player 1 does will automatically lead to Player 2's action screen. Once player 1 has acted on their turn, player 2 will be prompted to act).
 
