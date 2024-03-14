@@ -10,6 +10,7 @@ using namespace std;
 
 void analyze(Player *currPlayer, Player *oppPlayer, Output& o) {
   o.OutputAnalyze(currPlayer, oppPlayer);
+  o.OutputNewLine();
 }
 
 void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Room> map, Output& o) {

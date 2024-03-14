@@ -18,7 +18,7 @@ public:
     int validateRoomSize();
     int validateTurn();
     const std::string& validateMove(int currX, int currY, int n);
-    bool validateEncounter();
+    int validateEncounter();
     int validateNoConflict();
     std::string SetName();
 private:

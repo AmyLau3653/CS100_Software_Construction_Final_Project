@@ -52,7 +52,7 @@ void Player::attack(Player *opp) {
     << " damage to " << opp->getName() << endl;
   if (!(opp->isAlive())) {
     cout << opp->getName() << " is dead! " << endl;
-    cout << name << "wins!" << endl;
+    cout << name << " wins!" << endl;
   }
   return;
 }

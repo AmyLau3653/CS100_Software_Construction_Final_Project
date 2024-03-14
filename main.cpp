@@ -77,6 +77,7 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
     int decision;
     InvalidInput i;
     if(m == 3) {
+      cout << "M=3" <<endl;
       decision = i.validateTurn();
     }
     else {
@@ -101,7 +102,7 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
 
         }
     }
-
+    
     if (decision == 1) {
       move(currPlayer, oppPlayer, currRoom, n, map, output);
     } //analyze
@@ -112,6 +113,7 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
     
     numTurns++;
   }
+  
   return;
 }
 

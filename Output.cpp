@@ -22,11 +22,11 @@ void Output::OutputEncounter(Player* player1, Player* player2) {
 }
 
 void Output::OutputChoice() {
-  cout << "Move (1)   Stay (2)   Analyze (3)";
+  cout << "Move (1)\t Stay (2)\t Analyze (3)";
 }
 
 void Output::OutputChoiceMoveStay() {
-  cout << "Move (1)   Stay (2)";
+  cout << "Move (1)\t Stay (2)";
 }
 
 void Output::OutputChoiceThreeOptions() {
