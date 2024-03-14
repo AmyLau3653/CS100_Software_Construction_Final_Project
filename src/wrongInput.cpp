@@ -22,8 +22,8 @@ int InvalidInput::validateTitle() {
 }
 
 bool InvalidInput::validateQuit() {
-    std::cin >> strInput;
-    if (strInput.compare("q")) {
+    std::cin >> charInput;
+    if (charInput.compare("q")) {
         return true;
     }
     return false;
@@ -37,8 +37,8 @@ const std::string InvalidInput::validateCharacterSelection() {
     bool valid = false;
 
     while(!valid) {
-        std::cin >> strInput;
-        if (strInput == "a" || strInput == "b" || strInput == "c") {
+        std::cin >> charInput;
+        if (charInput == "a" || charInput == "b" || charInput == "c") {
             valid = true;
         }
         else {
@@ -46,7 +46,7 @@ const std::string InvalidInput::validateCharacterSelection() {
         }
 
     }
-    return strInput;
+    return charInput;
 }
 
 int InvalidInput::validateRoomSize() {
@@ -64,8 +64,8 @@ bool InvalidInput::validateEncounter() {
 const char InvalidInput::validateMove(Player *currPlayer, const int n) {
     char input;
     bool valid = false;
-    xPos = currPlayer->getX();
-    yPos = currPlayer->getY();
+    int xPos = currPlayer->getX();
+    int yPos = currPlayer->getY();
 
     while(!valid) {
         std::cin >> input;
