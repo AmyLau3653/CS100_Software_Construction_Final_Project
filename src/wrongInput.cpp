@@ -71,7 +71,7 @@ const char InvalidInput::validateMove(Player *currPlayer, const int n) {
         std::cin >> input;
         if ((input == 'w' && yPos != 1) || (input == 'a' && xPos != 1) 
         || (input == 's' && yPos != n) || (input == 'd' && xPos != n) 
-        || (input == 'c')) {
+        /*|| (input == 'c')*/) {
             valid = true;
         }
         else {

@@ -38,62 +38,31 @@ void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Ro
   }
   cout << "Cancel - 'c'" << endl << endl << "Enter a direction or cancel: ";
   direction = invalid.validateMove(currPlayer, n);
-  // cin >> direction;
-  // while (!((direction == 'w' && currY != 1) ||
-  //          (direction == 'a' && currX != 1) ||
-  //          (direction == 's' && currY != n) ||
-  //          (direction == 'd' && currX != n) || direction == 'c')) {
-  //   cout << "Error. Please choose a valid input: ";
-  //   cin >> direction;
+  
+  currPlayer->moveSpace(direction);
 
-  // }
-  if (direction == 'c') {
-    int m = 3;
+  currRoom =
+      currPlayer->searchRoom(map, currPlayer->getX(), currPlayer->getY());
+
+  if (currPlayer->getSpacesMoved() % 2 == 0) {
+    currPlayer->levelUp();
+  }
+  if (currRoom.Exodus()) {
+    output.OutputExitRoom(currPlayer);
+    exit(0);
+  }
+  if (currRoom.conflict(currX, currY, oppX, oppY)) {
+    output.OutputEncounter(currPlayer, oppPlayer);
+
     output.OutputChoice();
-    if (currRoom.conflict(currX, currY, oppX, oppY)) {
-      output.OutputChoiceAttack();
-      m = 4;
-    }
-    cout << endl;
     int choice;
-    cin >> choice;
-    while (choice > m || choice < 1) {
-      cout << "Error. Please choose a valid input: ";
-      cin >> choice;
-    }
-    cout << "FIXME: Cancel option still in progress" << endl;
-  } 
-  else {
-    currPlayer->moveSpace(direction);
 
-    currRoom =
-        currPlayer->searchRoom(map, currPlayer->getX(), currPlayer->getY());
+    choice = invalid.validateNumInputRange(1, 3);
 
-    if (currPlayer->getSpacesMoved() % 2 == 0) {
-      currPlayer->levelUp();
-    }
-    if (currRoom.Exodus()) {
-      output.OutputExitRoom(currPlayer);
-      exit(0);
-    }
-    if (currRoom.conflict(currX, currY, oppX, oppY)) {
-      output.OutputEncounter(currPlayer, oppPlayer);
-
-      output.OutputChoice();
-      int choice;
-      
-
-      // while (choice > 3 || choice < 1) {
-      //   cout << "Error. Please choose a valid input: ";
-      //   cin >> choice;
-      // }
-      choice = invalid.validateNumInputRange(1, 3);
-
-      if (choice == 1) {
-        currPlayer->attack(oppPlayer);
-      } else if (choice == 3) {
-        analyze(currPlayer, oppPlayer);
-      }
+    if (choice == 1) {
+      currPlayer->attack(oppPlayer);
+    } else if (choice == 3) {
+      analyze(currPlayer, oppPlayer);
     }
   }
   return;
