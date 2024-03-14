@@ -183,7 +183,7 @@ void runGame() {
   else if (p1Type == "b") {
     P1 = new TypeB(p1Name, BASEHP1, BASEATK1, x1, y1);
   }
-  else {
+  else { //p1Type == "c"
     P1 = new TypeC(p1Name, BASEHP2, BASEATK2, x1, y1);
   }
 
@@ -197,11 +197,12 @@ void runGame() {
   else if (p2Type == "b") {
     P2 = new TypeB(p2Name, BASEHP1, BASEATK1, x2, y2);
   }
-  else {
+  else { //p2Type == "c"
     P2 = new TypeC(p2Name, BASEHP2, BASEATK2, x2, y2);
   }
 
   GameSequence(P1, P2, map, exitX, exitY);
+  
   delete P1;
   delete P2; //no mem leaks
   return;
