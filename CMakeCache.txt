@@ -106,7 +106,6 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 
 //Value Computed by CMake.
 
-CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/pkgRedirects
 
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/pkgRedirects
 
