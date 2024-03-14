@@ -107,7 +107,7 @@ void Output::OutputExitRoom(Player* player) {
 }
 
 void Output::OutputFight(Player* player1, Player* player2) {
-  cout << player1->getName() << " does " << /*player1->GetDamage() << */" attack to "
+  cout << player1->getName() << " does " << player1->getNumAttack() << " damage to "
        << player2->getName() << "!" << endl;
 }
 
@@ -150,4 +150,8 @@ void Output::OutputNewLine() {
 
 void Output::OutputConflict(Player* currPlayer, Player* oppPlayer) {
       cout << "Fight (1) \tStay (2) \tAnalyze (3)" << endl;
+}
+
+void Output::OutputWin(Player* p) {
+  cout << p->getName() << " wins!" << endl;
 }

@@ -31,6 +31,7 @@ public:
   void OutputDirectionChoice(int py1, int px1, int n);
   void OutputNewLine();
   void OutputConflict(Player* currPlayer, Player* oppPlayer);
+  void OutputWin(Player* p);
 private: 
   void OutputColor(int, int, string);
 };

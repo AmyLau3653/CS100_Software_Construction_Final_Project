@@ -43,18 +43,23 @@ void Player::getAttack() const {
   cout << "Attack: " << attackStrength << endl;
 }
 
+int Player::getNumAttack() const {
+  return attackStrength;
+}
+
 void Player::damage(int dmg) {
   health -= dmg;
   return;
 }
 
 void Player::attack(Player *opp) {
+  Output output;
   opp->damage(attackStrength);
-  cout << name << " does " << attackStrength 
-    << " damage to " << opp->getName() << endl;
+
+  output.OutputFight(this, opp);
   if (!(opp->isAlive())) {
-    cout << opp->getName() << " is dead! " << endl;
-    cout << name << " wins!" << endl;
+    output.OutputDeath(opp);
+    output.OutputWin(this);
   }
   return;
 }
