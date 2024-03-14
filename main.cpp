@@ -39,7 +39,7 @@ vector<Room> MapGenerator(const int& n) {
   return map;
 }
 
-void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
+void GameSequence(Player* p1, Player* p2, vector<Room>& map, const int _X, const int _Y) {
   Output output;
   int n = sqrt(map.size());
   int numTurns = 0;
@@ -62,12 +62,7 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
 
     output.OutputPhase(currPlayer, Playerphase);
 
-
-    
-
     Room currRoom = currPlayer->searchRoom(map, currX, currY);
-    //cout << currPlayer->getName() << " currently in room " << currRoom.getID() << endl; //for testing purposes only
-    
     // cout << currPlayer->getName() << " currently in room " << currRoom.getID() << endl; //for testing purposes only
     
     if (currPlayer->isClose(oppX, oppY)) {
@@ -82,16 +77,13 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
       m = 4;
       output.OutputEncounter(currPlayer, oppPlayer);
-      
     }
 
     output.OutputChoice();
-
-   
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
       output.OutputChoiceAttack();
     }
-    output.OutputNewLine();
+    cout << endl;
 
     int decision;
     InvalidInput i;
@@ -99,30 +91,31 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
       decision = i.validateTurn();
     }
     else {
-      decision = i.validateEncounter();
-    } 
+      decision = i.validateNumInputRange(1, 4);
+    }
 
     bool analysis = false;
     if (decision == 3) {
       analysis = true;
-        analyze(currPlayer, oppPlayer, output);
+        analyze(currPlayer, oppPlayer);
         output.OutputChoiceMoveStay();
         bool conflict = currRoom.conflict(currX, currY, oppX, oppY);
         if (conflict) {
           output.OutputChoiceThreeOptions();
         }
-        output.OutputNewLine();
+        cout << endl;
+        //////////
         if(!conflict) {
-          decision = i.validateNoConflict();
+          decision = i.validateNumInputRange(1, 2);
         }
         else {
-          decision = i.validateTurn();
+          decision = i.validateNumInputRange(1, 3);
 
         }
     }
-    
+
     if (decision == 1) {
-      move(currPlayer, oppPlayer, currRoom, n, map, output);
+      move(currPlayer, oppPlayer, currRoom, n, map);
     } //analyze
     if (decision == 4 || 
       (analysis == true && decision == 3)) {
@@ -131,7 +124,6 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
     
     numTurns++;
   }
-  
   return;
 }
 
