@@ -51,7 +51,7 @@ TEST(OutputTest, OutputLevelUpPlayerTest) {
 
 TEST(OutputTest, OutputAnalyzeTest) {
   Player *P1 = new TypeA("Bob", BASEHP0, BASEATK0, 1, 1);
-  Player *P2 = new TypeB("Rob", BASEHP1, BASEATK1, 1, 1)
+  Player *P2 = new TypeB("Rob", BASEHP1, BASEATK1, 1, 1);
   Output output;
   output.OutputAnalyze(P1, P2);
 }
