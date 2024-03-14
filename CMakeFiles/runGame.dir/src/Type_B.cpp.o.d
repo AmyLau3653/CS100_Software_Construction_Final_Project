@@ -1,17 +1,9 @@
 CMakeFiles/runGame.dir/src/Type_B.cpp.o: \
-<<<<<<< HEAD
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Type_B.cpp \
  /usr/include/stdc-predef.h \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/Type_B.h \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/../header/Player.h \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/../header/room.h \
-=======
- /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Type_B.cpp \
- /usr/include/stdc-predef.h \
- /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/../header/Type_B.h \
- /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/../header/Player.h \
- /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/../header/room.h \
->>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
  /usr/include/c++/8/vector /usr/include/c++/8/bits/stl_algobase.h \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -127,12 +119,8 @@ CMakeFiles/runGame.dir/src/Type_B.cpp.o: \
  /usr/include/c++/8/bits/locale_facets.tcc \
  /usr/include/c++/8/bits/basic_ios.tcc \
  /usr/include/c++/8/bits/ostream.tcc /usr/include/c++/8/istream \
-<<<<<<< HEAD
  /usr/include/c++/8/bits/istream.tcc \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/Output.h \
- /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/../header/wrongInput.hpp \
- /usr/include/c++/8/sstream /usr/include/c++/8/bits/sstream.tcc \
- /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/../header/../header/Player.h
-=======
- /usr/include/c++/8/bits/istream.tcc
->>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
+ /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/Player.h \
+ /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/wrongInput.hpp \
+ /usr/include/c++/8/sstream /usr/include/c++/8/bits/sstream.tcc

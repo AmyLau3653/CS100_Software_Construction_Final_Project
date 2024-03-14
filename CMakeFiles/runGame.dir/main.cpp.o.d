@@ -135,6 +135,7 @@ CMakeFiles/runGame.dir/main.cpp.o: \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/header/../header/Player.h \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/header/../header/wrongInput.hpp \
  /usr/include/c++/8/sstream /usr/include/c++/8/bits/sstream.tcc \
+ /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/header/../header/../header/Player.h \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/header/../header/wrongInput.hpp \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/header/Output.h \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/header/Player.h \

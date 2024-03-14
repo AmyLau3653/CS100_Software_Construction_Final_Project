@@ -1,4 +1,4 @@
-CMakeFiles/runGame.dir/src/room.cpp.o: \
+CMakeFiles/test.dir/src/room.cpp.o: \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/room.cpp \
  /usr/include/stdc-predef.h \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/room.h \

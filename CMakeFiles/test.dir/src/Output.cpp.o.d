@@ -1,8 +1,6 @@
-CMakeFiles/runGame.dir/src/room.cpp.o: \
- /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/room.cpp \
- /usr/include/stdc-predef.h \
- /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/room.h \
- /usr/include/c++/8/vector /usr/include/c++/8/bits/stl_algobase.h \
+CMakeFiles/test.dir/src/Output.cpp.o: \
+ /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Output.cpp \
+ /usr/include/stdc-predef.h /usr/include/c++/8/iostream \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/8/x86_64-redhat-linux/bits/os_defines.h \
@@ -10,50 +8,39 @@ CMakeFiles/runGame.dir/src/room.cpp.o: \
  /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
  /usr/include/gnu/stubs-64.h \
  /usr/include/c++/8/x86_64-redhat-linux/bits/cpu_defines.h \
- /usr/include/c++/8/bits/functexcept.h \
- /usr/include/c++/8/bits/exception_defines.h \
- /usr/include/c++/8/bits/cpp_type_traits.h \
- /usr/include/c++/8/ext/type_traits.h \
- /usr/include/c++/8/ext/numeric_traits.h \
- /usr/include/c++/8/bits/stl_pair.h /usr/include/c++/8/bits/move.h \
- /usr/include/c++/8/bits/concept_check.h /usr/include/c++/8/type_traits \
- /usr/include/c++/8/bits/stl_iterator_base_types.h \
- /usr/include/c++/8/bits/stl_iterator_base_funcs.h \
- /usr/include/c++/8/debug/assertions.h \
- /usr/include/c++/8/bits/stl_iterator.h \
- /usr/include/c++/8/bits/ptr_traits.h /usr/include/c++/8/debug/debug.h \
- /usr/include/c++/8/bits/predefined_ops.h \
- /usr/include/c++/8/bits/allocator.h \
- /usr/include/c++/8/x86_64-redhat-linux/bits/c++allocator.h \
- /usr/include/c++/8/ext/new_allocator.h /usr/include/c++/8/new \
- /usr/include/c++/8/exception /usr/include/c++/8/bits/exception.h \
- /usr/include/c++/8/bits/exception_ptr.h \
- /usr/include/c++/8/bits/cxxabi_init_exception.h \
- /usr/lib/gcc/x86_64-redhat-linux/8/include/stddef.h \
- /usr/include/c++/8/typeinfo /usr/include/c++/8/bits/hash_bytes.h \
- /usr/include/c++/8/bits/nested_exception.h \
- /usr/include/c++/8/bits/memoryfwd.h \
- /usr/include/c++/8/bits/stl_construct.h \
- /usr/include/c++/8/ext/alloc_traits.h \
- /usr/include/c++/8/bits/alloc_traits.h \
- /usr/include/c++/8/bits/stl_uninitialized.h \
- /usr/include/c++/8/bits/stl_vector.h /usr/include/c++/8/initializer_list \
- /usr/include/c++/8/bits/stl_bvector.h \
- /usr/include/c++/8/bits/functional_hash.h \
- /usr/include/c++/8/bits/range_access.h \
- /usr/include/c++/8/bits/vector.tcc /usr/include/c++/8/iostream \
  /usr/include/c++/8/ostream /usr/include/c++/8/ios \
  /usr/include/c++/8/iosfwd /usr/include/c++/8/bits/stringfwd.h \
- /usr/include/c++/8/bits/postypes.h /usr/include/c++/8/cwchar \
- /usr/include/wchar.h /usr/include/bits/libc-header-start.h \
- /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
+ /usr/include/c++/8/bits/memoryfwd.h /usr/include/c++/8/bits/postypes.h \
+ /usr/include/c++/8/cwchar /usr/include/wchar.h \
+ /usr/include/bits/libc-header-start.h /usr/include/bits/floatn.h \
+ /usr/include/bits/floatn-common.h \
+ /usr/lib/gcc/x86_64-redhat-linux/8/include/stddef.h \
  /usr/lib/gcc/x86_64-redhat-linux/8/include/stdarg.h \
  /usr/include/bits/wchar.h /usr/include/bits/types/wint_t.h \
  /usr/include/bits/types/mbstate_t.h \
  /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
  /usr/include/bits/types/FILE.h /usr/include/bits/types/locale_t.h \
- /usr/include/bits/types/__locale_t.h \
- /usr/include/c++/8/bits/char_traits.h /usr/include/c++/8/cstdint \
+ /usr/include/bits/types/__locale_t.h /usr/include/c++/8/exception \
+ /usr/include/c++/8/bits/exception.h \
+ /usr/include/c++/8/bits/exception_ptr.h \
+ /usr/include/c++/8/bits/exception_defines.h \
+ /usr/include/c++/8/bits/cxxabi_init_exception.h \
+ /usr/include/c++/8/typeinfo /usr/include/c++/8/bits/hash_bytes.h \
+ /usr/include/c++/8/new /usr/include/c++/8/bits/nested_exception.h \
+ /usr/include/c++/8/bits/move.h /usr/include/c++/8/bits/concept_check.h \
+ /usr/include/c++/8/type_traits /usr/include/c++/8/bits/char_traits.h \
+ /usr/include/c++/8/bits/stl_algobase.h \
+ /usr/include/c++/8/bits/functexcept.h \
+ /usr/include/c++/8/bits/cpp_type_traits.h \
+ /usr/include/c++/8/ext/type_traits.h \
+ /usr/include/c++/8/ext/numeric_traits.h \
+ /usr/include/c++/8/bits/stl_pair.h \
+ /usr/include/c++/8/bits/stl_iterator_base_types.h \
+ /usr/include/c++/8/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/8/debug/assertions.h \
+ /usr/include/c++/8/bits/stl_iterator.h \
+ /usr/include/c++/8/bits/ptr_traits.h /usr/include/c++/8/debug/debug.h \
+ /usr/include/c++/8/bits/predefined_ops.h /usr/include/c++/8/cstdint \
  /usr/lib/gcc/x86_64-redhat-linux/8/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/types.h \
  /usr/include/bits/typesizes.h /usr/include/bits/stdint-intn.h \
@@ -79,11 +66,18 @@ CMakeFiles/runGame.dir/src/room.cpp.o: \
  /usr/include/bits/pthreadtypes-arch.h /usr/include/bits/setjmp.h \
  /usr/include/c++/8/x86_64-redhat-linux/bits/atomic_word.h \
  /usr/include/c++/8/bits/locale_classes.h /usr/include/c++/8/string \
+ /usr/include/c++/8/bits/allocator.h \
+ /usr/include/c++/8/x86_64-redhat-linux/bits/c++allocator.h \
+ /usr/include/c++/8/ext/new_allocator.h \
  /usr/include/c++/8/bits/ostream_insert.h \
  /usr/include/c++/8/bits/cxxabi_forced.h \
  /usr/include/c++/8/bits/stl_function.h \
  /usr/include/c++/8/backward/binders.h \
+ /usr/include/c++/8/bits/range_access.h \
+ /usr/include/c++/8/initializer_list \
  /usr/include/c++/8/bits/basic_string.h \
+ /usr/include/c++/8/ext/alloc_traits.h \
+ /usr/include/c++/8/bits/alloc_traits.h \
  /usr/include/c++/8/ext/string_conversions.h /usr/include/c++/8/cstdlib \
  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
  /usr/include/bits/waitstatus.h /usr/include/sys/types.h \
@@ -100,6 +94,7 @@ CMakeFiles/runGame.dir/src/room.cpp.o: \
  /usr/include/linux/errno.h /usr/include/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/bits/types/error_t.h \
+ /usr/include/c++/8/bits/functional_hash.h \
  /usr/include/c++/8/bits/basic_string.tcc \
  /usr/include/c++/8/bits/locale_classes.tcc \
  /usr/include/c++/8/system_error \
@@ -115,4 +110,14 @@ CMakeFiles/runGame.dir/src/room.cpp.o: \
  /usr/include/c++/8/bits/locale_facets.tcc \
  /usr/include/c++/8/bits/basic_ios.tcc \
  /usr/include/c++/8/bits/ostream.tcc /usr/include/c++/8/istream \
- /usr/include/c++/8/bits/istream.tcc
+ /usr/include/c++/8/bits/istream.tcc \
+ /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/Output.h \
+ /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/Player.h \
+ /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/room.h \
+ /usr/include/c++/8/vector /usr/include/c++/8/bits/stl_construct.h \
+ /usr/include/c++/8/bits/stl_uninitialized.h \
+ /usr/include/c++/8/bits/stl_vector.h \
+ /usr/include/c++/8/bits/stl_bvector.h /usr/include/c++/8/bits/vector.tcc \
+ /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/wrongInput.hpp \
+ /usr/include/c++/8/sstream /usr/include/c++/8/bits/sstream.tcc \
+ /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/../header/Player.h
