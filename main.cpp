@@ -3,14 +3,14 @@
 #include <vector>
 #include <cstdlib>
 #include <cmath>
-#include "header/header/room.h"
-#include "header/header/Player.h"
-#include "header/header/Type_A.h"
-#include "header/header/Type_B.h"
-#include "header/header/Type_C.h"
-#include "header/header/gameplay.h"
-#include "header/Output.h"
-#include "header/wrongInput.hpp"
+#include "../header/room.h"
+#include "../header/Player.h"
+#include "../header/Type_A.h"
+#include "../header/Type_B.h"
+#include "../header/Type_C.h"
+#include "../header/gameplay.h"
+#include "../header/Output.h"
+#include "../header/wrongInput.hpp"
 
 #include "header/Output.h"
 #include "header/wrongInput.hpp"
@@ -144,8 +144,6 @@ void runGame() {
   choice = i.validateHowToPlay();
 
   if (choice == 0) {
-  Output output;
-  InvalidInput i;
   output.OutputMenu();
 
   int choice;
