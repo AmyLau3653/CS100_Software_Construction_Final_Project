@@ -15,18 +15,15 @@ void Output::OutputDeath(Player* player) {
 }
 
 void Output::OutputEncounter(Player* player1, Player* player2) {
-  cout << player1->getName() << " has encountered " << player2->getName()
-       << "! What will " << player1->getName() << " do?\n";
-  //cout << player1->getName() << ", Turn FIX/n" /*<< player1->getNumMoves() << ":\n"*/;
-  //cout << "Move (1)   Stay (2)   Analyze (3)   Attack (4)" << endl;
+   OutputColor(3, 33, player1->getName() + " has encountered " + player2->getName() + "! What will " + player1->getName() + " do?\n" );
 }
 
 void Output::OutputChoice() {
-  cout << "Move (1)   Stay (2)   Analyze (3)";
+  cout << "Move (1)\t Stay (2)\t Analyze (3)";
 }
 
 void Output::OutputChoiceMoveStay() {
-  cout << "Move (1)   Stay (2)";
+  cout << "Move (1)\t Stay (2)";
 }
 
 void Output::OutputChoiceThreeOptions() {
@@ -45,23 +42,25 @@ void Output::OutputMove() {
   cout << "Left   -     \'a\'\n";
   cout << "Down   -     \'s\'\n";
   cout << "Right  -     \'d\'\n";
-  cout << "Cancel -     \'c\'" << endl;
 }
 
 void Output::OutputLevelUpPlayer(Player* player) {
   //output in cyan/light blue
-  OutputColor(0, 36, "Level Up! " + player->getName() + " is now level " + to_string(player->getNumLevel()) + "\n");
+  OutputColor(0, 36, "Level up! " + player->getName() + " is now level " + to_string(player->getIntLevel()) + ".");
 }
 
-void Output::OutputAnalyze(Player* player) {
-  cout << player->getName() << ":\n";
-  player->getLevel();
-  player->getHealth();
-  player->getAttack();
-}
+void Output::OutputAnalyze(Player* currPlayer, Player* oppPlayer) {
+  cout << currPlayer->getName() << ":" << endl;
+  currPlayer->getLevel();
+  currPlayer->getHealth();
+  currPlayer->getAttack();
 
-void Output::OutputWin(Player* player) {
-  cout << player->getName() << " wins!" << endl;
+  cout << endl;
+
+  cout << oppPlayer->getName() << ":" << endl;
+  oppPlayer->getLevel();
+  oppPlayer->getHealth();
+  oppPlayer->getAttack();
 }
 
 void Output::OutputMenu() {
@@ -130,10 +129,29 @@ void Output::OutputChoosePlayerName(int playerNum) {
   cout << "Enter Player " << playerNum << "'s name: ";
 }
 
-void Output::OutputEnemyClose(string playerName) {
-  cout << "Warning: " << playerName << " is nearby!" << endl;
+void Output::OutputDirectionChoice(int currY, int currX, int n) {
+  if (currY != 1) {
+    cout << "Up - 'w'" << endl;
+  }
+  if (currX != 1) {
+    cout << "Left - 'a'" << endl;
+  }
+  if (currY != n) {
+    cout << "Down - 's'" << endl;
+  }
+  if (currX != n) {
+    cout << "Right - 'd'" << endl;
+  }
 }
 
-void Output::OutputExitClose() {
-  cout << "The exit is nearby!" << endl;
+void Output::OutputNewLine() {
+  cout << endl;
+}
+
+void Output::OutputConflict(Player* currPlayer, Player* oppPlayer) {
+      cout << "Fight (1) \tStay (2) \tAnalyze (3)" << endl;
+}
+
+void Output::OutputWin(Player* p) {
+  cout << p->getName() << " wins!" << endl;
 }

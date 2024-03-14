@@ -4,61 +4,38 @@
 #include "../header/room.h"
 #include "../header/Output.h"
 #include "../header/wrongInput.hpp"
-#include <iostream>
 using namespace std;
 
 
 
-void analyze(Player *currPlayer, Player *oppPlayer) {
-  Output output;
-  output.OutputAnalyze(currPlayer);
-  cout << endl;
-  output.OutputAnalyze(oppPlayer);
+void analyze(Player *currPlayer, Player *oppPlayer, Output& o) {
+  o.OutputAnalyze(currPlayer, oppPlayer);
+  o.OutputNewLine();
 }
 
-void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Room> map) {
-  Output output;
-  char direction;
+void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Room> map, Output& o) {
+  string direction;
+  InvalidInput i;
+
   int currY = currPlayer->getY();
   int currX = currPlayer->getX();
   int oppX = oppPlayer->getX();
   int oppY = oppPlayer->getY();
-  if (currY != 1) {
-    cout << "Up - 'w'" << endl;
-  }
-  if (currX != 1) {
-    cout << "Left - 'a'" << endl;
-  }
-  if (currY != n) {
-    cout << "Down - 's'" << endl;
-  }
-  if (currX != n) {
-    cout << "Right - 'd'" << endl;
-  }
-  cout << "Cancel - 'c'" << endl << endl << "Enter a direction or cancel: ";
-  cin >> direction;
-  while (!((direction == 'w' && currY != 1) ||
-           (direction == 'a' && currX != 1) ||
-           (direction == 's' && currY != n) ||
-           (direction == 'd' && currX != n) || direction == 'c')) {
-    cout << "Error. Please choose a valid input: ";
-    cin >> direction;
-  }
-  if (direction == 'c') {
+
+  o.OutputDirectionChoice(currY, currX, n);
+
+  direction = i.validateMove(currX, currY, n);
+  if (direction == "c") {
     int m = 3;
-    cout << "Move (1)\t Stay (2)\t Analyze (3)";
+    o.OutputChoice();
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
-      cout << "\t Attack (4)";
+      o.OutputChoiceAttack();
       m = 4;
     }
-    cout << endl;
+    o.OutputNewLine();
+
     int choice;
-    cin >> choice;
-    while (choice > m || choice < 1) {
-      cout << "Error. Please choose a valid input: ";
-      cin >> choice;
-    }
-    cout << "FIXME: Cancel option still in progress" << endl;
+    choice = i.validateNumInputRange(1, m);
   } 
   else {
     currPlayer->moveSpace(direction);
@@ -68,29 +45,23 @@ void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Ro
 
     if (currPlayer->getSpacesMoved() % 2 == 0) {
       currPlayer->levelUp();
+      o.OutputLevelUpPlayer(currPlayer); 
+      o.OutputNewLine();
     }
     if (currRoom.Exodus()) {
-      output.OutputExitRoom(currPlayer);
+      o.OutputExitRoom(currPlayer);
       exit(0);
     }
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
-      cout << currPlayer->getName() << " has encountered "
-           << oppPlayer->getName() << "! What will " 
-           << currPlayer->getName() << " do?" << endl;
+      o.OutputEncounter(currPlayer, oppPlayer);
+      o.OutputConflict(currPlayer, oppPlayer);
+      o.OutputNewLine();
 
-      cout << "Fight (1) \tStay (2) \tAnalyze (3)" << endl;
-      int choice;
-      cin >> choice;
-
-      while (choice > 3 || choice < 1) {
-        cout << "Error. Please choose a valid input: ";
-        cin >> choice;
-      }
-
+      int choice = i.validateTurn();
       if (choice == 1) {
         currPlayer->attack(oppPlayer);
       } else if (choice == 3) {
-        analyze(currPlayer, oppPlayer);
+        analyze(currPlayer, oppPlayer, o);
       }
     }
   }

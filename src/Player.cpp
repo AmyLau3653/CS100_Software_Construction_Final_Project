@@ -1,6 +1,5 @@
 #include "../header/Player.h"
 #include "../header/Output.h"
-#include <cmath>
 #include <iostream>
 using namespace std;
 
@@ -10,6 +9,8 @@ Player::Player(PlayerType type, const string& name, int hp, int atk, int x, int 
   type(type), name(name), health(hp), maxHealth(hp),   
   attackStrength(atk), xLoc(x), yLoc(y)  {
 }
+
+Player::~Player() {}
 
 int Player::getX() {
   return xLoc;
@@ -36,8 +37,16 @@ void Player::getLevel() const {
   cout << "Level: " << level << endl;
 }
 
+int Player::getIntLevel() const {
+  return level;
+}
+
 void Player::getAttack() const {
   cout << "Attack: " << attackStrength << endl;
+}
+
+int Player::getNumAttack() const {
+  return attackStrength;
 }
 
 void Player::damage(int dmg) {
@@ -46,6 +55,7 @@ void Player::damage(int dmg) {
 }
 
 void Player::attack(Player *opp) {
+  Output output;
   Output output;
   opp->damage(attackStrength);
 
@@ -61,17 +71,17 @@ bool Player::isAlive() const {
   return health > 0;
 }
 
-void Player::moveSpace(const char& c) { //check for valid input
-  if (c == 'w') {
+void Player::moveSpace(const string& c) { //check for valid input
+  if (c == "w") {
     yLoc--;
   }
-  else if (c == 'a') {
+  else if (c == "a") {
     xLoc--;
   }
-  else if (c == 's') {
+  else if (c == "s") {
     yLoc++;
   }
-  else if (c == 'd') {
+  else if (c == "d") {
     xLoc++;
   }
   spacesMoved++;

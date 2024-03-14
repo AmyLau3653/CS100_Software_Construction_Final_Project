@@ -1,4 +1,5 @@
 #include "../header/Type_C.h"
+#include "../header/Type_C.h"
 #include <iostream>
 #include "../header/Output.h"
 using namespace std;

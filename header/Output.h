@@ -1,10 +1,10 @@
+using namespace std;
+
+#include "Player.h"
+#include "wrongInput.hpp"
+
 #ifndef __OUTPUT_H__
 #define __OUTPUT_H__
-using namespace std;
-#include "../header/Player.h"
-#include "../header/wrongInput.hpp"
-
-
 
 class Output {
 public:
@@ -14,9 +14,9 @@ public:
   void OutputGameSetup(const string& pName);
   void OutputMove();
   void OutputLevelUpPlayer(Player*);
-  void OutputAnalyze(Player*);
+  void OutputAnalyze(Player*, Player*);
   void OutputEncounter(Player*, Player*);
-  void OutputWin(Player*);
+  void OutputEscapeWin(Player*);
   void OutputMenu();
   void OutputPlay();
   void OutputHowToPlay();
@@ -28,9 +28,10 @@ public:
   void OutputChoiceThreeOptions();
   void OutputChooseMapSize();
   void OutputChoosePlayerName(int playerNum);
-  void OutputEnemyClose(string);
-  void OutputExitClose();
-
+  void OutputDirectionChoice(int py1, int px1, int n);
+  void OutputNewLine();
+  void OutputConflict(Player* currPlayer, Player* oppPlayer);
+  void OutputWin(Player* p);
 private: 
   void OutputColor(int, int, string);
 };

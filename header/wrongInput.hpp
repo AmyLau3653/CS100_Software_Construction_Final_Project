@@ -14,11 +14,13 @@ public:
     int validateTitle();
     bool validateQuit();
     int validateHowToPlay();
-    const std::string validateCharacterSelection();
+    const std::string& validateCharacterSelection();
     int validateRoomSize();
     int validateTurn();
-    const std::string validateMove();
-    bool validateEncounter();
+    const std::string& validateMove(int currX, int currY, int n);
+    int validateEncounter();
+    int validateNoConflict();
+    std::string SetName();
 private:
     int numInput;
     std::string strInput;

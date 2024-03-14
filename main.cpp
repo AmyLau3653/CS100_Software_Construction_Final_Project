@@ -3,12 +3,15 @@
 #include <vector>
 #include <cstdlib>
 #include <cmath>
-#include "header/room.h"
-#include "header/Player.h"
-#include "header/Type_A.h"
-#include "header/Type_B.h"
-#include "header/Type_C.h"
-#include "header/gameplay.h"
+#include "header/header/room.h"
+#include "header/header/Player.h"
+#include "header/header/Type_A.h"
+#include "header/header/Type_B.h"
+#include "header/header/Type_C.h"
+#include "header/header/gameplay.h"
+#include "header/Output.h"
+#include "header/wrongInput.hpp"
+
 #include "header/Output.h"
 #include "header/wrongInput.hpp"
 
@@ -24,11 +27,11 @@ vector<Room> MapGenerator(const int& n) {
   for (int i = 0; i < n; ++i) {
     for (int j = 0; j < n; ++j) {
       int ID = ((i * n) + (j % n)) + 1;
-      cout << ID << ": " << j + 1 << " , " << i + 1 << endl;
+      //cout << ID << ": " << j + 1 << " , " << i + 1 << endl;
       Room currRoom = Room(ID, j + 1, i + 1);
       if (ID == exit && n >= 4) {
         currRoom.setExit();
-        cout << "Room " << ID << " is the exit!" << endl; //take out later
+        //cout << "Room " << ID << " is the exit!" << endl; //take out later
       }
       map.push_back(currRoom);
     }
@@ -36,7 +39,7 @@ vector<Room> MapGenerator(const int& n) {
   return map;
 }
 
-void GameSequence(Player* p1, Player* p2, vector<Room>& map, const int _X, const int _Y) {
+void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
   Output output;
   int n = sqrt(map.size());
   int numTurns = 0;
@@ -59,7 +62,12 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map, const int _X, const
 
     output.OutputPhase(currPlayer, Playerphase);
 
+
+    output.OutputPhase(currPlayer, Playerphase);
+
     Room currRoom = currPlayer->searchRoom(map, currX, currY);
+    //cout << currPlayer->getName() << " currently in room " << currRoom.getID() << endl; //for testing purposes only
+    
     cout << currPlayer->getName() << " currently in room " << currRoom.getID() << endl; //for testing purposes only
     
     if (currPlayer->isClose(oppX, oppY)) {
@@ -74,13 +82,16 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map, const int _X, const
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
       m = 4;
       output.OutputEncounter(currPlayer, oppPlayer);
+      output.OutputEncounter(currPlayer, oppPlayer);
     }
+
+    output.OutputChoice();
 
     output.OutputChoice();
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
       output.OutputChoiceAttack();
     }
-    cout << endl;
+    output.OutputNewLine();
 
     int decision;
     InvalidInput i;
@@ -88,31 +99,30 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map, const int _X, const
       decision = i.validateTurn();
     }
     else {
-      decision = i.validateNumInputRange(1, 4);
-    }
+      decision = i.validateEncounter();
+    } 
 
     bool analysis = false;
     if (decision == 3) {
       analysis = true;
-        analyze(currPlayer, oppPlayer);
+        analyze(currPlayer, oppPlayer, output);
         output.OutputChoiceMoveStay();
         bool conflict = currRoom.conflict(currX, currY, oppX, oppY);
         if (conflict) {
           output.OutputChoiceThreeOptions();
         }
-        cout << endl;
-        //////////
+        output.OutputNewLine();
         if(!conflict) {
-          decision = i.validateNumInputRange(1, 2);
+          decision = i.validateNoConflict();
         }
         else {
-          decision = i.validateNumInputRange(1, 3);
+          decision = i.validateTurn();
 
         }
     }
-
+    
     if (decision == 1) {
-      move(currPlayer, oppPlayer, currRoom, n, map);
+      move(currPlayer, oppPlayer, currRoom, n, map, output);
     } //analyze
     if (decision == 4 || 
       (analysis == true && decision == 3)) {
@@ -121,6 +131,7 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map, const int _X, const
     
     numTurns++;
   }
+  
   return;
 }
 
@@ -133,11 +144,19 @@ void runGame() {
   choice = i.validateHowToPlay();
 
   if (choice == 0) {
+  Output output;
+  InvalidInput i;
+  output.OutputMenu();
+
+  int choice;
+  choice = i.validateHowToPlay();
+
+  if (choice == 0) {
     return;
   }
   if (choice == 2) {
     output.OutputHowToPlay();
-    choice = i.validateNumInputRange(0, 1);
+    choice = i.validateTitle();
 
     if (choice == 0) {
       return;
@@ -145,7 +164,9 @@ void runGame() {
   }
 
   output.OutputChooseMapSize();
+  output.OutputChooseMapSize();
   int n;
+  n = i.validateRoomSize();
   n = i.validateRoomSize();
 
   vector<Room> map = MapGenerator(n);
@@ -168,9 +189,10 @@ void runGame() {
 
   string p1Name, p2Name;
   output.OutputChoosePlayerName(1);
-  std::cin >> p1Name;
+  p1Name = i.SetName();
+  
   output.OutputChoosePlayerName(2);
-  std::cin >> p2Name;
+  p2Name = i.SetName();
 
   output.OutputGameSetup(p1Name);
 
@@ -201,11 +223,13 @@ void runGame() {
     P2 = new TypeC(p2Name, BASEHP2, BASEATK2, x2, y2);
   }
 
-  P1->getPosition();
-  P2->getPosition(); //take these two out later; these are for testing only
+  //P1->getPosition();
+  //P2->getPosition(); //take these two out later; these are for testing only
 
+  GameSequence(P1, P2, map);
   
-  GameSequence(P1, P2, map, exitX, exitY);
+  delete P1;
+  delete P2;
   return;
 }
 
