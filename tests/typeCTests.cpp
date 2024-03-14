@@ -6,17 +6,17 @@ TEST(TypeCTests, LevelUpTest) {
   p->levelUp();
 
   ASSERT_EQ(ss.str(), "Level up!");
-  ASSERT_EQ(typeC.getLevel(), 1);
-  ASSERT_EQ(typeC.getMaxHealth(), 11);
-  ASSERT_EQ(typeC.getHealth(), 11);
-  ASSERT_EQ(typeC.getAttackStrength(), 8);
+  ASSERT_EQ(Type_C.getLevel(), 1);
+  ASSERT_EQ(Type_C.getMaxHealth(), 11);
+  ASSERT_EQ(Type_C.getHealth(), 11);
+  ASSERT_EQ(Type_C.getAttackStrength(), 8);
 }
 
 TEST(TypeCTests, InitialStatsTest) {
-  TypeC typeC("Test Player", 10 ,5, 0, 0);
+  Player* p = new Type_C("Test Player", 10, 5, 0, 0);
 
-  ASSERT_EQ(typeC.getLevel(), 0);
-  ASSERT_EQ(typeC.getMaxHealth(), 10);
-  ASSERT_EQ(typeC.getHealth(), 10);
-  ASSERT_EQ(typeC.getAttackStrength(), 5);
+  ASSERT_EQ(Type_C.getLevel(), 0);
+  ASSERT_EQ(Type_C.getMaxHealth(), 10);
+  ASSERT_EQ(Type_C.getHealth(), 10);
+  ASSERT_EQ(Type_C.getAttackStrength(), 5);
 }
