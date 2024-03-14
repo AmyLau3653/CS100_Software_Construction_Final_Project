@@ -56,7 +56,6 @@ void Player::damage(int dmg) {
 
 void Player::attack(Player *opp) {
   Output output;
-  Output output;
   opp->damage(attackStrength);
 
   output.OutputFight(this, opp);
