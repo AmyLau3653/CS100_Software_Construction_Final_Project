@@ -7,7 +7,7 @@ ADD_EXECUTABLE(runGame
     src/Type_B.cpp 
     src/Type_C.cpp 
     main.cpp
-    Output.cpp 
-    wrongInput.cpp 
+    src/Output.cpp 
+    src/wrongInput.cpp 
     
 )

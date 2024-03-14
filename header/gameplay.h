@@ -2,8 +2,8 @@
 #define GAMEPLAY_H
 #include "../header/Player.h"
 #include "../header/room.h"
-#include "../Output.h"
-#include "../wrongInput.hpp"
+#include "../header/Output.h"
+#include "../header/wrongInput.hpp"
 using namespace std;
 
 
