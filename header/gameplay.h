@@ -36,7 +36,7 @@ void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Ro
   if (currX != n) {
     cout << "Right - 'd'" << endl;
   }
-  cout << "Cancel - 'c'" << endl << endl << "Enter a direction or cancel: ";
+  cout << "Enter a direction or cancel: ";
   direction = invalid.validateMove(currPlayer, n);
   
   currPlayer->moveSpace(direction);
