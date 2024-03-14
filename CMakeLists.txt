@@ -11,3 +11,12 @@ ADD_EXECUTABLE(runGame
     src/wrongInput.cpp 
     
 )
+
+ADD_EXECUTABLE(Tests
+    tests/outputTests.cpp
+    tests/playerTests.cpp
+    tests/roomTests.cpp
+    tests/typeATests.cpp
+    tests/typeBTests.cpp
+    tests/typeCTests.cpp
+)
