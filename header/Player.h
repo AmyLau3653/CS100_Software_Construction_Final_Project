@@ -27,11 +27,10 @@ public:
   const string &getName() const;
   void getHealth() const;
   void getLevel() const; //
-  int getIntLevel() const;
   void getAttack() const;
   int getNumLevel() const;
   int getNumAttack() const;
-  int getNumAttack() const;
+  
   void damage(int);
   virtual void levelUp() = 0;
   void moveSpace(const string &c);

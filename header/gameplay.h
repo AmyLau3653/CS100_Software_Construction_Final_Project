@@ -8,7 +8,8 @@ using namespace std;
 
 
 
-void analyze(Player *currPlayer, Player *oppPlayer, Output& o) {
+void analyze(Player *currPlayer, Player *oppPlayer) {
+  Output o;
   o.OutputAnalyze(currPlayer, oppPlayer);
   o.OutputNewLine();
 }
