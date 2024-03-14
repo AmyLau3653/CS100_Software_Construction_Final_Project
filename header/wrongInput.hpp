@@ -19,7 +19,7 @@ public:
     int validateRoomSize();
     int validateTurn();
     const string validateMove(Player*, const int);
-    bool validateEncounter();
+    int validateEncounter();
 private:
     int numInput;
     string strInput;

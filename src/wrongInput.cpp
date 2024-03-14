@@ -57,7 +57,7 @@ int InvalidInput::validateTurn() {
     return validateNumInputRange(0, 3);
 }
 
-bool InvalidInput::validateEncounter() {
+int InvalidInput::validateEncounter() {
     return validateNumInputRange(0, 4);
 }
 
