@@ -10,7 +10,7 @@ TEST(TypeBTests, LevelUpTest) {
 
   EXPECT_EQ(p->getNumAttack(), 8);
 
-  EXPECT_EQ(p->getNumLevel(), 2);
+  EXPECT_EQ(p->getIntLevel(), 2);
 
   EXPECT_EQ(p->getX(), 0);
   
