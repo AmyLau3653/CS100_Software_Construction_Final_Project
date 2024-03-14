@@ -49,7 +49,7 @@ TEST(PlayerTests, isCloseTest) {
   EXPECT_TRUE(P1->isClose(2, 1));
 }
 
-TEST(PlayerTests, getNumLevelTest) {
+TEST(PlayerTests, getIntLevelTest) {
   Player *P1 = new TypeA("Bob", BASEHP0, BASEATK0, 2, 2);
   EXPECT_EQ(P1->getIntLevel(), 1);
 }
