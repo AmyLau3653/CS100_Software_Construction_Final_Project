@@ -73,6 +73,20 @@ We decided to remove the "Enemy" class since there are only two players, with on
  
  ## Screenshots
  > Screenshots of the input/output after running your application
+
+* Game Menu/Introduction: Outputs the game menu and instructions on how to play
+  * Expected input: ‘0’ to quit the game, ‘1’ to play the game, and ‘2’ to view the rules on how to play the game.
+  * Input '2' for rules on how to play the game:
+  * ![howtoplay](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/c6f70864-d2eb-41ce-87ed-96025cdc8f11)
+  * Input '1' to play the game and move:
+  * ![play](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/131137160/1998013f-c4a9-433d-938b-fc7c95ca3dbf)
+* Normal Scenario: Outputs options to 'Move', 'Stay', or 'Analyze'
+  * Expected input:  ‘1’ to Move, 2 to ‘Stay’, and 3 to ‘Analyze’
+  * Input 3 to 'Analyze'
+* Encounter Scenario: Outputs options to 'Move', 'Stay', 'Analyze', or 'Attack'
+  * Input '4' to Attack:  
+
+
  ## Installation/Usage
  > Instructions on installing and running your application
 
