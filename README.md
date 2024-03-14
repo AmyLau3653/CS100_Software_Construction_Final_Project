@@ -93,7 +93,5 @@ We decided to remove the "Enemy" class since there are only two players, with on
 To install this game and run the application, this Github repository should be cloned into an IDE that supports C++ programming. After cloning in the terminal or command line, the following need to be run in this order: `cmake .`, `make`, `./runGame`. After `./runGame`, the game should start running and gameplay will begin. 
 
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
-
 The project was tested through unit testing using the Google Unit Test Framework, as well as manually testing different inputs while running the game. The unit testing files are included in the tests folder, where we have tested the following classes: Output, Player, Room, TypeA, TypeB, TypeC. A large majority of the testing was through comparing outputs in the terminal with the outputs we had in mind to ensure that the screen layouts would fit our expectations. This is due to the fact that this project is text-based game that is played solely in the terminal. In addition to the unit tests, we ran our game many times to check that it would run smoothly when given a valid input, and that it would output an error message when there was an invalid input.
  
