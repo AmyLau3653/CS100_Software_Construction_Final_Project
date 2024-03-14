@@ -33,12 +33,12 @@ int InvalidInput::validateHowToPlay() {
     return validateNumInputRange(0, 2);
 }
 
-const std::string& InvalidInput::validateCharacterSelection() {
+const string InvalidInput::validateCharacterSelection() {
     bool valid = false;
 
     while(!valid) {
         std::cin >> strInput;
-        if (strInput == "a" || strInput == "b" || strInput == "c") {
+        if (strInput == "a"|| strInput == "b" || strInput == "c") {
             valid = true;
         }
         else {
@@ -58,22 +58,28 @@ int InvalidInput::validateTurn() {
 }
 
 int InvalidInput::validateEncounter() {
-    return validateNumInputRange(1, 4);
+    return validateNumInputRange(0, 4);
 }
 
-int InvalidInput::validateNoConflict() {
-    return validateNumInputRange(1, 2);
-}
-const std::string& InvalidInput::validateMove(int currX, int currY, int n) {
-    std::cin >> strInput;
-    while (!((strInput == "w" && currY != 1) ||
-        (strInput == "a" && currX != 1) ||
-        (strInput == "s" && currY != n) ||
-        (strInput == "d" && currX != n))) {
-        std::cout << "Error. Please choose a valid input: ";
-        std::cin >> strInput;
-  } 
-    return strInput;
+const string InvalidInput::validateMove(Player *currPlayer, const int n) {
+    string input;
+    bool valid = false;
+    int xPos = currPlayer->getX();
+    int yPos = currPlayer->getY();
+
+    while(!valid) {
+        std::cin >> input;
+        if ((input == "w" && yPos != 1) || (input == "a" && xPos != 1) 
+        || (input == "s" && yPos != n) || (input == "d" && xPos != n) 
+        /*|| (input == 'c')*/) {
+            valid = true;
+        }
+        else {
+            std::cout << "Error: invalid input" << std::endl;
+        }
+
+    }
+    return input;
 }
 
 std::string InvalidInput::SetName() {

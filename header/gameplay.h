@@ -13,56 +13,53 @@ void analyze(Player *currPlayer, Player *oppPlayer, Output& o) {
   o.OutputNewLine();
 }
 
-void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Room> map, Output& o) {
+void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Room> map) {
+  Output output;
+  InvalidInput invalid;
   string direction;
-  InvalidInput i;
-
   int currY = currPlayer->getY();
   int currX = currPlayer->getX();
   int oppX = oppPlayer->getX();
   int oppY = oppPlayer->getY();
+  if (currY != 1) {
+    cout << "Up - 'w'" << endl;
+  }
+  if (currX != 1) {
+    cout << "Left - 'a'" << endl;
+  }
+  if (currY != n) {
+    cout << "Down - 's'" << endl;
+  }
+  if (currX != n) {
+    cout << "Right - 'd'" << endl;
+  }
+  cout << "Enter a direction to move in: ";
+  direction = invalid.validateMove(currPlayer, n);
+  
+  currPlayer->moveSpace(direction);
 
-  o.OutputDirectionChoice(currY, currX, n);
+  currRoom =
+      currPlayer->searchRoom(map, currPlayer->getX(), currPlayer->getY());
 
-  direction = i.validateMove(currX, currY, n);
-  if (direction == "c") {
-    int m = 3;
-    o.OutputChoice();
-    if (currRoom.conflict(currX, currY, oppX, oppY)) {
-      o.OutputChoiceAttack();
-      m = 4;
-    }
-    o.OutputNewLine();
+  if (currPlayer->getSpacesMoved() % 2 == 0) {
+    currPlayer->levelUp();
+  }
+  if (currRoom.Exodus()) {
+    output.OutputExitRoom(currPlayer);
+    exit(0);
+  }
+  if (currRoom.conflict(currX, currY, oppX, oppY)) {
+    output.OutputEncounter(currPlayer, oppPlayer);
 
+    output.OutputChoice();
     int choice;
-    choice = i.validateNumInputRange(1, m);
-  } 
-  else {
-    currPlayer->moveSpace(direction);
 
-    currRoom =
-        currPlayer->searchRoom(map, currPlayer->getX(), currPlayer->getY());
+    choice = invalid.validateNumInputRange(1, 3);
 
-    if (currPlayer->getSpacesMoved() % 2 == 0) {
-      currPlayer->levelUp();
-      o.OutputLevelUpPlayer(currPlayer); 
-      o.OutputNewLine();
-    }
-    if (currRoom.Exodus()) {
-      o.OutputExitRoom(currPlayer);
-      exit(0);
-    }
-    if (currRoom.conflict(currX, currY, oppX, oppY)) {
-      o.OutputEncounter(currPlayer, oppPlayer);
-      o.OutputConflict(currPlayer, oppPlayer);
-      o.OutputNewLine();
-
-      int choice = i.validateTurn();
-      if (choice == 1) {
-        currPlayer->attack(oppPlayer);
-      } else if (choice == 3) {
-        analyze(currPlayer, oppPlayer, o);
-      }
+    if (choice == 1) {
+      currPlayer->attack(oppPlayer);
+    } else if (choice == 3) {
+      analyze(currPlayer, oppPlayer);
     }
   }
   return;
