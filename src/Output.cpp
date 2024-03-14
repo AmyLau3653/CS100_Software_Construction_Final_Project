@@ -24,6 +24,7 @@ void Output::OutputChoice() {
 
 void Output::OutputChoiceMoveStay() {
   cout << "Move (1)\t Stay (2)";
+
 }
 
 void Output::OutputChoiceThreeOptions() {

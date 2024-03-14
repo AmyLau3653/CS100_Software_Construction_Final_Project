@@ -24,7 +24,8 @@ The RPG we are making consists of a map generated in the form of a square (where
 ## User Interface Specification
 
 ### Navigation Diagram
-![Escape the Square Maze Navi Diagram](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/139507850/f635950d-bf57-4ed4-a821-a2621daeb330)
+![Escape Maze Navi 3](https://github.com/cs100/final-project-buong001-alau030-byu064-imcke003/assets/139507850/1ee7f429-68f0-47fa-8d33-987648237a90)
+
 
 This diagram depicts the different "screens" that the game will feature. For example, we have the title screen which also functions as the main menu. The user/player has the option to read the instructions, start the game, or quit (the circle represents the state of the program when it's not running). Once starting the game, both players will be prompted to the character creation screens, and the mechanics of the gameplay are shown in the rest of the graph. The player can either move, attack, stay, or check both players' stats. The graph also depicts which action will lead to which screen (for example, each action Player 1 does will automatically lead to Player 2's action screen. Once player 1 has acted on their turn, player 2 will be prompted to act).
 
@@ -72,6 +73,11 @@ We decided to remove the "Enemy" class since there are only two players, with on
  > Screenshots of the input/output after running your application
  ## Installation/Usage
  > Instructions on installing and running your application
+
+To install this game and run the application, this Github repository should be cloned into an IDE that supports C++ programming. After cloning in the terminal or command line, the following need to be run in this order: `cmake .`, `make`, `./runGame`. After `./runGame`, the game should start running and gameplay will begin. 
+
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+
+The project was tested through unit testing using the Google Unit Test Framework, as well as manually testing different inputs while running the game. The unit testing files are included in the tests folder, where we have tested the following classes: Output, Player, Room, TypeA, TypeB, TypeC. A large majority of the testing was through comparing outputs in the terminal with the outputs we had in mind to ensure that the screen layouts would fit our expectations. This is due to the fact that this project is text-based game that is played solely in the terminal. In addition to the unit tests, we ran our game many times to check that it would run smoothly when given a valid input, and that it would output an error message when there was an invalid input.
  

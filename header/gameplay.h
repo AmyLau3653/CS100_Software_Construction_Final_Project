@@ -4,9 +4,8 @@
 #include "../header/room.h"
 #include "../header/Output.h"
 #include "../header/wrongInput.hpp"
+
 using namespace std;
-
-
 
 void analyze(Player *currPlayer, Player *oppPlayer, Output& o) {
   o.OutputAnalyze(currPlayer, oppPlayer);
@@ -16,6 +15,7 @@ void analyze(Player *currPlayer, Player *oppPlayer, Output& o) {
 void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Room> map, Output& o) {
   string direction;
   InvalidInput i;
+
 
   int currY = currPlayer->getY();
   int currX = currPlayer->getX();

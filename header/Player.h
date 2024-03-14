@@ -1,10 +1,11 @@
+#ifndef PLAYER_H_
+#define PLAYER_H_
 #include "room.h"
 #include <string>
 #include <vector>
 using namespace std;
 
-#ifndef PLAYER_H_
-#define PLAYER_H_
+
 
 enum PlayerType { TYPE_A, TYPE_B, TYPE_C };
 
@@ -28,6 +29,7 @@ public:
   void getLevel() const; //
   int getIntLevel() const;
   void getAttack() const;
+  int getNumLevel() const;
   int getNumAttack() const;
   void damage(int);
   virtual void levelUp() = 0;
@@ -39,6 +41,9 @@ public:
   void analyze(Player &);
   int getX(), getY();
   Room searchRoom(vector<Room>, int, int);
+  bool isClose(int, int);
+private:
+  int Manhattan(int, int);
 };
 
 //add in output.h functions later

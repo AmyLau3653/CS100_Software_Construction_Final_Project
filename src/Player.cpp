@@ -3,6 +3,8 @@
 #include <iostream>
 using namespace std;
 
+
+
 Player::Player(PlayerType type, const string& name, int hp, int atk, int x, int y) :
   type(type), name(name), health(hp), maxHealth(hp),   
   attackStrength(atk), xLoc(x), yLoc(y)  {
@@ -102,3 +104,20 @@ void Player::getPosition() const {
   cout << name << " is at (" << xLoc << ", " << yLoc << ")" << endl;
   return;
 } //for testing purposes only
+
+int Player::Manhattan(int x2, int y2) {
+  return (abs(xLoc - x2) + abs(yLoc - y2));
+}
+
+bool Player::isClose(int x, int y) {
+  return(Manhattan(x, y) == 1);
+}
+
+int Player::getNumLevel() const {
+  return level;
+}
+
+int Player::getNumAttack() const {
+  return attackStrength;
+}
+

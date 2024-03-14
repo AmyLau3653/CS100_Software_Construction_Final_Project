@@ -36,6 +36,7 @@ vector<Room> MapGenerator(const int& n) {
   return map;
 }
 
+
 void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
   Output output;
   int n = sqrt(map.size());
@@ -60,8 +61,17 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
     output.OutputPhase(currPlayer, Playerphase);
 
     Room currRoom = currPlayer->searchRoom(map, currX, currY);
+
     //cout << currPlayer->getName() << " currently in room " << currRoom.getID() << endl; //for testing purposes only
     
+    if (currPlayer->isClose(oppX, oppY)) {
+      output.OutputEnemyClose(oppPlayer->getName());
+    }
+
+    if (currPlayer->isClose(_X, _Y)) {
+      output.OutputExitClose();
+    } //exit is close by clue
+
     int m = 3;
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
       m = 4;
@@ -72,6 +82,7 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
       output.OutputChoiceAttack();
     }
+
     output.OutputNewLine();
 
     int decision;
@@ -87,6 +98,7 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
     if (decision == 3) {
       analysis = true;
         analyze(currPlayer, oppPlayer, output);
+
         output.OutputChoiceMoveStay();
         bool conflict = currRoom.conflict(currX, currY, oppX, oppY);
         if (conflict) {
@@ -101,7 +113,6 @@ void GameSequence(Player* p1, Player* p2, vector<Room>& map) {
 
         }
     }
-    
     if (decision == 1) {
       move(currPlayer, oppPlayer, currRoom, n, map, output);
     } //analyze
@@ -120,7 +131,7 @@ void runGame() {
   Output output;
   InvalidInput i;
   output.OutputMenu();
-
+  
   int choice;
   choice = i.validateHowToPlay();
 
@@ -129,8 +140,8 @@ void runGame() {
   }
   if (choice == 2) {
     output.OutputHowToPlay();
-    choice = i.validateTitle();
 
+    choice = i.validateTitle();
     if (choice == 0) {
       return;
     }
@@ -141,6 +152,15 @@ void runGame() {
   n = i.validateRoomSize();
 
   vector<Room> map = MapGenerator(n);
+  int exitX, exitY;
+
+  for (int i = 0; i < map.size(); ++i) {
+    if (map[i].Exodus()) {
+      exitX = map[i].getX();
+      exitY = map[i].getY();
+      break;
+    }
+  }
   Player* P1;
   Player* P2;
 

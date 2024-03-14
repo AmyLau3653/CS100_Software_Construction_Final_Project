@@ -1,3 +1,4 @@
+
 using namespace std;
 
 #include "Player.h"
@@ -5,6 +6,7 @@ using namespace std;
 
 #ifndef __OUTPUT_H__
 #define __OUTPUT_H__
+
 
 class Output {
 public:
