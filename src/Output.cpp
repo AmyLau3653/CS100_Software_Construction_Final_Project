@@ -11,7 +11,7 @@ void Output::OutputColor(int emphasis, int color, string text) {
 
 void Output::OutputDeath(Player* player) {
   //output in italicized red
-  OutputColor(3, 31, player->getName() + " has died!");
+  OutputColor(3, 31, player->getName() + " has died!\n");
 }
 
 void Output::OutputEncounter(Player* player1, Player* player2) {
