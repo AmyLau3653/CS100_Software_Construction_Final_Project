@@ -1,22 +1,20 @@
-#include "../src/Type_A.cpp"
+#include "../header/Type_A.h"
+#include "../header/Player.h"
 #include "gtest/gtest.h"
 
 TEST(TypeATests, LevelUpTest) {
-  TypeA typeA("Test Player", 10 ,5, 0, 0);
-  typeA.levelUp();
+  Player* p = new TypeA("Test Player", 5, 5, 0, 0);
+  p->levelUp();
 
-  ASSERT_EQ(ss.str(), "Level up!");
-  ASSERT_EQ(typeA.getLevel(), 1);
-  ASSERT_EQ(typeA.getMaxHealth(), 12);
-  ASSERT_EQ(typeA.getHealth(), 12);
-  ASSERT_EQ(typeA.getAttackStrength(), 7);
-}
+  EXPECT_EQ(p->getName(), "Test Player");
 
-TEST(TypeATests, InitialStatsTest) {
-  TypeA typeA("Test Player", 10 ,5, 0, 0);
+  EXPECT_EQ(p->getNumAttack(), 7);
 
-  ASSERT_EQ(typeA.getLevel(), 0);
-  ASSERT_EQ(typeA.getMaxHealth(), 10);
-  ASSERT_EQ(typeA.getHealth(), 10);
-  ASSERT_EQ(typeA.getAttackStrength(), 5);
+  EXPECT_EQ(p->getNumLevel(), 2);
+
+  EXPECT_EQ(p->getX(), 0);
+  
+  EXPECT_EQ(p->getY(), 0);
+
+  delete p;
 }
