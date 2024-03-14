@@ -62,16 +62,16 @@ bool Player::isAlive() const {
 }
 
 void Player::moveSpace(const string& s) { //check for valid input
-  if (c == 'w') {
+  if (s == "w") {
     yLoc--;
   }
-  else if (c == 'a') {
+  else if (c == "a") {
     xLoc--;
   }
-  else if (c == 's') {
+  else if (c == "s") {
     yLoc++;
   }
-  else if (c == 'd') {
+  else if (c == "d") {
     xLoc++;
   }
   spacesMoved++;
