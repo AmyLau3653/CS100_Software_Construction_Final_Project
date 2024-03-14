@@ -37,9 +37,9 @@ void Player::getLevel() const {
   cout << "Level: " << level << endl;
 }
 
-int Player::getIntLevel() const {
-  return level;
-}
+// int Player::getIntLevel() const {
+//   return level;
+// }
 
 void Player::getAttack() const {
   cout << "Attack: " << attackStrength << endl;
