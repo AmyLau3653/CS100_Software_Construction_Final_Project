@@ -36,7 +36,6 @@ void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Ro
 
     int choice;
     choice = i.validateNumInputRange(1, m);
-    cout << "FIXME: Cancel option still in progress" << endl;
   } 
   else {
     currPlayer->moveSpace(direction);

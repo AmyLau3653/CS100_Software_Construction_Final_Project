@@ -17,8 +17,6 @@ void Output::OutputDeath(Player* player) {
 void Output::OutputEncounter(Player* player1, Player* player2) {
   cout << player1->getName() << " has encountered " << player2->getName()
        << "! What will " << player1->getName() << " do?\n";
-  //cout << player1->getName() << ", Turn FIX/n" /*<< player1->getNumMoves() << ":\n"*/;
-  //cout << "Move (1)   Stay (2)   Analyze (3)   Attack (4)" << endl;
 }
 
 void Output::OutputChoice() {
@@ -45,7 +43,6 @@ void Output::OutputMove() {
   cout << "Left   -     \'a\'\n";
   cout << "Down   -     \'s\'\n";
   cout << "Right  -     \'d\'\n";
-  cout << "Cancel -     \'c\'" << endl;
 }
 
 void Output::OutputLevelUpPlayer(Player* player) {
@@ -151,7 +148,6 @@ void Output::OutputDirectionChoice(int currY, int currX, int n) {
   if (currX != n) {
     cout << "Right - 'd'" << endl;
   }
-  cout << "Cancel - 'c'" << endl << endl << "Enter a direction or cancel: ";
 }
 
 void Output::OutputNewLine() {

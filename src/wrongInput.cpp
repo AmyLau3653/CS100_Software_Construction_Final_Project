@@ -69,7 +69,7 @@ const std::string& InvalidInput::validateMove(int currX, int currY, int n) {
     while (!((strInput == "w" && currY != 1) ||
         (strInput == "a" && currX != 1) ||
         (strInput == "s" && currY != n) ||
-        (strInput == "d" && currX != n) || strInput == "c")) {
+        (strInput == "d" && currX != n))) {
         std::cout << "Error. Please choose a valid input: ";
         std::cin >> strInput;
   } 
