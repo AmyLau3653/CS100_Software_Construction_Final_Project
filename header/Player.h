@@ -28,7 +28,7 @@ public:
   void getHealth() const;
   void getLevel() const; //
   void getAttack() const;
-  int getNumLevel() const;
+  int getIntLevel() const;
   int getNumAttack() const;
   
   void damage(int);
