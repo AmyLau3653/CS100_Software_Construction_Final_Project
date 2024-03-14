@@ -1,4 +1,4 @@
-#include "../src/room.cpp"
+#include "../header/room.h"
 #include "gtest/gtest.h"
 
 TEST(RoomTests, ConstructionTest) {
