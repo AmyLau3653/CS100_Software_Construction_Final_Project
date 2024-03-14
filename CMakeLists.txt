@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
 project(finalProject)
-
 add_subdirectory(googletest)
 
 set(SRC_FILES
