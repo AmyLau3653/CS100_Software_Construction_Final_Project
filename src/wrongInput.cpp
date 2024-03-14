@@ -82,8 +82,8 @@ const string InvalidInput::validateMove(Player *currPlayer, const int n) {
     return input;
 }
 
-std::string InvalidInput::SetName() {
-    std::string name;
-    std::cin >>  name;
-    return name;
-}
+// std::string InvalidInput::SetName() {
+//     std::string name;
+//     std::cin >>  name;
+//     return name;
+// }
