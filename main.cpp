@@ -201,10 +201,6 @@ void runGame() {
     P2 = new TypeC(p2Name, BASEHP2, BASEATK2, x2, y2);
   }
 
-  // P1->getPosition();
-  // P2->getPosition(); //take these two out later; these are for testing only
-
-  
   GameSequence(P1, P2, map, exitX, exitY);
   return;
 }
