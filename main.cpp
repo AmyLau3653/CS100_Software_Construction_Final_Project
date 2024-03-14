@@ -202,6 +202,8 @@ void runGame() {
   }
 
   GameSequence(P1, P2, map, exitX, exitY);
+  delete P1;
+  delete P2; //no mem leaks
   return;
 }
 
