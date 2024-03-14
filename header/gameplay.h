@@ -46,10 +46,10 @@ void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Ro
     if (currPlayer->getSpacesMoved() % 2 == 0) {
       currPlayer->levelUp();
       o.OutputLevelUpPlayer(currPlayer); 
-      o.OutputNewLine();// MAYBE DONT NEED
+      o.OutputNewLine();
     }
     if (currRoom.Exodus()) {
-      o.OutputEscapeWin(currPlayer);
+      o.OutputExitRoom(currPlayer);
       exit(0);
     }
     if (currRoom.conflict(currX, currY, oppX, oppY)) {

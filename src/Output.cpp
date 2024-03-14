@@ -15,8 +15,7 @@ void Output::OutputDeath(Player* player) {
 }
 
 void Output::OutputEncounter(Player* player1, Player* player2) {
-  cout << player1->getName() << " has encountered " << player2->getName()
-       << "! What will " << player1->getName() << " do?\n";
+   OutputColor(3, 33, player1->getName() + " has encountered " + player2->getName() + "! What will " + player1->getName() + " do?\n" );
 }
 
 void Output::OutputChoice() {
@@ -62,11 +61,6 @@ void Output::OutputAnalyze(Player* currPlayer, Player* oppPlayer) {
   oppPlayer->getLevel();
   oppPlayer->getHealth();
   oppPlayer->getAttack();
-}
-
-void Output::OutputEscapeWin(Player* player) {
-  cout << player->getName() << " has escaped!" << endl
-    << player->getName() << " wins!" << endl;
 }
 
 void Output::OutputMenu() {

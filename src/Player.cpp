@@ -1,4 +1,5 @@
 #include "../header/Player.h"
+#include "../header/Output.h"
 #include <iostream>
 using namespace std;
 
@@ -49,7 +50,6 @@ void Player::damage(int dmg) {
 
 void Player::attack(Player *opp) {
   opp->damage(attackStrength);
-
   cout << name << " does " << attackStrength 
     << " damage to " << opp->getName() << endl;
   if (!(opp->isAlive())) {
