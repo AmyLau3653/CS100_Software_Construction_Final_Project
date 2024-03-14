@@ -23,7 +23,7 @@ int InvalidInput::validateTitle() {
 
 bool InvalidInput::validateQuit() {
     std::cin >> charInput;
-    if (charInput.compare("q")) {
+    if (charInput.compare('q')) {
         return true;
     }
     return false;
@@ -38,7 +38,7 @@ const std::string InvalidInput::validateCharacterSelection() {
 
     while(!valid) {
         std::cin >> charInput;
-        if (charInput == "a" || charInput == "b" || charInput == "c") {
+        if (charInput == 'a'|| charInput == 'b' || charInput == 'c') {
             valid = true;
         }
         else {
