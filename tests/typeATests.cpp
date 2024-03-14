@@ -2,8 +2,8 @@
 #include "gtest/gtest.h"
 
 TEST(TypeATests, LevelUpTest) {
-  TypeA typeA("Test Player", 10 ,5, 0, 0);
-  typeA.levelUp();
+  Player* p = new Type_A("Test Player", 10, 5, 0, 0);
+  p->levelUp();
 
   ASSERT_EQ(ss.str(), "Level up!");
   ASSERT_EQ(typeA.getLevel(), 1);
