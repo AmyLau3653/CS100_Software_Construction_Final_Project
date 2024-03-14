@@ -3,7 +3,7 @@
 #include <vector>
 #include <cstdlib>
 #include <cmath>
-#include "../header/room.h"
+#include "header/room.h"
 #include "../header/Player.h"
 #include "../header/Type_A.h"
 #include "../header/Type_B.h"
