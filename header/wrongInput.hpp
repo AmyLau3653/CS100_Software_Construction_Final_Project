@@ -1,5 +1,6 @@
 #include <sstream>
 #include <string>
+#include "../header/Player.h"
 
 #ifndef __INVALIDINPUT_HPP__
 #define __INVALIDINPUT_HPP__
@@ -17,11 +18,11 @@ public:
     const std::string validateCharacterSelection();
     int validateRoomSize();
     int validateTurn();
-    const std::string validateMove();
+    const char validateMove(Player*, const int);
     bool validateEncounter();
 private:
     int numInput;
-    std::string strInput;
+    char charInput;
 };
 
 #endif

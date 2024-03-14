@@ -61,13 +61,17 @@ bool InvalidInput::validateEncounter() {
     return validateNumInputRange(0, 4);
 }
 
-const std::string InvalidInput::validateMove() {
-    std::string input;
+const char InvalidInput::validateMove(Player *currPlayer, const int n) {
+    char input;
     bool valid = false;
+    xPos = currPlayer->getX();
+    yPos = currPlayer->getY();
 
     while(!valid) {
         std::cin >> input;
-        if (input == "w" || input == "a" || input == "s" || input == "d" || input == "c") {
+        if ((input == 'w' && yPos != 1) || (input == 'a' && xPos != 1) 
+        || (input == 's' && yPos != n) || (input == 'd' && xPos != n) 
+        || (input == 'c')) {
             valid = true;
         }
         else {

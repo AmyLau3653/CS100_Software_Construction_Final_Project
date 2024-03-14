@@ -18,6 +18,7 @@ void analyze(Player *currPlayer, Player *oppPlayer) {
 
 void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Room> map) {
   Output output;
+  InvalidInput invalid;
   char direction;
   int currY = currPlayer->getY();
   int currX = currPlayer->getX();
@@ -36,19 +37,21 @@ void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Ro
     cout << "Right - 'd'" << endl;
   }
   cout << "Cancel - 'c'" << endl << endl << "Enter a direction or cancel: ";
-  cin >> direction;
-  while (!((direction == 'w' && currY != 1) ||
-           (direction == 'a' && currX != 1) ||
-           (direction == 's' && currY != n) ||
-           (direction == 'd' && currX != n) || direction == 'c')) {
-    cout << "Error. Please choose a valid input: ";
-    cin >> direction;
-  }
+  direction = invalid.validateMove(currPlayer, n);
+  // cin >> direction;
+  // while (!((direction == 'w' && currY != 1) ||
+  //          (direction == 'a' && currX != 1) ||
+  //          (direction == 's' && currY != n) ||
+  //          (direction == 'd' && currX != n) || direction == 'c')) {
+  //   cout << "Error. Please choose a valid input: ";
+  //   cin >> direction;
+
+  // }
   if (direction == 'c') {
     int m = 3;
-    cout << "Move (1)\t Stay (2)\t Analyze (3)";
+    output.OutputChoice();
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
-      cout << "\t Attack (4)";
+      output.OutputChoiceAttack();
       m = 4;
     }
     cout << endl;
@@ -74,18 +77,17 @@ void move(Player *currPlayer, Player *oppPlayer, Room currRoom, int n, vector<Ro
       exit(0);
     }
     if (currRoom.conflict(currX, currY, oppX, oppY)) {
-      cout << currPlayer->getName() << " has encountered "
-           << oppPlayer->getName() << "! What will " 
-           << currPlayer->getName() << " do?" << endl;
+      output.OutputEncounter(currPlayer, oppPlayer);
 
-      cout << "Fight (1) \tStay (2) \tAnalyze (3)" << endl;
+      output.OutputChoice();
       int choice;
-      cin >> choice;
+      
 
-      while (choice > 3 || choice < 1) {
-        cout << "Error. Please choose a valid input: ";
-        cin >> choice;
-      }
+      // while (choice > 3 || choice < 1) {
+      //   cout << "Error. Please choose a valid input: ";
+      //   cin >> choice;
+      // }
+      choice = invalid.validateNumInputRange(1, 3);
 
       if (choice == 1) {
         currPlayer->attack(oppPlayer);
