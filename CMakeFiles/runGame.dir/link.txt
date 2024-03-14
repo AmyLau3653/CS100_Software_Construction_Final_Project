@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/runGame.dir/main.cpp.o CMakeFiles/runGame.dir/src/room.cpp.o CMakeFiles/runGame.dir/src/Player.cpp.o CMakeFiles/runGame.dir/src/Type_A.cpp.o CMakeFiles/runGame.dir/src/Type_B.cpp.o CMakeFiles/runGame.dir/src/Type_C.cpp.o CMakeFiles/runGame.dir/src/Output.cpp.o CMakeFiles/runGame.dir/src/wrongInput.cpp.o -o runGame 
