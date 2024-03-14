@@ -1,5 +1,9 @@
 CMakeFiles/runGame.dir/main.cpp.o: \
+<<<<<<< HEAD
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/main.cpp \
+=======
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/main.cpp \
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
  /usr/include/stdc-predef.h /usr/include/c++/8/iostream \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -122,6 +126,7 @@ CMakeFiles/runGame.dir/main.cpp.o: \
  /usr/include/bits/mathcalls-helper-functions.h \
  /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
  /usr/include/bits/iscanonical.h \
+<<<<<<< HEAD
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/header/room.h \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/header/Player.h \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/header/room.h \
@@ -139,3 +144,24 @@ CMakeFiles/runGame.dir/main.cpp.o: \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/header/../header/wrongInput.hpp \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/header/Output.h \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/header/wrongInput.hpp
+=======
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/header/room.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/header/Player.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/header/room.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/header/Type_A.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/header/Player.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/header/Type_B.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/header/Type_C.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/header/gameplay.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/header/../header/Player.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/header/../header/room.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/header/../header/room.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/header/../header/Output.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/header/../header/Player.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/header/../header/wrongInput.hpp \
+ /usr/include/c++/8/sstream /usr/include/c++/8/bits/sstream.tcc \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/header/../header/wrongInput.hpp \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/header/Output.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/header/wrongInput.hpp \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/header/wrongInput.hpp
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603

@@ -54,10 +54,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003
+=======
+CMAKE_SOURCE_DIR = /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +88,24 @@ clean: CMakeFiles/runGame.dir/clean
 CMakeFiles/runGame.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runGame.dir/build.make CMakeFiles/runGame.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target runGame"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target runGame"
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 .PHONY : CMakeFiles/runGame.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/runGame.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/runGame.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/runGame.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles 0
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 .PHONY : CMakeFiles/runGame.dir/rule
 
 # Convenience name for target.

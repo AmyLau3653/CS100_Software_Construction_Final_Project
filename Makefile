@@ -57,10 +57,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003
+=======
+CMAKE_SOURCE_DIR = /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +94,15 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003//CMakeFiles/progress.marks
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles 0
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 .PHONY : all
 
 # The main clean target

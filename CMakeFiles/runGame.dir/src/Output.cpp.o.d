@@ -1,5 +1,9 @@
 CMakeFiles/runGame.dir/src/Output.cpp.o: \
+<<<<<<< HEAD
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Output.cpp \
+=======
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Output.cpp \
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
  /usr/include/stdc-predef.h /usr/include/c++/8/iostream \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -111,13 +115,24 @@ CMakeFiles/runGame.dir/src/Output.cpp.o: \
  /usr/include/c++/8/bits/basic_ios.tcc \
  /usr/include/c++/8/bits/ostream.tcc /usr/include/c++/8/istream \
  /usr/include/c++/8/bits/istream.tcc \
+<<<<<<< HEAD
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/Output.h \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/../header/Player.h \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/../header/room.h \
+=======
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/../header/Output.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/../header/Player.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/../header/room.h \
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
  /usr/include/c++/8/vector /usr/include/c++/8/bits/stl_construct.h \
  /usr/include/c++/8/bits/stl_uninitialized.h \
  /usr/include/c++/8/bits/stl_vector.h \
  /usr/include/c++/8/bits/stl_bvector.h /usr/include/c++/8/bits/vector.tcc \
+<<<<<<< HEAD
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/../header/wrongInput.hpp \
  /usr/include/c++/8/sstream /usr/include/c++/8/bits/sstream.tcc \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/../header/../header/Player.h
+=======
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/../header/wrongInput.hpp \
+ /usr/include/c++/8/sstream /usr/include/c++/8/bits/sstream.tcc
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603

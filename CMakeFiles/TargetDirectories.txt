@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/runGame.dir
 /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/edit_cache.dir
 /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/rebuild_cache.dir
+=======
+/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/runGame.dir
+/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/edit_cache.dir
+/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/rebuild_cache.dir
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603

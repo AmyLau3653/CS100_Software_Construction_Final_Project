@@ -198,7 +198,10 @@ CMakeFiles/runGame.dir/main.cpp.o: main.cpp \
   header/wrongInput.hpp \
   /usr/include/c++/8/sstream \
   /usr/include/c++/8/bits/sstream.tcc \
+<<<<<<< HEAD
   header/Player.h \
+=======
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
   header/wrongInput.hpp \
   header/Output.h \
   header/wrongInput.hpp
@@ -380,8 +383,12 @@ CMakeFiles/runGame.dir/src/Output.cpp.o: src/Output.cpp \
   /usr/include/c++/8/bits/vector.tcc \
   header/wrongInput.hpp \
   /usr/include/c++/8/sstream \
+<<<<<<< HEAD
   /usr/include/c++/8/bits/sstream.tcc \
   header/Player.h
+=======
+  /usr/include/c++/8/bits/sstream.tcc
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 
 CMakeFiles/runGame.dir/src/Player.cpp.o: src/Player.cpp \
   /usr/include/stdc-predef.h \
@@ -561,7 +568,10 @@ CMakeFiles/runGame.dir/src/Player.cpp.o: src/Player.cpp \
   /usr/include/c++/8/bits/ostream.tcc \
   /usr/include/c++/8/bits/istream.tcc \
   /usr/include/c++/8/bits/sstream.tcc \
+<<<<<<< HEAD
   header/Player.h \
+=======
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
   /usr/include/c++/8/cmath \
   /usr/include/math.h \
   /usr/include/bits/math-vector.h \
@@ -753,8 +763,12 @@ CMakeFiles/runGame.dir/src/Type_A.cpp.o: src/Type_A.cpp \
   header/Output.h \
   header/wrongInput.hpp \
   /usr/include/c++/8/sstream \
+<<<<<<< HEAD
   /usr/include/c++/8/bits/sstream.tcc \
   header/Player.h
+=======
+  /usr/include/c++/8/bits/sstream.tcc
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 
 CMakeFiles/runGame.dir/src/Type_B.cpp.o: src/Type_B.cpp \
   /usr/include/stdc-predef.h \
@@ -934,8 +948,12 @@ CMakeFiles/runGame.dir/src/Type_B.cpp.o: src/Type_B.cpp \
   header/Output.h \
   header/wrongInput.hpp \
   /usr/include/c++/8/sstream \
+<<<<<<< HEAD
   /usr/include/c++/8/bits/sstream.tcc \
   header/Player.h
+=======
+  /usr/include/c++/8/bits/sstream.tcc
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 
 CMakeFiles/runGame.dir/src/Type_C.cpp.o: src/Type_C.cpp \
   /usr/include/stdc-predef.h \
@@ -1115,8 +1133,12 @@ CMakeFiles/runGame.dir/src/Type_C.cpp.o: src/Type_C.cpp \
   header/Output.h \
   header/wrongInput.hpp \
   /usr/include/c++/8/sstream \
+<<<<<<< HEAD
   /usr/include/c++/8/bits/sstream.tcc \
   header/Player.h
+=======
+  /usr/include/c++/8/bits/sstream.tcc
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 
 CMakeFiles/runGame.dir/src/room.cpp.o: src/room.cpp \
   /usr/include/stdc-predef.h \
@@ -1461,6 +1483,7 @@ CMakeFiles/runGame.dir/src/wrongInput.cpp.o: src/wrongInput.cpp \
   /usr/include/c++/8/limits \
   header/wrongInput.hpp \
   /usr/include/c++/8/sstream \
+<<<<<<< HEAD
   /usr/include/c++/8/bits/sstream.tcc \
   header/Player.h \
   header/room.h \
@@ -1470,6 +1493,9 @@ CMakeFiles/runGame.dir/src/wrongInput.cpp.o: src/wrongInput.cpp \
   /usr/include/c++/8/bits/stl_vector.h \
   /usr/include/c++/8/bits/stl_bvector.h \
   /usr/include/c++/8/bits/vector.tcc
+=======
+  /usr/include/c++/8/bits/sstream.tcc
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 
 
 /usr/include/c++/8/limits:

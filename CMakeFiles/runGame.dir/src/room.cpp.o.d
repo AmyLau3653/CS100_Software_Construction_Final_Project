@@ -1,7 +1,13 @@
 CMakeFiles/runGame.dir/src/room.cpp.o: \
+<<<<<<< HEAD
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/room.cpp \
  /usr/include/stdc-predef.h \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/room.h \
+=======
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/room.cpp \
+ /usr/include/stdc-predef.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/../header/room.h \
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
  /usr/include/c++/8/vector /usr/include/c++/8/bits/stl_algobase.h \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

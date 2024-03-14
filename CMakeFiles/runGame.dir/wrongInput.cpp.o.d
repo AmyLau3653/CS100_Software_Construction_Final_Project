@@ -1,5 +1,9 @@
 CMakeFiles/runGame.dir/wrongInput.cpp.o: \
+<<<<<<< HEAD
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/wrongInput.cpp \
+=======
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/wrongInput.cpp \
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
  /usr/include/stdc-predef.h /usr/include/c++/8/iostream \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -111,5 +115,9 @@ CMakeFiles/runGame.dir/wrongInput.cpp.o: \
  /usr/include/c++/8/bits/basic_ios.tcc \
  /usr/include/c++/8/bits/ostream.tcc /usr/include/c++/8/istream \
  /usr/include/c++/8/bits/istream.tcc /usr/include/c++/8/limits \
+<<<<<<< HEAD
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/wrongInput.hpp \
+=======
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/wrongInput.hpp \
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
  /usr/include/c++/8/sstream /usr/include/c++/8/bits/sstream.tcc

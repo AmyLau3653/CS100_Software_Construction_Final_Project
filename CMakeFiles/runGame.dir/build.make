@@ -53,10 +53,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003
+=======
+CMAKE_SOURCE_DIR = /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 
 # Include any dependencies generated for this target.
 include CMakeFiles/runGame.dir/depend.make
@@ -72,6 +79,7 @@ include CMakeFiles/runGame.dir/flags.make
 CMakeFiles/runGame.dir/src/room.cpp.o: CMakeFiles/runGame.dir/flags.make
 CMakeFiles/runGame.dir/src/room.cpp.o: src/room.cpp
 CMakeFiles/runGame.dir/src/room.cpp.o: CMakeFiles/runGame.dir/compiler_depend.ts
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runGame.dir/src/room.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runGame.dir/src/room.cpp.o -MF CMakeFiles/runGame.dir/src/room.cpp.o.d -o CMakeFiles/runGame.dir/src/room.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/room.cpp
 
@@ -82,10 +90,23 @@ CMakeFiles/runGame.dir/src/room.cpp.i: cmake_force
 CMakeFiles/runGame.dir/src/room.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runGame.dir/src/room.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/room.cpp -o CMakeFiles/runGame.dir/src/room.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runGame.dir/src/room.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runGame.dir/src/room.cpp.o -MF CMakeFiles/runGame.dir/src/room.cpp.o.d -o CMakeFiles/runGame.dir/src/room.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/room.cpp
+
+CMakeFiles/runGame.dir/src/room.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runGame.dir/src/room.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/room.cpp > CMakeFiles/runGame.dir/src/room.cpp.i
+
+CMakeFiles/runGame.dir/src/room.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runGame.dir/src/room.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/room.cpp -o CMakeFiles/runGame.dir/src/room.cpp.s
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 
 CMakeFiles/runGame.dir/src/Player.cpp.o: CMakeFiles/runGame.dir/flags.make
 CMakeFiles/runGame.dir/src/Player.cpp.o: src/Player.cpp
 CMakeFiles/runGame.dir/src/Player.cpp.o: CMakeFiles/runGame.dir/compiler_depend.ts
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runGame.dir/src/Player.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runGame.dir/src/Player.cpp.o -MF CMakeFiles/runGame.dir/src/Player.cpp.o.d -o CMakeFiles/runGame.dir/src/Player.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Player.cpp
 
@@ -96,10 +117,23 @@ CMakeFiles/runGame.dir/src/Player.cpp.i: cmake_force
 CMakeFiles/runGame.dir/src/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runGame.dir/src/Player.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Player.cpp -o CMakeFiles/runGame.dir/src/Player.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runGame.dir/src/Player.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runGame.dir/src/Player.cpp.o -MF CMakeFiles/runGame.dir/src/Player.cpp.o.d -o CMakeFiles/runGame.dir/src/Player.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Player.cpp
+
+CMakeFiles/runGame.dir/src/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runGame.dir/src/Player.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Player.cpp > CMakeFiles/runGame.dir/src/Player.cpp.i
+
+CMakeFiles/runGame.dir/src/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runGame.dir/src/Player.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Player.cpp -o CMakeFiles/runGame.dir/src/Player.cpp.s
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 
 CMakeFiles/runGame.dir/src/Type_A.cpp.o: CMakeFiles/runGame.dir/flags.make
 CMakeFiles/runGame.dir/src/Type_A.cpp.o: src/Type_A.cpp
 CMakeFiles/runGame.dir/src/Type_A.cpp.o: CMakeFiles/runGame.dir/compiler_depend.ts
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runGame.dir/src/Type_A.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runGame.dir/src/Type_A.cpp.o -MF CMakeFiles/runGame.dir/src/Type_A.cpp.o.d -o CMakeFiles/runGame.dir/src/Type_A.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Type_A.cpp
 
@@ -110,10 +144,23 @@ CMakeFiles/runGame.dir/src/Type_A.cpp.i: cmake_force
 CMakeFiles/runGame.dir/src/Type_A.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runGame.dir/src/Type_A.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Type_A.cpp -o CMakeFiles/runGame.dir/src/Type_A.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runGame.dir/src/Type_A.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runGame.dir/src/Type_A.cpp.o -MF CMakeFiles/runGame.dir/src/Type_A.cpp.o.d -o CMakeFiles/runGame.dir/src/Type_A.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Type_A.cpp
+
+CMakeFiles/runGame.dir/src/Type_A.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runGame.dir/src/Type_A.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Type_A.cpp > CMakeFiles/runGame.dir/src/Type_A.cpp.i
+
+CMakeFiles/runGame.dir/src/Type_A.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runGame.dir/src/Type_A.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Type_A.cpp -o CMakeFiles/runGame.dir/src/Type_A.cpp.s
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 
 CMakeFiles/runGame.dir/src/Type_B.cpp.o: CMakeFiles/runGame.dir/flags.make
 CMakeFiles/runGame.dir/src/Type_B.cpp.o: src/Type_B.cpp
 CMakeFiles/runGame.dir/src/Type_B.cpp.o: CMakeFiles/runGame.dir/compiler_depend.ts
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/runGame.dir/src/Type_B.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runGame.dir/src/Type_B.cpp.o -MF CMakeFiles/runGame.dir/src/Type_B.cpp.o.d -o CMakeFiles/runGame.dir/src/Type_B.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Type_B.cpp
 
@@ -124,10 +171,23 @@ CMakeFiles/runGame.dir/src/Type_B.cpp.i: cmake_force
 CMakeFiles/runGame.dir/src/Type_B.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runGame.dir/src/Type_B.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Type_B.cpp -o CMakeFiles/runGame.dir/src/Type_B.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/runGame.dir/src/Type_B.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runGame.dir/src/Type_B.cpp.o -MF CMakeFiles/runGame.dir/src/Type_B.cpp.o.d -o CMakeFiles/runGame.dir/src/Type_B.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Type_B.cpp
+
+CMakeFiles/runGame.dir/src/Type_B.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runGame.dir/src/Type_B.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Type_B.cpp > CMakeFiles/runGame.dir/src/Type_B.cpp.i
+
+CMakeFiles/runGame.dir/src/Type_B.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runGame.dir/src/Type_B.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Type_B.cpp -o CMakeFiles/runGame.dir/src/Type_B.cpp.s
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 
 CMakeFiles/runGame.dir/src/Type_C.cpp.o: CMakeFiles/runGame.dir/flags.make
 CMakeFiles/runGame.dir/src/Type_C.cpp.o: src/Type_C.cpp
 CMakeFiles/runGame.dir/src/Type_C.cpp.o: CMakeFiles/runGame.dir/compiler_depend.ts
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/runGame.dir/src/Type_C.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runGame.dir/src/Type_C.cpp.o -MF CMakeFiles/runGame.dir/src/Type_C.cpp.o.d -o CMakeFiles/runGame.dir/src/Type_C.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Type_C.cpp
 
@@ -138,10 +198,23 @@ CMakeFiles/runGame.dir/src/Type_C.cpp.i: cmake_force
 CMakeFiles/runGame.dir/src/Type_C.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runGame.dir/src/Type_C.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Type_C.cpp -o CMakeFiles/runGame.dir/src/Type_C.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/runGame.dir/src/Type_C.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runGame.dir/src/Type_C.cpp.o -MF CMakeFiles/runGame.dir/src/Type_C.cpp.o.d -o CMakeFiles/runGame.dir/src/Type_C.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Type_C.cpp
+
+CMakeFiles/runGame.dir/src/Type_C.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runGame.dir/src/Type_C.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Type_C.cpp > CMakeFiles/runGame.dir/src/Type_C.cpp.i
+
+CMakeFiles/runGame.dir/src/Type_C.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runGame.dir/src/Type_C.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Type_C.cpp -o CMakeFiles/runGame.dir/src/Type_C.cpp.s
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 
 CMakeFiles/runGame.dir/main.cpp.o: CMakeFiles/runGame.dir/flags.make
 CMakeFiles/runGame.dir/main.cpp.o: main.cpp
 CMakeFiles/runGame.dir/main.cpp.o: CMakeFiles/runGame.dir/compiler_depend.ts
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/runGame.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runGame.dir/main.cpp.o -MF CMakeFiles/runGame.dir/main.cpp.o.d -o CMakeFiles/runGame.dir/main.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/main.cpp
 
@@ -152,10 +225,23 @@ CMakeFiles/runGame.dir/main.cpp.i: cmake_force
 CMakeFiles/runGame.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runGame.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/main.cpp -o CMakeFiles/runGame.dir/main.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/runGame.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runGame.dir/main.cpp.o -MF CMakeFiles/runGame.dir/main.cpp.o.d -o CMakeFiles/runGame.dir/main.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/main.cpp
+
+CMakeFiles/runGame.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runGame.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/main.cpp > CMakeFiles/runGame.dir/main.cpp.i
+
+CMakeFiles/runGame.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runGame.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/main.cpp -o CMakeFiles/runGame.dir/main.cpp.s
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 
 CMakeFiles/runGame.dir/src/Output.cpp.o: CMakeFiles/runGame.dir/flags.make
 CMakeFiles/runGame.dir/src/Output.cpp.o: src/Output.cpp
 CMakeFiles/runGame.dir/src/Output.cpp.o: CMakeFiles/runGame.dir/compiler_depend.ts
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/runGame.dir/src/Output.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runGame.dir/src/Output.cpp.o -MF CMakeFiles/runGame.dir/src/Output.cpp.o.d -o CMakeFiles/runGame.dir/src/Output.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Output.cpp
 
@@ -166,10 +252,23 @@ CMakeFiles/runGame.dir/src/Output.cpp.i: cmake_force
 CMakeFiles/runGame.dir/src/Output.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runGame.dir/src/Output.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Output.cpp -o CMakeFiles/runGame.dir/src/Output.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/runGame.dir/src/Output.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runGame.dir/src/Output.cpp.o -MF CMakeFiles/runGame.dir/src/Output.cpp.o.d -o CMakeFiles/runGame.dir/src/Output.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Output.cpp
+
+CMakeFiles/runGame.dir/src/Output.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runGame.dir/src/Output.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Output.cpp > CMakeFiles/runGame.dir/src/Output.cpp.i
+
+CMakeFiles/runGame.dir/src/Output.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runGame.dir/src/Output.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Output.cpp -o CMakeFiles/runGame.dir/src/Output.cpp.s
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 
 CMakeFiles/runGame.dir/src/wrongInput.cpp.o: CMakeFiles/runGame.dir/flags.make
 CMakeFiles/runGame.dir/src/wrongInput.cpp.o: src/wrongInput.cpp
 CMakeFiles/runGame.dir/src/wrongInput.cpp.o: CMakeFiles/runGame.dir/compiler_depend.ts
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/runGame.dir/src/wrongInput.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runGame.dir/src/wrongInput.cpp.o -MF CMakeFiles/runGame.dir/src/wrongInput.cpp.o.d -o CMakeFiles/runGame.dir/src/wrongInput.cpp.o -c /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/wrongInput.cpp
 
@@ -180,6 +279,18 @@ CMakeFiles/runGame.dir/src/wrongInput.cpp.i: cmake_force
 CMakeFiles/runGame.dir/src/wrongInput.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runGame.dir/src/wrongInput.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/wrongInput.cpp -o CMakeFiles/runGame.dir/src/wrongInput.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/runGame.dir/src/wrongInput.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runGame.dir/src/wrongInput.cpp.o -MF CMakeFiles/runGame.dir/src/wrongInput.cpp.o.d -o CMakeFiles/runGame.dir/src/wrongInput.cpp.o -c /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/wrongInput.cpp
+
+CMakeFiles/runGame.dir/src/wrongInput.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runGame.dir/src/wrongInput.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/wrongInput.cpp > CMakeFiles/runGame.dir/src/wrongInput.cpp.i
+
+CMakeFiles/runGame.dir/src/wrongInput.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runGame.dir/src/wrongInput.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/wrongInput.cpp -o CMakeFiles/runGame.dir/src/wrongInput.cpp.s
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 
 # Object files for target runGame
 runGame_OBJECTS = \
@@ -205,7 +316,11 @@ runGame: CMakeFiles/runGame.dir/src/Output.cpp.o
 runGame: CMakeFiles/runGame.dir/src/wrongInput.cpp.o
 runGame: CMakeFiles/runGame.dir/build.make
 runGame: CMakeFiles/runGame.dir/link.txt
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable runGame"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable runGame"
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runGame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -217,6 +332,10 @@ CMakeFiles/runGame.dir/clean:
 .PHONY : CMakeFiles/runGame.dir/clean
 
 CMakeFiles/runGame.dir/depend:
+<<<<<<< HEAD
 	cd /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003 /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003 /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003 /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003 /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/runGame.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003 /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003 /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003 /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003 /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/runGame.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
 .PHONY : CMakeFiles/runGame.dir/depend
 

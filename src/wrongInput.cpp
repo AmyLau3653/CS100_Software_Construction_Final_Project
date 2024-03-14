@@ -1,6 +1,6 @@
 #include <iostream>
 #include <limits>
-#include "wrongInput.hpp"
+#include "../header/wrongInput.hpp"
 
 int InvalidInput::validateNumInputRange(int minNum, int maxNum) {
     bool isValid = false;
@@ -9,7 +9,7 @@ int InvalidInput::validateNumInputRange(int minNum, int maxNum) {
         if(std::cin.fail() || (numInput < minNum || numInput > maxNum)) {
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            std::cout << "Error: invalid Input" << std::endl;
+            std::cout << "Error. Please choose a valid input: ";
         }
         else {
             isValid = true;
@@ -18,7 +18,7 @@ int InvalidInput::validateNumInputRange(int minNum, int maxNum) {
     return numInput;
 }
 int InvalidInput::validateTitle() {
-    return validateNumInputRange(0, 3);
+    return validateNumInputRange(0, 1);
 }
 
 bool InvalidInput::validateQuit() {
@@ -33,7 +33,7 @@ int InvalidInput::validateHowToPlay() {
     return validateNumInputRange(0, 2);
 }
 
-const std::string InvalidInput::validateCharacterSelection() {
+const std::string& InvalidInput::validateCharacterSelection() {
     bool valid = false;
 
     while(!valid) {
@@ -42,7 +42,7 @@ const std::string InvalidInput::validateCharacterSelection() {
             valid = true;
         }
         else {
-            std::cout << "Error: invalid input" << std::endl;
+            std::cout << "Error. Please choose a valid input: ";
         }
 
     }
@@ -50,31 +50,34 @@ const std::string InvalidInput::validateCharacterSelection() {
 }
 
 int InvalidInput::validateRoomSize() {
-    return validateNumInputRange(2, 9);
+    return validateNumInputRange(4, 13);
 }
 
 int InvalidInput::validateTurn() {
-    return validateNumInputRange(0, 3);
+    return validateNumInputRange(1, 3);
 }
 
-bool InvalidInput::validateEncounter() {
-    return validateNumInputRange(0, 4);
+int InvalidInput::validateEncounter() {
+    return validateNumInputRange(1, 4);
 }
 
-const std::string InvalidInput::validateMove() {
-    std::string input;
-    bool valid = false;
-
-    while(!valid) {
-        std::cin >> input;
-        if (input == "w" || input == "a" || input == "s" || input == "d" || input == "c") {
-            valid = true;
-        }
-        else {
-            std::cout << "Error: invalid input" << std::endl;
-        }
-
-    }
-    return input;
+int InvalidInput::validateNoConflict() {
+    return validateNumInputRange(1, 2);
+}
+const std::string& InvalidInput::validateMove(int currX, int currY, int n) {
+    std::cin >> strInput;
+    while (!((strInput == "w" && currY != 1) ||
+        (strInput == "a" && currX != 1) ||
+        (strInput == "s" && currY != n) ||
+        (strInput == "d" && currX != n))) {
+        std::cout << "Error. Please choose a valid input: ";
+        std::cin >> strInput;
+  } 
+    return strInput;
 }
 
+std::string InvalidInput::SetName() {
+    std::string name;
+    std::cin >>  name;
+    return name;
+}

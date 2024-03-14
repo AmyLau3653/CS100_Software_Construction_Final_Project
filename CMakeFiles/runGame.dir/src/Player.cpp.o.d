@@ -1,8 +1,15 @@
 CMakeFiles/runGame.dir/src/Player.cpp.o: \
+<<<<<<< HEAD
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/Player.cpp \
  /usr/include/stdc-predef.h \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/Player.h \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/room.h \
+=======
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/Player.cpp \
+ /usr/include/stdc-predef.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/../header/Player.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/../header/room.h \
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
  /usr/include/c++/8/vector /usr/include/c++/8/bits/stl_algobase.h \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -101,9 +108,15 @@ CMakeFiles/runGame.dir/src/Player.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/bits/types/error_t.h \
  /usr/include/c++/8/bits/basic_string.tcc \
+<<<<<<< HEAD
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/Output.h \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/../header/Player.h \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/../header/wrongInput.hpp \
+=======
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/../header/Output.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/../header/Player.h \
+ /home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/src/../header/wrongInput.hpp \
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
  /usr/include/c++/8/sstream /usr/include/c++/8/istream \
  /usr/include/c++/8/ios /usr/include/c++/8/bits/ios_base.h \
  /usr/include/c++/8/bits/locale_classes.h \
@@ -121,6 +134,7 @@ CMakeFiles/runGame.dir/src/Player.cpp.o: \
  /usr/include/c++/8/bits/locale_facets.tcc \
  /usr/include/c++/8/bits/basic_ios.tcc /usr/include/c++/8/ostream \
  /usr/include/c++/8/bits/ostream.tcc /usr/include/c++/8/bits/istream.tcc \
+<<<<<<< HEAD
  /usr/include/c++/8/bits/sstream.tcc \
  /home/csmajs/byu064/final-project-buong001-alau030-byu064-imcke003/src/../header/../header/../header/Player.h \
  /usr/include/c++/8/cmath /usr/include/math.h \
@@ -130,3 +144,6 @@ CMakeFiles/runGame.dir/src/Player.cpp.o: \
  /usr/include/bits/mathcalls-helper-functions.h \
  /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
  /usr/include/bits/iscanonical.h /usr/include/c++/8/iostream
+=======
+ /usr/include/c++/8/bits/sstream.tcc /usr/include/c++/8/iostream
+>>>>>>> 6232d0bf43e91515473c6cf51730385c88bd3603
