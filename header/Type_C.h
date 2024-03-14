@@ -1,6 +1,6 @@
 #ifndef TYPE_C_H_
 #define TYPE_C_H_
-#include "Player.h"
+#include "../header/Player.h"
 using namespace std;
 const int BASEHP2 = 4, BASEATK2 = 6;
 class TypeC: public Player {

@@ -1,4 +1,4 @@
-#include "room.h"
+#include "../header/room.h"
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -24,10 +24,6 @@ void Room::setExit() {
   isExit = true;
   return;
 }
-
-
-
-
 
 bool Room::Exodus() { return isExit; }
 

@@ -1,0 +1,3 @@
+/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/runGame.dir
+/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/edit_cache.dir
+/home/csmajs/imcke003/final-project-buong001-alau030-byu064-imcke003/CMakeFiles/rebuild_cache.dir

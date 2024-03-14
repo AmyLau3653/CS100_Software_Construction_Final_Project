@@ -12,9 +12,15 @@ TEST(RoomTests, ConstructionTest) {
 
 TEST(RoomTests, PositionTest) {
   Room room(1, 10, 20);
+  stringstream captured_output;
+  streambuf* original_output = std::cout.rdbuf();
+  cout.rdbuf(captured_output.rdbuf());
+
   room.getPosition();
 
-  EXPECT_EQ(output, "Current position: (10, 20)\n");
+  cout.rdbuf(original_output);
+  string expected_output = "Current position: (10, 20)\n";
+  EXPECT_EQ(captured_output.str(), expected_output);
 }
 
 TEST(RoomTests, ExitTest) {
