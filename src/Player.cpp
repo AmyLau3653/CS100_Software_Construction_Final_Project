@@ -113,11 +113,3 @@ int Player::Manhattan(int x2, int y2) {
 bool Player::isClose(int x, int y) {
   return(Manhattan(x, y) == 1);
 }
-
-int Player::getNumLevel() const {
-  return level;
-}
-
-int Player::getNumAttack() const {
-  return attackStrength;
-}
