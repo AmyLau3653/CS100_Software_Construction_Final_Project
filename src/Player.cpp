@@ -65,13 +65,13 @@ void Player::moveSpace(const string& s) { //check for valid input
   if (s == "w") {
     yLoc--;
   }
-  else if (c == "a") {
+  else if (s == "a") {
     xLoc--;
   }
-  else if (c == "s") {
+  else if (s == "s") {
     yLoc++;
   }
-  else if (c == "d") {
+  else if (s == "d") {
     xLoc++;
   }
   spacesMoved++;
